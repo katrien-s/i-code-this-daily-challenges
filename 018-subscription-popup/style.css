@@ -11,7 +11,7 @@
 /* Variables */
 :root {
 	--clr-primary-100: hsl(221, 34%, 80%);
-	--clr-primary-700: #24324c;
+	--clr-primary-700: hsl(219, 36%, 22%);
 	--clr-primary-900: hsl(224, 38%, 20%);
 
 	--clr-accent-500: hsl(213, 90%, 61%);
@@ -39,17 +39,17 @@ body {
 }
 
 .container {
-  background-color: var(--clr-primary-700);
+	background-color: var(--clr-primary-700);
 	margin: auto;
 	max-width: 550px;
 	width: 90vw;
 	padding: 2.5rem 3.5rem;
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-  0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  background-image: url('blob-scene-haikei.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	background-image: url('blob-scene-haikei.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .fa-xmark {
@@ -60,16 +60,15 @@ body {
 	right: 1rem;
 }
 
-
 .text-container {
-  margin: 0 auto;
-  padding: 0 2.5rem;
+	margin: 0 auto;
+	padding: 0 2.5rem;
 }
 
 h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
 }
 
 /* Input */
@@ -92,19 +91,19 @@ input,
 }
 
 input {
-  text-align: center;
-  background-color: var(--clr-primary-700);
-  color: var(--clr-primary-100);
+	text-align: center;
+	background-color: var(--clr-primary-700);
+	color: var(--clr-primary-100);
 }
 
 /* Buttons */
 .btn {
-  cursor: pointer;
-  border: 0.5px solid var(--clr-accent-500);
+	cursor: pointer;
+	border: 0.5px solid var(--clr-accent-500);
 	background-color: var(--clr-accent-500);
 	color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
 	display: inline-block;
 	transition: all ease-in 0.3s;
 }
@@ -113,7 +112,7 @@ input {
 .btn:focus-visible {
 	background-color: var(--clr-primary-100);
 	border-color: var(--clr-primary-100);
-  color: var(--clr-primary-900);
+	color: var(--clr-primary-900);
 }
 
 @media (min-width: 30em) {
