@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="player">
+			<video
+				src="https://assets.mixkit.co/videos/preview/mixkit-couple-cuddling-in-bed-926-large.mp4"
+				class="video"
+				playsinline
+			></video>
+			<!-- Controls -->
+			<div class="controls-container">
+				<!-- Left Controls -->
+				<div class="controls-left">
+					<i class="fa-solid fa-backward"></i>
+					<i class="fa-solid fa-play play-btn" title="Play"></i>
+					<i class="fa-solid fa-forward"></i>
+					<i class="fa-solid fa-stop stop-btn" title="Stop"></i>
+					<i class="fa-solid fa-bars"></i>
+				</div>
+				<!-- Progress Bar -->
+				<div class="controls-middle">
+					<span class="time-elapsed">0:00</span>
+					<div class="progress-range" title="Seek">
+						<div class="progress-bar"></div>
+					</div>
+					<span class="time-duration">0:00</span>
+				</div>
+				<!-- Right Controls -->
+				<div class="controls-right">
+					<div class="volume">
+						<i class="fa-solid fa-volume-off"></i>
+						<div class="volume-range" title="Change Volume">
+							<div class="volume-bar"></div>
+						</div>
+						<i class="fa-solid fa-volume-high"></i>
+					</div>
+					<div class="fullscreen">
+						<i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

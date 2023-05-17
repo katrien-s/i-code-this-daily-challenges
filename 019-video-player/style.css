@@ -1,0 +1,144 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: hsl(240, 24%, 96%);
+	--clr-primary-900: hsl(226, 43%, 25%);
+	--clr-accent-500: hsl(36, 93%, 56%);
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html,
+body {
+	height: 100%;
+}
+
+html {
+	background-color: var(--clr-primary-100);
+}
+
+body {
+	font-family: 'Wix Madefor Display', sans-serif;
+	font-size: 1rem;
+	color: var(--clr-primary-900);
+	display: grid;
+	place-items: center;
+}
+
+.fa-solid {
+	font-size: 1.25rem;
+}
+
+.fa-solid:hover {
+	color: var(--clr-accent-500);
+}
+
+.player {
+	cursor: pointer;
+	min-width: 0;
+	max-width: 95vw;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+}
+
+.video {
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/* Controls Container */
+
+.controls-container {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	margin-top: -5px;
+	height: 50px;
+	padding: 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.controls-left,
+.controls-middle,
+.controls-right {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.progress-range,
+.progress-bar,
+.volume-range {
+	height: 8px;
+	background-color: var(--clr-primary-100);
+	border-radius: 10px;
+	align-self: center;
+}
+
+.progress-range {
+	width: calc(800px / 3);
+}
+
+.progress-bar {
+  width: 0;
+}
+
+.progress-bar,
+.volume-bar {
+	background-color: var(--clr-accent-500);
+	height: 8px;
+	border-radius: 10px;
+}
+
+.volume {
+	display: flex;
+	gap: 5px;
+	justify-content: space-between;
+  align-items: center;
+}
+
+.volume-range {
+	width: 100px;
+}
+
+.volume-bar {
+  width: 100%;
+}
+
+.fullscreen {
+	margin-left: auto;
+}
+
+@media (min-width: 50em) {
+	.player {
+		max-width: 80vw;
+		min-width: 800px;
+	}
+}
