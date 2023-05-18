@@ -15,24 +15,6 @@
 	--primary-700: #232428;
 	--primary-800: #1a1c20;
 	--primary-900: #161819;
-
-	/* box shadow */
-	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-		0 2px 4px -1px rgba(0, 0, 0, 0.06);
-	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-		0 4px 6px -2px rgba(0, 0, 0, 0.05);
-	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-		0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-	/* rest of the vars */
-	--backgroundColor: var(--grey-50);
-	--textColor: var(--grey-900);
-	--borderRadius: 0.25rem;
-	--letterSpacing: 1px;
-	--transition: 0.3s ease-in-out all;
-	--max-width: 1120px;
-	--fixed-width: 600px;
 }
 
 /* Global Styles */
@@ -59,8 +41,8 @@ body {
 	background-color: var(--primary-900);
 	border: 15px solid var(--primary-900);
 	border-radius: 10px;
-  width: 95vw;
-  max-width: 450px;
+	width: 95vw;
+	max-width: 450px;
 }
 
 .container {
@@ -82,7 +64,7 @@ h3 {
 	font-size: 1.75rem;
 	font-weight: 600;
 	margin-bottom: 1.38rem;
-  line-height: 1.2;
+	line-height: 1.2;
 }
 
 .img {
@@ -107,21 +89,21 @@ h3 {
 	border: transparent;
 	border-radius: 5px;
 	padding: 1rem 1.75rem;
-  width: 100%;
-  margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
 	text-transform: capitalize;
 	display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  transition: 0.3s all ease-in-out;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	transition: 0.3s all ease-in-out;
 }
 
 .fa-solid {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .btn:hover {
 	background: var(--primary-200);
-  color: var(--primary-900);
+	color: var(--primary-900);
 }
