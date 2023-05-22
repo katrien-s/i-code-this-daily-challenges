@@ -1,0 +1,174 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--black: rgb(31, 33, 35);
+	--white: hsl(0, 0%, 100%);
+	--clr-accent-500: hsl(41, 94%, 53%);
+	--clr-accent-900: hsl(4, 78%, 30%);
+
+	--clr-facebook: hsl(220, 46%, 48%);
+	--clr-twitter: hsl(203, 89%, 53%);
+	--clr-reddit: hsl(16, 100%, 50%);
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* rest of the vars */
+	--borderRadius: 0.25rem;
+	--letterSpacing: 1px;
+	--transition: 0.3s ease-in-out all;
+}
+
+/* Global Styles */
+html,
+body {
+	height: 100%;
+}
+
+html {
+	background-color: hsl(223, 4%, 39%);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	font-family: 'Instrument Sans', sans-serif;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	text-align: center;
+	color: var(--black);
+}
+
+.container {
+	background-color: var(--white);
+	padding: 2rem;
+	width: min(95vw, 550px);
+	border-radius: 10px;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+		0 10px 10px -5px rgba(0, 0, 0, 0.06);
+	display: flex;
+	flex-direction: column;
+}
+
+.fa-xmark {
+	align-self: flex-end;
+	color: var(--black);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.fa-xmark:hover {
+	color: var(--clr-accent-500);
+}
+
+p {
+	max-width: 20em;
+	margin: 0 auto 1.5rem auto;
+}
+
+span {
+	font-weight: 600;
+}
+
+h5 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 1.38rem;
+}
+
+/* Buttons */
+.button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	margin-inline: auto;
+	margin-bottom: 1.5rem;
+	width: min(100%, 300px);
+}
+
+.btn {
+	cursor: pointer;
+	color: var(--white);
+	background: var(--black);
+	border: transparent;
+	border-radius: var(--borderRadius);
+	padding: 0.375rem 0.75rem;
+	min-width: calc(100% / 3);
+	transition: var(--transition);
+	display: block;
+	font-size: 0.8rem;
+}
+
+.btn:hover {
+	background: var(--clr-accent-900);
+}
+
+.btn[data-type='social-button'] {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: var(--white);
+}
+
+.btn[data-type='social-button']:first-of-type {
+	background-color: var(--clr-facebook);
+}
+
+.btn[data-type='social-button']:nth-of-type(2) {
+	background-color: var(--clr-twitter);
+}
+
+.btn[data-type='social-button']:hover {
+	background-color: var(--black);
+}
+
+.btn[data-type='social-button']:last-of-type:hover {
+	background-color: var(--clr-reddit);
+	color: var(--black);
+}
+
+.btn[data-type='close-btn'] {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: var(--white);
+	color: var(--clr-accent-500);
+}
+
+.btn[data-type='close-btn']:hover {
+	color: var(--clr-accent-900);
+}
+
+@media (min-width: 30em) {
+	.button-container {
+		flex-direction: row;
+	}
+
+	.btn[data-type='social-button'] {
+		width: 100%;
+	}
+}
+
+#open-modal-btn {
+	display: none;
+}

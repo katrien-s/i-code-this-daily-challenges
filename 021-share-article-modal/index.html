@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Share Article Modal</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<i class="fa-solid fa-xmark" id="close-modal"></i>
+			<div class="text-container">
+				<h5>Share this article</h5>
+				<p>
+					If you liked this article share it with your friends. They will thank
+					you later.
+				</p>
+			</div>
+			<div class="button-container">
+				<button class="btn" data-type="social-button">
+					<i class="fa-brands fa-facebook-f"></i> Facebook</button
+				><button class="btn" data-type="social-button">
+					<i class="fa-brands fa-twitter"></i> Twitter</button
+				><button class="btn" data-type="social-button">
+					<i class="fa-brands fa-reddit-alien"></i>Reddit
+				</button>
+			</div>
+			<p><span>4,5 K</span> Shares</p>
+			<button class="btn" data-type="close-btn" id="close-modal-btn">
+				Close this window
+			</button>
+		</div>
+		<button class="btn" id="open-modal-btn">Open Modal</button>
+	</body>
+</html>
