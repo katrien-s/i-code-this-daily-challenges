@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Share Link</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+    <div class="container" id="modal">
+      <div class="circle"></div>
+			<i class="fa-solid fa-xmark" id="close-modal"></i>
+			<div class="text-container">
+				<h4>Share something awesome</h4>
+				<p>
+					New and awesome design content will be added to our website, and may
+					even end up in our weekly newsletter
+				</p>
+			</div>
+			<div class="input-container" id="input-container">
+				<input
+					type="url"
+					placeholder="Eg. https://"
+					id="user-input-url"
+					name="user-input-url"
+					required
+				/>
+				<button class="btn" id="share-button">Share</button>
+			</div>
+			<div class="text-container" data-content="disclaimer">
+				<p class="text-small fw-bold">Sharing guidelines</p>
+				<p class="text-small">
+					We accept quality designVisual projects, animations, 3D, UI/UX
+					prototypes, or any other visual design project.
+					<a href="#">Read more</a>
+				</p>
+			</div>
+		</div>
+		<button class="btn" id="open-modal">Open Modal</button>
+	</body>
+</html>
