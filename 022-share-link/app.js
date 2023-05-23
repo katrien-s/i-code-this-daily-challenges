@@ -30,7 +30,7 @@ shareButton.addEventListener('click', function (e) {
 	setTimeout(() => {
 		inputContainer.innerHTML = `
       <input type="url" placeholder="Eg. https://" id="user-input-url" name="user-input-url" required/>
-			<button class="btn" id="share-button">Share</button>
+				<button class="btn" id="share-button">Share</button>
     `;
 	}, 3000);
 });
