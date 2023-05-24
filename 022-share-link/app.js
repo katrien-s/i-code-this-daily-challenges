@@ -12,7 +12,7 @@ const closeModal = () => {
 
 const openModal = () => {
 	openModalElem.style.display = 'none';
-	modalElem.style.display = 'flex';
+	modalElem.style.display = 'block';
 };
 
 closeModalElem.addEventListener('click', closeModal);
