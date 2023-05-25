@@ -80,16 +80,25 @@ h4 {
 	font-weight: 600;
 }
 
+.line-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+}
+
 hr {
-  display: none;
+	width: calc(350px / 3);
+	border-color: var(--clr-primary-500);
 }
 
 .gray-text {
-  color: var(--clr-primary-500);
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  margin-block: 1.5rem;
+	flex-basis: 100%;
+	color: var(--clr-primary-500);
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	letter-spacing: 1px;
+	margin-block: 1.5rem;
 }
 
 .form-container {
@@ -171,7 +180,7 @@ a:hover {
 	align-items: center;
 	gap: 8px;
 	padding: 0.75rem 1rem;
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .svg-logo {
