@@ -1,0 +1,249 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: #fff;
+	--clr-primary-200: #ebedf5;
+	--clr-primary-400: #babccb;
+	--clr-primary-500: #a3a6b9;
+	--clr-primary-900: #1a2150;
+
+	--clr-accent-500: #8bcbff;
+	--clr-accent-900: #6a8fff;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(139, 203, 255, 0.5),
+		0 1px 2px 0 rgba(106, 143, 255, 0.5);
+	--shadow-3: 0 10px 15px -3px rgba(139, 203, 255, 0.5),
+		0 4px 6px -2px rgba(106, 143, 255, 0.5);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* rest of the vars */
+	--backgroundColor: var(--grey-50);
+	--textColor: var(--grey-900);
+	--borderRadius: 0.25rem;
+	--letterSpacing: 1px;
+	--transition: 0.3s ease-in-out all;
+	--max-width: 1120px;
+	--fixed-width: 600px;
+	--linear-gradient: linear-gradient(
+		90deg,
+		rgba(139, 203, 255, 1) 0%,
+		rgba(106, 143, 255, 1) 100%
+	);
+}
+
+/* Global Styles */
+html,
+body {
+	height: 100%;
+}
+
+html {
+	/* background-color: var(--clr-primary-200); */
+	background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8" standalone="no"%3F><!-- Created with Inkscape (http://www.inkscape.org/) --><svg version="1.1" id="svg2" width="1600" height="1600" viewBox="0 0 1600 1600" sodipodi:docname="v793-ning-41.eps" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"> <defs id="defs6"> <clipPath clipPathUnits="userSpaceOnUse" id="clipPath20"> <path d="m 10000,6000 c 0,-2209.14 -1790.86,-4000 -4000,-4000 -2209.14,0 -4000,1790.86 -4000,4000 0,2209.14 1790.86,4000 4000,4000 2209.14,0 4000,-1790.86 4000,-4000 z" id="path18" /> </clipPath> <linearGradient x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-5498.61,-5498.61,-5498.61,5498.61,8716.71,8716.71)" spreadMethod="pad" id="linearGradient30"> <stop style="stop-opacity:1;stop-color:%23314cdd" offset="0" id="stop22" /> <stop style="stop-opacity:1;stop-color:%23f691b2" offset="0.50700264" id="stop24" /> <stop style="stop-opacity:1;stop-color:%23f691b2" offset="0.556841" id="stop26" /> <stop style="stop-opacity:1;stop-color:%23ff9552" offset="1" id="stop28" /> </linearGradient> </defs> <sodipodi:namedview id="namedview4" pagecolor="%23ffffff" bordercolor="%23000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="%23d1d1d1" /> <g id="g8" inkscape:groupmode="layer" inkscape:label="ink_ext_XXXXXX" transform="matrix(1.3333333,0,0,-1.3333333,0,1600)"> <g id="g10" transform="scale(0.1)"> <path d="M 0,12000 H 12000 V 0 H 0 v 12000" style="fill:%23fee0e0;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path12" /> <g id="g14"> <g id="g16" clip-path="url(%23clipPath20)"> <path d="m 10000,6000 c 0,-2209.14 -1790.86,-4000 -4000,-4000 -2209.14,0 -4000,1790.86 -4000,4000 0,2209.14 1790.86,4000 4000,4000 2209.14,0 4000,-1790.86 4000,-4000" style="fill:url(%23linearGradient30);fill-opacity:1;fill-rule:nonzero;stroke:none" id="path32" /> </g> </g> </g> </g></svg>');
+	background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--clr-primary-900);
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 0.75rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-primary-900);
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	color: var(--clr-primary-100);
+	background: var(--clr-accent-500);
+	background-image: linear-gradient(
+		90deg,
+		rgba(139, 203, 255, 1) 0%,
+		rgba(106, 143, 255, 1) 100%
+	);
+	background-size: 200% auto;
+	border: transparent;
+	border-radius: var(--borderRadius);
+	padding: 0.75rem 0.75rem;
+	letter-spacing: 0.5px;
+	box-shadow: var(--shadow-1);
+	transition: var(--transition);
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+	background-position: left right;
+	background: var(--clr-accent-900);
+	box-shadow: var(--shadow-3);
+}
+
+.btn-block {
+	width: 100%;
+}
+
+/* Form */
+
+form {
+	margin-block: 1.5rem;
+}
+
+input {
+	width: 100%;
+	padding: 0.75rem 3rem 0.75rem;
+	border-radius: var(--borderRadius);
+	border: 1px solid var(--clr-primary-400);
+	background-color: var(--clr-primary-100);
+	margin-bottom: 1rem;
+	font-size: 0.75rem;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.fa-solid {
+	position: absolute;
+	color: var(--clr-accent-500);
+	font-size: 1.5rem;
+	top: 0.75rem;
+	left: 0.75rem;
+	transform: translateY(-12%);
+}
+
+/* Footer */
+
+.footer {
+	background-color: var(--clr-primary-100);
+	padding: 2.5rem;
+	width: min(95vw, 1120px);
+	box-shadow: var(--shadow-4);
+}
+
+.footer-divider {
+	border: 1px solid var(--clr-primary-500);
+	border-radius: 10px;
+	margin-block: 2rem;
+}
+
+.footer__major-menu ul,
+.footer__major-menu ul li {
+	margin-bottom: 0.75rem;
+}
+
+.footer__major-menu a {
+	transition: var(--transition);
+}
+
+.footer__major-menu a:hover {
+	background-image: var(--linear-gradient);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.footer__minor-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__minor-menu a {
+	font-size: 0.825rem;
+	color: var(--clr-primary-500);
+	transition: var(--transition);
+}
+
+.footer__minor-menu a:hover,
+.footer__minor-menu a:focus {
+	color: var(--clr-accent-900);
+}
+
+@media (min-width: 42em) {
+	body {
+		text-align: left;
+	}
+
+	.footer__major-menu {
+		display: flex;
+		gap: 1.75rem;
+	}
+
+	.footer__major-menu__left {
+		width: 70%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.main-footer__major-menu__right {
+		padding: 0;
+		width: 30%;
+	}
+
+	.footer__minor-menu {
+		flex-direction: row;
+	}
+
+	.footer__minor-menu ul li + li::before {
+		content: '\25CF';
+		display: inline-block;
+		width: 1em;
+		font-weight: 300;
+		color: var(--clr-primary-500);
+		font-size: 0.75rem;
+	}
+
+	.footer__minor-menu ul {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 50em) {
+	.footer__major-menu {
+		gap: 5rem;
+	}
+}
