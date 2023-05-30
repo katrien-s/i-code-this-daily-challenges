@@ -1,0 +1,312 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: hsl(225, 18%, 96%);
+	--clr-primary-200: hsl(260, 50%, 98%);
+	--clr-primary-300: hsl(240, 48%, 95%);
+	--clr-primary-500: hsl(224, 38%, 80%);
+	--clr-primary-700: hsl(225, 12%, 61%);
+	--clr-primary-800: hsl(224, 17%, 53%);
+	--clr-primary-900: hsl(224, 39%, 22%);
+
+	--clr-secondary-500: #5282f6;
+	--clr-tertary-500: #f652ee;
+
+	/* rest of colors */
+	--clr-neutral-100: #fff;
+	--clr-neutral-900: #222;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* rest of the vars */
+	--backgroundColor: var(--grey-50);
+	--textColor: var(--grey-900);
+	--borderRadius: 0.5rem;
+	--transition: 0.3s ease-in-out all;
+	--max-width: 1120px;
+	--fixed-width: 600px;
+
+	--fs-100: 0.625rem;
+	--fs-200: 0.75rem;
+	--fs-300: 0.875rem;
+	--fs-400: 1rem;
+	--fs-500: 1.5rem;
+	--fs-600: 1.75rem;
+
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+}
+
+/* Global Styles */
+html,
+body {
+	height: 100%;
+}
+
+html {
+	background-color: var(--clr-primary-300);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	font-size: var(--fs-300);
+	font-family: 'Mulish', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--clr-primary-700);
+}
+
+.container {
+	background-color: var(--clr-primary-200);
+	box-shadow: var(--shadow-4);
+	border-radius: var(--borderRadius);
+	width: min(95vw, 300px);
+	padding: 1rem;
+}
+
+.tab-buttons-container {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	font-size: 0.875rem;
+	line-height: 1;
+	color: var(--clr-primary-900);
+	border: transparent;
+	background: none;
+	border-radius: var(--borderRadius);
+	padding: 0.5rem 1rem;
+	transition: var(--transition);
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+.btn:hover {
+	background-color: var(--clr-neutral-100);
+	box-shadow: var(--shadow-3);
+}
+
+/* Tab Containers */
+
+.tab-container {
+	padding: 2rem 0.5rem 1rem;
+}
+
+/* Tab Container 01 */
+.color-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin-block: 1.5rem;
+}
+
+.color-button {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 5px;
+	background-color: var(--clr-neutral-100);
+	border: 0.5px solid var(--clr-primary-500);
+	border-radius: 1.25rem;
+	padding: 0.5rem 0.5rem;
+}
+
+.color-dot {
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	background-color: var(--clr-primary-100);
+}
+
+[data-id='bac4e0'] {
+	background-color: #bac4e0;
+}
+[data-id='f2f3f6'] {
+	background-color: #f2f3f6;
+}
+[data-id='5282f6'] {
+	background-color: #5282f6;
+}
+[data-id='e9effd'] {
+	background-color: #e9effd;
+}
+[data-id='8f95a7'] {
+	background-color: #8f95a7;
+}
+[data-id='222e4e'] {
+	background-color: #222e4e;
+}
+
+.color-code {
+	font-size: var(--fs-400);
+	text-transform: uppercase;
+}
+
+.font-container > *:first-of-type {
+	margin-block: 1rem;
+}
+
+/* Tutorials Container */
+
+.component-highlight {
+	border-radius: 0.25rem;
+	background-color: var(--clr-neutral-100);
+	box-shadow: var(--shadow-1);
+	padding: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.component-highlight:hover {
+	box-shadow: var(--shadow-4);
+}
+
+.component-highlight a {
+	text-transform: lowercase;
+}
+
+.component-highlight a:hover {
+	color: var(--clr-secondary-500);
+}
+
+.component-title {
+	display: flex;
+	align-items: center;
+}
+
+.fa-chevron-right {
+	display: block;
+	text-align: right;
+}
+
+footer {
+	text-align: center;
+	color: var(--clr-primary-700);
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: var(--clr-secondary-500);
+}
+
+/* Utility Classes */
+.clr-primary-500 {
+	color: var(--clr-primary-500);
+}
+
+.clr-primary-700 {
+	color: var(--clr-primary-700);
+}
+
+.clr-primary-800 {
+	color: var(--clr-primary-800);
+}
+
+.clr-primary-900 {
+	color: var(--clr-primary-900);
+}
+
+.clr-tertary-500 {
+	color: var(--clr-tertary-500);
+}
+
+.fw-medium {
+	font-weight: var(--fw-medium);
+}
+
+.fw-semibold {
+	font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+	font-weight: var(--fw-bold);
+}
+
+.fs-200 {
+	font-size: var(--fs-200);
+}
+
+.fs-300 {
+	font-size: var(--fs-300);
+}
+
+.fs-400 {
+	font-size: var(--fs-400);
+}
+
+.fs-500 {
+	font-size: var(--fs-500);
+}
+
+.margin-block-300 {
+	margin-block: 0.75rem;
+}
+
+.margin-bottom-300 {
+	margin-bottom: 0.75rem;
+}
+
+.margin-bottom-400 {
+	margin-bottom: 1rem;
+}
+
+.margin-bottom-500 {
+	margin-bottom: 1.25rem;
+}
+
+.margin-bottom-600 {
+	margin-bottom: 1.5rem;
+}
+
+.margin-left-auto {
+	margin-left: auto;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+/* Display options of the containers */
+
+#tab-container-01 {
+	display: block;
+}
+
+#tab-container-02 {
+	display: none;
+}
+
+#tab-container-03 {
+	display: none;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+		<title>Tabs UI</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="tab-buttons-container | center">
+				<button class="btn tab-button" value="details">Details</button>
+				<button class="btn tab-button" value="tutorials">Tutorials</button>
+				<button class="btn tab-button" value="snippets">Code Snippets</button>
+			</div>
+			<!-- Start Tab 01 -->
+			<div class="tab-container | center" id="tab-container-01">
+				<h3 class="fw-bold fs-500 clr-primary-900">Color Palette</h3>
+				<p class="margin-bottom-300">Click on the color to copy code</p>
+				<div class="color-buttons">
+					<div class="color-button">
+						<div class="color-dot" data-id="bac4e0"></div>
+						<p class="color-code" value="bac4e0">#bac4e0</p>
+					</div>
+					<div class="color-button">
+						<div class="color-dot" data-id="e9effd"></div>
+						<p class="color-code" value="e9effd">#e9effd</p>
+					</div>
+					<div class="color-button">
+						<div class="color-dot" data-id="f2f3f6"></div>
+						<p class="color-code" value="f2f3f6">#f2f3f6</p>
+					</div>
+					<div class="color-button">
+						<div class="color-dot" data-id="8f95a7"></div>
+						<p class="color-code" value="8f95a7">#8f95a7</p>
+					</div>
+					<div class="color-button">
+						<div class="color-dot" data-id="5282f6"></div>
+						<p class="color-code" value="5282f6">#5282f6</p>
+					</div>
+					<div class="color-button">
+						<div class="color-dot" data-id="222e4e"></div>
+						<p class="color-code" value="222e4e">#222e4e</p>
+					</div>
+				</div>
+				<div class="font-container">
+					<h3 class="fw-bold fs-500 clr-primary-900">Fonts</h3>
+					<p class="margin-block-300 clr-primary-900 fs-400">Muli Regular</p>
+					<p class="clr-primary-900 fs-400">Muli Bold</p>
+				</div>
+			</div>
+			<!-- End Tab 01 -->
+			<div class="tab-container | center" id="tab-container-02">
+				<h3 class="fw-bold fs-500 clr-primary-900">Tutorials</h3>
+				<p class="margin-bottom-300">Learn how to build this component</p>
+				<div class="margin-bottom-600">
+					<h4 class="fw-bold fs-300 margin-bottom-300">HTML/CSS</h4>
+					<div class="component-highlight">
+						<div class="component-title | margin-bottom-300 clr-primary-800">
+							<h4 class="fw-medium fs-400">Academind</h4>
+							<p class="margin-left-auto">
+								<i class="fa-solid fa-chevron-right"></i>
+							</p>
+						</div>
+						<p>
+							<a
+								href="https://youtu.be/i9uAgkKEuNU"
+								class="fs-200 clr-primary-700"
+								target="_blank"
+								>https://youtu.be/i9uAgkKEuNU</a
+							>
+						</p>
+					</div>
+					<div class="component-highlight">
+						<div class="component-title | margin-bottom-300 clr-primary-800">
+							<h4 class="fw-medium fs-400">Florin Pop</h4>
+							<p class="margin-left-auto">
+								<i class="fa-solid fa-chevron-right"></i>
+							</p>
+						</div>
+						<p>
+							<a
+								href="https://youtu.be/Rz-rey4Q1bw"
+								class="fs-200 clr-primary-700"
+								target="_blank"
+								>https://youtu.be/Rz-rey4Q1bw</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="margin-bottom-600">
+					<h4 class="fw-bold fs-300 margin-bottom-300">React Native</h4>
+					<div class="component-highlight">
+						<div class="component-title | margin-bottom-300 clr-primary-800">
+							<h4 class="fw-medium fs-400">Coding Addict</h4>
+							<p class="margin-left-auto">
+								<i class="fa-solid fa-chevron-right"></i>
+							</p>
+						</div>
+						<p>
+							<a
+								href="https://youtu.be/Flbw5BX_AX0"
+								class="fs-200 clr-primary-700"
+								target="_blank"
+								>https://youtu.be/Flbw5BX_AX0</a
+							>
+						</p>
+					</div>
+				</div>
+				<footer>
+					<p>
+						Did you make a tutorial with this component?
+						<a href="#" class="clr-tertary-500">Send your link</a> and we will
+						post it here
+					</p>
+				</footer>
+			</div>
+			<!-- Start Tab 02 -->
+			<!-- End Tab 02 -->
+			<!-- Start Tab 03 -->
+			<div class="tab-container | center" id="tab-container-03">
+				<h3 class="fw-bold fs-500 clr-primary-900">Code Snippets</h3>
+				<p class="margin-bottom-300">
+					Inspect the solutions others implemented.
+				</p>
+				<div class="margin-bottom-600">
+					<div class="component-highlight">
+						<div class="component-title | margin-bottom-300 clr-primary-800">
+							<h4 class="fw-medium fs-400">Stefan Galescu</h4>
+							<p class="margin-left-auto">
+								<i class="fa-solid fa-chevron-right"></i>
+							</p>
+						</div>
+						<p>
+							<a
+								href="https://codepen.io/stefan-galescu/pen/OJMNvPp"
+								class="fs-200 clr-primary-700"
+								target="_blank"
+								>https://codepen.io/stefan-galescu/pen/OJMNvPp</a
+							>
+						</p>
+					</div>
+					<div class="component-highlight">
+						<div class="component-title | margin-bottom-300 clr-primary-800">
+							<h4 class="fw-medium fs-400">Matthias Hurrle</h4>
+							<p class="margin-left-auto">
+								<i class="fa-solid fa-chevron-right"></i>
+							</p>
+						</div>
+						<p>
+							<a
+								href="https://codepen.io/atzedent/pen/mdzwWzy"
+								class="fs-200 clr-primary-700"
+								target="_blank"
+								>https://codepen.io/atzedent/pen/mdzwWzy</a
+							>
+						</p>
+					</div>
+				</div>
+				<footer>
+					<p>
+						Did you build this component?
+						<a href="#" class="clr-tertary-500">Send your link</a> and we will
+						post it here
+					</p>
+				</footer>
+			</div>
+			<!-- End Tab 03 -->
+		</div>
+	</body>
+</html>
