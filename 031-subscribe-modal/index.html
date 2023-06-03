@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Subscribe Modal</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="container" id="modal">
+      <div class="close-modal-btn-container">
+        <button class="close-modal-btn" id="close-modal-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <section class="ui-container">
+          <div class="subscribe-image-container">
+            <img src="mathilda-khoo-J_REyyXY14s-unsplash.jpg" class="img" alt="Colourful floating jellyfish against a black background">
+          </div>
+          <div class="subscribe-form-container">
+            <h4>Ideas and UI components in your inbox</h4>
+            <p>
+              Sign up to receive ideas, free components and free resources plus 15% on all of our pro UI kits.
+            </p>
+            <form action="">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter your email address"
+                />
+              <button class="btn btn-block" disabled>Subscribe</button>
+              <p class="text-small" >No spams included</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <button class="btn open-modal-btn" id="open-modal-btn">Open Modal</button>
+	</body>
+</html>

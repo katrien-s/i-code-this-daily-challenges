@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="1600"
+   height="1600"
+   viewBox="0 0 1600 1600"
+   sodipodi:docname="v793-ning-41.eps"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath20">
+      <path
+         d="m 10000,6000 c 0,-2209.14 -1790.86,-4000 -4000,-4000 -2209.14,0 -4000,1790.86 -4000,4000 0,2209.14 1790.86,4000 4000,4000 2209.14,0 4000,-1790.86 4000,-4000 z"
+         id="path18" />
+    </clipPath>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-5498.61,-5498.61,-5498.61,5498.61,8716.71,8716.71)"
+       spreadMethod="pad"
+       id="linearGradient30">
+      <stop
+         style="stop-opacity:1;stop-color:#314cdd"
+         offset="0"
+         id="stop22" />
+      <stop
+         style="stop-opacity:1;stop-color:#f691b2"
+         offset="0.50700264"
+         id="stop24" />
+      <stop
+         style="stop-opacity:1;stop-color:#f691b2"
+         offset="0.556841"
+         id="stop26" />
+      <stop
+         style="stop-opacity:1;stop-color:#ff9552"
+         offset="1"
+         id="stop28" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="ink_ext_XXXXXX"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1600)">
+    <g
+       id="g10"
+       transform="scale(0.1)">
+      <path
+         d="M 0,12000 H 12000 V 0 H 0 v 12000"
+         style="fill:#fee0e0;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path12" />
+      <g
+         id="g14">
+        <g
+           id="g16"
+           clip-path="url(#clipPath20)">
+          <path
+             d="m 10000,6000 c 0,-2209.14 -1790.86,-4000 -4000,-4000 -2209.14,0 -4000,1790.86 -4000,4000 0,2209.14 1790.86,4000 4000,4000 2209.14,0 4000,-1790.86 4000,-4000"
+             style="fill:url(#linearGradient30);fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path32" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
