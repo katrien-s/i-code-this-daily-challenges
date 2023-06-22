@@ -1,0 +1,68 @@
+:root {
+	--clr-primary-100: hsl(223, 100%, 95%);
+	--clr-primary-500: hsl(231, 85%, 61%);
+	--clr-primary-900: hsl(232, 70%, 49%);
+
+	--clr-secondary-500: hsl(349, 70%, 59%);
+
+	--clr-neutral-100: hsl(0, 0%, 100%);
+}
+
+html {
+	background-color: var(--clr-primary-100);
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	color: var(--clr-neutral-100);
+}
+
+.container {
+	background-color: var(--clr-primary-900);
+	padding: 8rem 6rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	justify-content: space-between;
+	box-shadow: 0px 8px 24px hsla(231, 85%, 61%, 0.4);
+}
+
+.status {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	border-radius: 5px;
+	padding: 0.75rem 1rem;
+	transition: scale 200ms ease-in-out;
+}
+
+.status:hover {
+	cursor: pointer;
+	scale: 1.05;
+}
+
+.status > *,
+.try-again {
+	margin: 0;
+}
+
+.status[data-status='passed'] {
+	background-color: var(--clr-primary-500);
+}
+
+.status[data-status='failed'] {
+	background-color: var(--clr-secondary-500);
+}
+
+.close-modal-container {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-left: auto;
+	opacity: 0.8;
+}
