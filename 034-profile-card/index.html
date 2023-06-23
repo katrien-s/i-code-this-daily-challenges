@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile Card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<div class="notifications-menu">
+				<div class="notifications-btn btn">
+					<div class="notifications notifications-dm">
+						<i class="fa-solid fa-envelope"></i>
+					</div>
+          <div class="divider"></div>
+					<div class="notifications notifications-act">
+						<i class="fa-solid fa-bell"></i>
+					</div>
+				</div>
+					<div class="plus-modal-container">
+					  <button class="plus-modal-btn btn">
+					  	<i class="fa-solid fa-plus"></i>
+					  </button>
+					</div>
+			</div>
+			<div class="user-profile">
+				<img
+					src="images/pexels-photo-8817851.jpeg"
+					alt=""
+					class="img user-profile__image"
+				/>
+				<div class="user-profile__text">
+					<p class="user-profile__name">Mfwooddesign</p>
+					<p class="user-profile__description">
+						Hand painted unique decorations for your home. Send us your ideas
+						and we'll bring them to life.
+					</p>
+				</div>
+			</div>
+			<div class="user-statistics">
+				<div class="user-likes">
+					<p class="user-statistics__text">Likes</p>
+					<p class="user-statistics__number">2,395</p>
+				</div>
+				<div class="user-likes">
+					<p class="user-statistics__text">Post Engagements</p>
+					<p class="user-statistics__number">34,024</p>
+				</div>
+			</div>
+			<div class="update-profile">
+				<div class="close-modal-container">
+					<button class="close-modal-btn">
+						<i class="fa-solid fa-x"></i>
+					</button>
+				</div>
+				<p class="update-profile__text">
+					Say more about your mission and goals on your page. It may help people
+					to find it more easily.
+				</p>
+				<button class="update-profile-btn btn">Update profile</button>
+			</div>
+		</main>
+	</body>
+</html>
