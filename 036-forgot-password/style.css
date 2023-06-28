@@ -137,6 +137,14 @@ input::placeholder {
 	opacity: 1;
 }
 
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
 @media (min-width: 40em) {
 	input {
 		margin-bottom: 1rem;
@@ -160,3 +168,4 @@ input::placeholder {
 	background: var(--clr-primary-300);
 	color: var(--clr-primary-900);
 }
+
