@@ -173,6 +173,11 @@ input {
 	opacity: 0.5;
 }
 
+.fa-circle-check {
+	color: rgb(27, 167, 27);
+  opacity: 1;
+}
+
 .select-creditcard,
 .select-paypal {
 	display: flex;
@@ -187,7 +192,9 @@ input {
 }
 
 .select-creditcard:hover,
-.select-paypal:hover {
+.select-creditcard:focus,
+.select-paypal:hover,
+.select-paypal:focus {
 	box-shadow: var(--shadow-3);
 	background-color: var(--clr-neutral-100);
 	scale: 1.05;
@@ -235,7 +242,7 @@ input {
 	}
 
 	.selection-wrapper {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: start;
 		gap: 1.5rem;
 	}
