@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Credit Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<img
+				src="images/cheers-beer.svg"
+				alt="Two vases of beer, almost clinking to cheer, as a drawing"
+				class="img show-only-desktop"
+			/>
+			<div class="payment-method-container">
+				<span class="step-counter">4/4</span>
+				<h3>Last step!</h3>
+				<p>Enter your payment info below</p>
+        <div class="select-btns-container">
+          <button class="btn select-creditcard" id="select-creditcard">
+            <img src="images/credit-card.png" class="img">
+            <p class="show-only-desktop">Credit Card</p>
+            <i class="fa-regular fa-circle"></i>
+          </button>
+          <button class="btn select-paypal" id="select-paypal">
+            <img src="images/paypal-logo.svg" alt="" class="img">
+            <i class="fa-regular fa-circle"></i>
+          </button>
+        </div>
+
+				<form>
+					<div class="cardnumber">
+            <label for="cardnumber">Card Number</label>
+            <input
+              type="text"
+              name="cardnumber"
+              maxlength="16"
+              pattern="[0-9]*"
+              placeholder="123 4597 8912 3456"
+              required
+            />
+          </div>
+
+					<div class="selection-wrapper" >
+            <div class="select-expiration">
+              <label>Expiration Date</label>
+              <select
+                name="expiration-month"
+                id="expiration-month"
+                aria-label="Expiration Month"
+                required
+              />
+              <option value="month" selected disabled>Month</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+                        </select>
+              <select
+                name="expiration-year"
+                id="expiration-year"
+                aria-label="Experation Year"
+                required
+              />
+              <option value="month" selected disabled>Year</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+                        </select>
+            </div>
+                      
+                      <div class="cvc-number">
+                        <label for="cvc-number">CVC</label>
+                        <input
+                        type="text"
+                        name="cvc-number"
+                        maxlength="3"
+                        pattern="[0-9]*"
+                        placeholder="123"
+                        required
+                        />
+                      </div>
+                    </div>
+
+					<p class="text-small">
+						By creating an account, you agree to Study.com's
+						<a href="#">Term of Use</a> and <a href="#">Privacy Policy</a>.
+					</p>
+					<button type="button" class="btn">Join Now</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
