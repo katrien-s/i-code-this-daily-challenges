@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booking Flight</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<nav>
+				<ul>
+					<li><a href="#">Flights</a></li>
+					<li><a href="#">Hotels</a></li>
+					<li><a href="#">Cars</a></li>
+				</ul>
+			</nav>
+			<form>
+				<label for="origin-location">Origin</label>
+				<select name="origin-location" id="origin-location">
+					<option value="Berlin">Berlin Tegel Airport | TXL</option>
+					<option value="Brussels">Brussels International Airport | BRU</option>
+					<option value="Bucharest">Bucharest | BUH</option>
+				</select>
+				<label for="destination-location">Destination</label>
+				<select name="destination-location" id="destination-location">
+					<option value="Stockholm">Stockholm Metropolitan | STO</option>
+					<option value="Valencia">Valencia Airport | VLC</option>
+					<option value="Zagreb">Zagreb International Airport | ZAG</option>
+				</select>
+
+				<div class="number-selection">
+					<div class="flex-column">
+						<label for="date-departure">Departure</label>
+						<input
+							class="form-control"
+							type="date"
+							name="date-departure"
+							id="date-departure"
+							placeholder="dd/mm/yyyy"
+							required
+						/>
+					</div>
+					<div class="flex-column">
+						<label for="date-departure">Arrival</label>
+						<input
+							class="form-control"
+							type="date"
+							name="date-arrival"
+							id="date-arrival"
+							placeholder="dd/mm/yyyy"
+							required
+						/>
+					</div>
+					<div class="flex-column">
+						<label for="number-passengers">Passengers</label>
+						<select name="number-passengers" id="number-passengers">
+							<option value="">1 adult</option>
+							<option value="">2 adults</option>
+							<option value="">3 adults</option>
+							<option value="">4 adult</option>
+						</select>
+					</div>
+				</div>
+
+				<button type="submit" class="btn" id="search-flights">Search</button>
+				<p>Flexible on dates?</p>
+			</form>
+		</main>
+	</body>
+</html>
