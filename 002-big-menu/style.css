@@ -46,7 +46,7 @@ img {
 /* Global Classes */
 
 .container {
-	width: min(90vw, 1089px);
+	width: min(90vw, 1000px);
 }
 
 .menu-container {
