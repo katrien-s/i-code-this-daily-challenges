@@ -90,8 +90,24 @@ h3 {
 	object-fit: cover;
 }
 
+.img-container {
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  inset: auto 0 0;
+  height: 20%;
+  z-index: 1;
+	background: linear-gradient(
+		to top,
+		rgba(38, 52, 59, 1) 50%,
+		transparent
+	);
+}
+
 .text-container-with-button {
-	padding: 1.5rem 2rem 0;
+	padding: 0 2rem;
 }
 
 .image-carousel-container {
@@ -111,12 +127,12 @@ h3 {
 	text-transform: uppercase;
 	display: inline-block;
 	font-weight: 500;
-  transition: all ease-in-out 0.5s;
+	transition: all ease-in-out 0.5s;
 }
 
 .btn:hover {
 	background: var(--clr-neutral-100);
-  color: var(--clr-secondary-500);
+	color: var(--clr-secondary-500);
 	box-shadow: var(--shadow-3);
 }
 
