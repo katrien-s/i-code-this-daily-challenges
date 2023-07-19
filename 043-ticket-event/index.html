@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ticket Event</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="app.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- splidejs -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+		/>
+	</head>
+	<body>
+		<main class="container">
+			<section class="band-container">
+				<div class="img-container">
+					<img src="./images/muse.jpg" class="img main-img" alt="Muse" />
+				</div>
+				<div class="text-container-with-button">
+					<div class="text-container">
+						<h1>Muse World Tour 2023</h1>
+						<p>
+							<i class="fa-solid fa-location-dot"></i> Kuala Lumpur, Malaysia
+						</p>
+						<p><i class="fa-solid fa-clock"></i> 29 july 2023</p>
+						<p class="band-bio">
+							Muse are Matt Bellamy, Dominic Howard and Chris Wolstenholme.
+							Since forming in 1994, Muse have released nine studio albums,
+							selling over 30 million units worldwide. Their latest album ‘Will
+							of the People” debuted at #1 <span id="dots">...</span>
+							<span id="more"
+								>in multiple territories including, UK, Austria, France,
+								Finland, Italy and Switzerland. Muse is an absolute hit. Muse
+								have won numerous music awards including two Grammy Awards, an
+								American Music Award, five MTV Europe Music Awards, two Brit
+								Awards, eleven NME Awards and seven Q Awards, amongst others.
+							</span>
+						</p>
+						<button class="btn" id="read-more-btn">Read More</button>
+					</div>
+					<button class="btn" id="buy-ticket-btn">Buy ticket</button>
+				</div>
+			</section>
+			<!-- carousel -->
+			<section class="image-carousel-container">
+				<h3>Recommended</h3>
+				<section
+					id="image-carousel"
+					class="splide"
+					aria-label="Other artists you might be interested in"
+				>
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<img src="images/depeche-mode.webp" alt="Depeche Mode" />
+								<div>
+									<p class="fw-600">Depeche Mode</p>
+									<p>Memento Mori Tour</p>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="images/coldplay.webp" alt="Coldplay" />
+								<div>
+									<p class="fw-600">Coldplay</p>
+									<p>Moon Music Tour</p>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<img src="images/greenday.jpg" alt="Greenday" />
+								<div>
+									<p class="fw-600">Greenday</p>
+									<p>Nimrod, 20th Anniversary Tour</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+		</main>
+	</body>
+</html>
