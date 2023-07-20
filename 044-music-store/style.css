@@ -123,6 +123,30 @@ header.container {
 	padding: 1.5rem;
 }
 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	font-weight: 500;
+	font-size: 3rem;
+	color: var(--clr-neutral-400);
+  margin-bottom: 0;
+}
+
+header .search-container {
+  border-bottom: 1px solid var(--clr-neutral-400);
+}
+
+header .album-search {
+  border-color: transparent;
+  background-color: transparent;
+  padding: .5rem 0.25rem;
+  font-size: 1rem;
+}
+
 section {
 	margin-top: 1.5rem;
 }
@@ -143,7 +167,7 @@ section {
 	width: 100vw;
 	max-width: var(--fixed-width);
 	padding: 1rem;
-	margin-top: 0;
+	margin-top: 1.5rem;
 }
 
 .explore-text {
@@ -282,12 +306,12 @@ section {
 @media (min-width: 40em) {
 	.explore-container {
 		grid-template-columns: auto auto;
+		gap: 10rem;
 	}
 
 	.explore-text {
 		grid-column: unset;
 		margin: auto;
-		margin-right: 10rem;
 		max-width: 35ch;
 	}
 
@@ -315,7 +339,7 @@ section {
 	}
 
 	.recommended-container .albums-container {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
 
 	.recommended-title-container {
@@ -324,7 +348,53 @@ section {
 		align-items: center;
 	}
 
-	.loadmore-btn {
-		margin-left: auto;
+	.loadmore-btn,
+	.loadmore-btn:hover {
+		margin: 0;
+	}
+}
+
+@media (min-width: 55em) {
+	.explore-container {
+		gap: 2rem;
+	}
+
+	.explore-container .albums-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.top-sales-container .albums-container {
+		display: grid;
+		grid-template-columns: repeat(3, calc((100% / 3) - 0.5rem));
+		gap: 0.75rem;
+	}
+
+	.top-sales-container .album-container {
+		align-items: start;
+		height: 150px;
+	}
+
+	.top-sales-container .album-image {
+		height: 150px;
+	}
+
+	.top-sales-container .album-container:not(:first-of-type) {
+		margin-top: 0rem;
+	}
+
+	.top-sales-container .album-text {
+		height: 150px;
+		padding-bottom: 0.25rem;
+		width: 100%;
+		overflow: auto;
+	}
+
+	.top-sales-container .album-description {
+		font-size: 0.85rem;
+		line-height: 1.2;
+	}
+
+	.recommended-container .albums-container {
+		grid-template-columns: repeat(6, 1fr);
 	}
 }

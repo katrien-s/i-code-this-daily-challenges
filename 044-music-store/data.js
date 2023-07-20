@@ -114,10 +114,38 @@ const albums = [
 		artist: 'Spivak',
 		title: 'You Win Again',
 		'release-date': '14-07-2023',
-		'record-label': ' Ecstatic',
+		'record-label': 'Ecstatic',
 		'wholesale price': 12,
 		description:
 			'Bursting with bittersweet, memorable songs, Maria Spivak follows her spectacular and highly sought-after debut album with this new LP for Ecstatic, operating at the intersection of blazed synthpop, folk and shoegaze with a sparkling Drexciyan dimension. Real strong gear that comes highly recommended if yr into anything from Cocteau Twins to Junior Boys, Jonnine to Jessy Lanza.',
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
+	},
+	{
+		artist: 'Corin',
+		title: 'Lux Aeterna',
+		'release-date': '14-07-2023',
+		'record-label': 'UIQ',
+		'wholesale price': 14,
+		description:
+			'Lee Gamble’s UIQ label unveils a second album from Filipina-Australian artist Corin Ileto, deploying a brace of swarming alien chorales and rapturous digital rave noise to explore the idea of sound as a sentient being. Bold and operatic, cinematic and cybernetic, it comes highly recommended if you’re into Lorenzo Senni, Amnesia Scanner, Caterina Barbieri, Fractal Fantasy or Bitstream - remember them?',
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
+	},
+	{
+		artist: 'Kode9, Burial',
+		title: 'Infirmary / Unknown Summer',
+		'release-date': '20-07-2023',
+		'record-label': 'Fabric',
+		'wholesale price': 3,
+		description:
+			"Kode9's hybrid stepper 'Infirmary' was one of the clear highlights of his recent Sonar mix, and it's paired here with a 10-minute deep trance slusher from Burial.",
 		rating: 4,
 		// url: ,
 		explore: false,
