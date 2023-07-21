@@ -151,5 +151,117 @@ const albums = [
 		explore: false,
 		'top-sales': false,
 		recommended: true
+	},
+	{
+		artist: 'Mary Jane Leach',
+		title: 'Woodwind Multiples',
+		'release-date': '07-07-2023',
+		'record-label': 'Modern Love',
+		'wholesale price': 16,
+		description:
+			"Mary Jane Leach is a composer focussed on the physicality of sound, its acoustic properties and how they interact with space. She has played an instrumental role in NYC’s pioneering Downtown scene alongside Arthur Russell, Ellen Fullman, Peter Zummo, Philip Corner and Arnold Dreyblatt, as well as devoting years to the preservation and reappraisal of Julius Eastman’s work since his death in 1990. 'Woodwind Multiples' is her second album for Modern Love.",
+		rating: 4,
+		// url: ,
+		explore: true,
+		'top-sales': false,
+		recommended: false
+	},
+	{
+		artist: 'Baldruin',
+		title: 'Relikte Aus Der Zukunft',
+		'release-date': '20-07-2023',
+		'record-label': 'Fabric',
+		'wholesale price': 16,
+		description:
+			'Peru’s incredible Buh label continues to wade into contemporary experimental waters alongside their impeccable reissue series, here presenting a set of colourful instrumental diversions from Johannes Schebler aka Baldruin - yours to check out if you’re into Piotr Kurek, László Hortobágyi, Christos Chondropoulos or Wojciech Rusin.',
+		rating: 4,
+		// url: ,
+		explore: true,
+		'top-sales': false,
+		recommended: false
+	},
+	{
+		artist: 'Bas Relief',
+		title: 'Insulary',
+		'release-date': '18-07-2023',
+		'record-label': 'Quiet Time Tapes',
+		'wholesale price': 14,
+		description:
+			'Quiet Time Tapes, the label behind releases from Ulla, Debit, Kareem Lotfy, Huerco S. etc return with an album of feather-light autotuned IDM-pop somewhere between Dntel and Organ Tapes.',
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
+	},
+	{
+		artist: 'Yushh',
+		title: 'Look Mum No Hands',
+		'release-date': '02-03-2023',
+		'record-label': 'Wisdom Teeth',
+		'wholesale price': 8,
+		description:
+			'Ascendant Bristol producer Yushh debuts a deft sound bending slow/fast ambient techno, broken beats and meter-messing footwork jungle on her killer venture for Facta & K-Lone’s label.',
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
+	},
+	{
+		artist: 'Andy Stott',
+		title: 'Faith In Strangers',
+		'release-date': '17-11-2014',
+		'record-label': 'Modern Love',
+		'wholesale price': 16,
+		description:
+			'Faith In Strangers’ was recorded between January 2013 and June 2014, and was edited and sequenced in July 2014. Making use of on an array of instruments, field recordings, found sounds and vocal treatments, it’s a largely analogue variant of hi-tech production styles arcing from the dissonant to the sublime.',
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
+	},
+	{
+		artist: 'Christophe De Babalon',
+		title: "If You're Into It, I'm Out Of It",
+		'release-date': '31-03-2023',
+		'record-label': 'Cross Fade Enter Tainment [CFET]',
+		'wholesale price': 20,
+		description:
+			"A late ‘90s neo-noir ambient jungle masterpiece, Christoph De Babalon’s 'If You’re Into It, I’m Out Of It' sounds something like Thomas Köner re-assembling fierce, unrelenting D&B with his frozen gear. Now a quarter of a century old, it still occupies its own distinct notch on the continuum; copied endlessly, never bettered.",
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
+	},
+	{
+		artist: 'Nondi',
+		title: 'Flood City Trax',
+		'release-date': '31-03-2023',
+		'record-label': 'Planet Mu Records Ltd.',
+		'wholesale price': 14,
+		description:
+			'‘Flood City Trax’ is an exceptional debut LP of dare-to-differ footwork and warped post-Detroit styles by Nondi_, who hails from a small town in backwater Pennsylvania, and makes brilliant music defined by its detachment from IRL scenes - RIYL Jlin, Vladislav Delay, Helena Celle/Otherworld, Teresa Winter, Jamal Moss.',
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
+	},
+	{
+		artist: 'Various Artists',
+		title: 'Place: Tunisia - Curated by Azu Tiwaline and Shinigami San',
+		'release-date': '21-04-2023',
+		'record-label': 'Air Texture',
+		'wholesale price': 12,
+		description:
+			'Azu Tiwaline & Shinigami San preview their Air Texture compilation thru four tracks of roiling, arid soundscape, deep techno and fantasy sci-fi tribalism ',
+		rating: 4,
+		// url: ,
+		explore: false,
+		'top-sales': false,
+		recommended: true
 	}
 ];
