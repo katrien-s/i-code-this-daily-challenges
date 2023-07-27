@@ -287,10 +287,6 @@ a {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.meal-cards-container.horizontal-display {
-		outline: 1px solid green;
-	}
-
 	.meal-cards-container.horizontal-display .meal-card {
 		display: grid;
 		grid-template-columns: 130px 1fr;
