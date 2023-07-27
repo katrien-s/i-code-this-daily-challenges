@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meal Results</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<div class="meal-filter-container">
+				<h3 class="meal-filter-results">Results for "Avocado"</h3>
+				<p class="text-small">3 results found</p>
+				<div class="meal-filter-cta">
+					<button class="btn filter-btn">
+						<span
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-menu-2"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M4 6l16 0"></path>
+								<path d="M4 12l16 0"></path>
+								<path d="M4 18l16 0"></path></svg
+						></span>
+						<span>filters</span>
+						<span id="results-counter">3</span>
+					</button>
+					<a href="#" class="btn"
+						><span>Vegetarian</span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-circle-x"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M10 10l4 4m0 -4l-4 4"></path></svg
+					></a>
+					<a href="#" class="btn"
+						><span>Protein</span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-circle-x"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M10 10l4 4m0 -4l-4 4"></path></svg
+					></a>
+					<a href="#" class="btn"
+						><span>Dinner</span>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-circle-x"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+							<path d="M10 10l4 4m0 -4l-4 4"></path></svg
+					></a>
+				</div>
+				<div class="display-selection">
+					<p class="text-small">Choose display</p>
+					<div class="display-selection-buttons">
+            <button class="btn" id="horizontal-display">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-baseline-density-small"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M4 3h16"></path>
+                  <path d="M4 9h16"></path>
+                  <path d="M4 15h16"></path>
+                  <path d="M4 21h16"></path></svg
+              ></span>
+            </button>
+            <button class="btn active" id="vertical-display">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-grid-dots"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M19 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  <path d="M19 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path></svg
+              ></span>
+            </button>
+          </div>
+				</div>
+			</div>
+			<div class="meal-cards-container | horizontal-display " id="meal-cards-container">
+				<div class="meal-card">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-bookmark"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path
+							d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+						></path>
+					</svg>
+					<div class="meal-card-image">
+						<img
+							src="./images/avocado-and-egg.jpg"
+							alt="Avocado and boiled egg on toast"
+							class="img"
+						/>
+					</div>
+					<div class="meal-card-text">
+						<p class="fw-700">Avocado sandwich with boiled egg</p>
+						<p class="text-small meal-card-time">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-clock-hour-1"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+									<path d="M12 7v5"></path>
+									<path d="M12 12l2 -3"></path>
+								</svg>
+							</span>
+							Under 1 hour
+						</p>
+					</div>
+				</div>
+				<div class="meal-card">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-bookmark"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path
+							d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+						></path>
+					</svg>
+					<div class="meal-card-image">
+						<img
+							src="./images/avocado-poke-bowl.jpg"
+							alt="Avocado Poke Bowl"
+							class="img"
+						/>
+					</div>
+					<div class="meal-card-text">
+						<p class="fw-700">Avocado Poke Bowl</p>
+						<p class="text-small meal-card-time">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-clock-hour-1"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+									<path d="M12 7v5"></path>
+									<path d="M12 12l2 -3"></path>
+								</svg>
+							</span>
+							Under 1 hour
+						</p>
+					</div>
+				</div>
+				<div class="meal-card">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-bookmark"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path
+							d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+						></path>
+					</svg>
+					<div class="meal-card-image">
+						<img
+							src="./images/avocado-pasta.jpg"
+							alt="Avocado Basil Spaghetti"
+							class="img"
+						/>
+					</div>
+					<div class="meal-card-text">
+						<p class="fw-700">Avocado Basil Spaghetti</p>
+						<p class="text-small meal-card-time">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-clock-hour-1"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+									<path d="M12 7v5"></path>
+									<path d="M12 12l2 -3"></path>
+								</svg>
+							</span>
+							Under 1 hour
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
