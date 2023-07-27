@@ -20,7 +20,7 @@
 }
 
 /* Global Styles */
-html, body {
+html {
 	height: 100%;
 }
 
@@ -32,8 +32,6 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 1rem;
 	color: var(--clr-primary-900);
-	display: grid;
-	place-content: center;
 }
 
 img {
@@ -62,6 +60,12 @@ img {
 }
 
 @media (min-width: 36em) {
+	body {
+		height: 100%;
+		display: grid;
+		place-content: center;
+	}
+
 	.menu-container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -130,8 +134,7 @@ img {
 	position: relative;
 }
 
-.fa-chevron-down,
-.fa-chevron-up {
+.fa-chevron-down {
 	display: inline;
 	margin-left: 0.25rem;
 	font-size: 0.875rem;
