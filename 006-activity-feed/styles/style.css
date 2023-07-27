@@ -1,0 +1,104 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+html {
+	background-color: #ECF2FF;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	color: #002b5b;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+p {
+	max-width: 40em;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	color: #3E54AC;
+	background-color: #ECF2FF;
+	border: transparent;
+	border-radius: 25px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.25rem;
+	padding: 0.5em 1.5em;
+	margin-top: 2em;
+	transition: background-color ease 1s, color ease 1s;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #655DBB;
+	color: #ECF2FF;
+}
+
+/* General Classes */
+
+.container {
+	width: 390px;
+	background-color: #fff;
+	text-align: center;
+	padding: 2em 1em;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* User Profile */
+
+.user-profile {
+	display: grid;
+	grid-template-columns: 85px auto;
+	padding: 1em;
+	margin: auto;
+}
+
+.profile-img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}
+
+.user-details {
+	text-align: left;
+	margin: auto 0.5em;
+}
+
+.user-name {
+	font-weight: 700;
+}
+
+.action-time {
+	font-weight: 300;
+	color: rgba(0, 43, 91, 0.8);
+}
+
+.icon {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 1rem;
+	align-self: center;
+}

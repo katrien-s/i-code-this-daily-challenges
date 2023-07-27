@@ -1,0 +1,111 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--accent-01-900: #ef8783;
+	--accent-02-100: #f3fdf3;
+	--accent-02-500: #cdf9cf;
+	--accent-02-900: #83ef87;
+
+	/* rest of colors */
+	--black: #303030;
+	--white: #fff;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html {
+	background-color: var(--accent-02-100);
+}
+
+body {
+	font-weight: 400;
+	line-height: 1.5;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	font-size: 0.8rem;
+	text-align: center;
+	font-family: 'Comme', sans-serif;
+}
+
+.container {
+	display: none;
+	padding: 1rem 2rem;
+	background-color: var(--white);
+	box-shadow: var(--shadow-3);
+}
+
+.cookie-container {
+	margin-bottom: 2.5em;
+}
+
+.img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	max-width: 80px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.fa-xmark {
+	margin: auto 100%;
+	color: var(--black);
+	font-size: 1.25rem;
+	cursor: pointer;
+	transition: all ease-in 0.2s;
+}
+
+.fa-xmark:hover {
+	color: var(--accent-01-900);
+}
+
+.cta-text {
+	text-transform: uppercase;
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: var(--black);
+	background: var(--accent-02-900);
+	border: transparent;
+	border-radius: 0.25em;
+	padding: 1em;
+	box-shadow: var(--shadow-1);
+	transition: all ease-in 0.2s;
+	margin-bottom: 2em;
+}
+
+.btn:hover {
+	background: var(--accent-01-900);
+}
+
+.btn:active {
+	box-shadow: var(--shadow-3);
+}
+
+.show-cookie-modal {
+	display: block;
+}

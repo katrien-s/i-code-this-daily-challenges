@@ -1,0 +1,156 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--primary-100: #edf4fc;
+	--primary-300: #edf4fc;
+	--primary-400: #80b2ea;
+	--primary-500: #4a91e1;
+	--primary-700: #254971;
+	--primary-900: #070e16;
+
+	--black: #222;
+	--white: #fff;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* rest of the vars */
+	--transition: 0.3s ease-in-out all;
+}
+
+/* Global Styles */
+html {
+	background-color: var(--primary-500);
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.3;
+  font-size: 0.85rem;
+	color: var(--black);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 8px;
+  width: 90vw;
+  max-width: 320px;
+  margin: auto;
+  padding: 1em 1.75em;
+  position: relative;
+}
+
+.img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+i {
+  font-size: 1.25rem;
+}
+
+/* Message Box */
+.message-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 1em;
+  padding-bottom: 0.75em;
+}
+
+.message-box-header p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.message-box-header i {
+  color: var(--primary-400);
+}
+
+/* Input */
+
+.input-search {
+  background-color: var(--primary-300);
+  padding: 1em 0.5em 1em 0.75em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.input-search i {
+  color: var(--primary-500);
+}
+
+.input-search input {
+  background-color: var(--primary-300);
+  border: none;
+  width: 100%;
+}
+
+/* User messages */
+
+.message-box {
+  display: flex;
+  gap: 10px;
+  margin: 1em 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 4 / 3;
+}
+
+.profile-name {
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.profile-name:hover {
+  color: var(--primary-500);
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	color: var(--white);
+	background: var(--primary-500);
+	border: transparent;
+	border-radius: 50%;
+	box-shadow: var(--shadow-1);
+	transition: var(--transition);
+  position: absolute;
+  bottom: 1em;
+  right: 1.75em;
+  width: 45px;
+  height: 45px;
+}
+
+.btn:hover {
+	background: var(--primary-700);
+	box-shadow: var(--shadow-3);
+}
