@@ -3,16 +3,169 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Signup Form 3</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@400;700&family=Open+Sans&display=swap"
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
 		/>
+		<title>Member Subscriptions</title>
 		<link rel="stylesheet" href="style.css" />
-		<script src="app.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<main class="container">
+			<section class="text-container">
+				<h3>Subscriptions</h3>
+				<p>
+					Support these creators by purchasing their monthly subscriptions, and
+					get access to premium content.
+				</p>
+				<ul>
+					<li>
+						<span class="icon-span"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-paperclip"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path
+									d="M15 7l-6.5 6.5a1.5 1.5 0 0 0 3 3l6.5 -6.5a3 3 0 0 0 -6 -6l-6.5 6.5a4.5 4.5 0 0 0 9 9l6.5 -6.5"
+								></path></svg
+						></span>
+						Source files
+					</li>
+					<li>
+						<span class="icon-span"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-cast"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M3 19l.01 0"></path>
+								<path d="M7 19a4 4 0 0 0 -4 -4"></path>
+								<path d="M11 19a8 8 0 0 0 -8 -8"></path>
+								<path
+									d="M15 19h3a3 3 0 0 0 3 -3v-8a3 3 0 0 0 -3 -3h-12a3 3 0 0 0 -2.8 2"
+								></path></svg
+						></span>
+						Live streams
+					</li>
+					<li>
+						<span class="icon-span"
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-calendar-event"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								stroke-width="2"
+								stroke="currentColor"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path
+									d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+								></path>
+								<path d="M16 3l0 4"></path>
+								<path d="M8 3l0 4"></path>
+								<path d="M4 11l16 0"></path>
+								<path d="M8 15h2v2h-2z"></path></svg
+						></span>
+						Meetup
+					</li>
+				</ul>
+			</section>
+
+			<section class="slider-container">
+				<div class="button-container">
+					<button class="slider-btn">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-chevron-left"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M15 6l-6 6l6 6"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="slider-content-container">
+					<div class="slider-card">
+						<img
+							src="images/ludwig-lagos.jpg"
+							alt="Ludwig Lagos"
+							class="img card-img"
+						/>
+						<p class="card-name">Ludwig Lagos</p>
+						<p class="card-info">Illustrator</p>
+						<a href="#" class="card-btn btn">View content</a>
+					</div>
+					<div class="slider-card">
+						<img
+							src="images/nina-valentine.jpg"
+							alt="Nina Valentine"
+							class="img card-img"
+						/>
+						<p class="card-name">Nina Valentine</p>
+						<p class="card-info">3D Artist</p>
+						<a href="#" class="card-btn btn">View content</a>
+					</div>
+					<div class="slider-card">
+						<img
+							src="images/karolina-vargas.jpg"
+							alt="Karolina Vargas"
+							class="img card-img"
+						/>
+						<p class="card-name">Karolina Vargas</p>
+						<p class="card-info">Illustrator</p>
+						<a href="#" class="card-btn btn">View content</a>
+					</div>
+				</div>
+				<div class="button-container">
+					<button class="slider-btn">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-chevron-right"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M9 6l6 6l-6 6"></path>
+						</svg>
+					</button>
+				</div>
+			</s>
+		</main>
+	</body>
 </html>
