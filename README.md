@@ -27,7 +27,7 @@ Users should be able to:
 
 ### I Code This platform
 
-![](screenshot-i-code-this.png)
+![](screenshot-i-code-this.jpg)
 
 ### Links
 
