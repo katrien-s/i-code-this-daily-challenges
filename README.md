@@ -1,6 +1,6 @@
 # I Code This - Daily Challenges
 
-This is a growing collection of challenges solved for the platform [I Code This](https://iCodeThis.com/?ref=Katrien). I Code This posts daily web development challenges. 
+This is a growing collection of challenges solved for the platform [I Code This](https://iCodeThis.com/?ref=Katrien). I Code This posts daily web development challenges.
 
 ## Table of contents
 
@@ -27,12 +27,12 @@ Users should be able to:
 
 ### I Code This platform
 
-![](./screenshot-i-code-this.png)
-
+![](screenshot-i-code-this.png)
 
 ### Links
 
 All the solutions are deployed here on Github using Github Pages.
+
 - Solution URL: [Github](https://github.com/graficdoctor/i-code-this-daily-challenges)
 - Live Site URL: [Github Pages](https://graficdoctor.github.io/i-code-this-daily-challenges/)
 
