@@ -188,26 +188,26 @@ ul {
 }
 
 .slider-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .slider-content-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 	gap: 0.75rem;
 	overflow: hidden;
 	scroll-behavior: smooth;
 }
 
 .slider-card {
-  align-self: center;
+	align-self: center;
 	flex-basis: 180px;
 	flex-shrink: 0;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .card-img {
@@ -231,6 +231,6 @@ ul {
 
 @media (min-width: 40em) {
 	.slider-card {
-    flex-basis: 160px;
-  }
+		flex-basis: 160px;
+	}
 }
