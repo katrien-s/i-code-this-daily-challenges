@@ -45,6 +45,7 @@ All the solutions are deployed here on Github using Github Pages.
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Vanilla JS
 
 ### What I learned
 
@@ -54,10 +55,11 @@ Use this section to recap over some of your major learnings while working throug
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-### Useful resources
+### Useful resources organised per challenge
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+**Challenge 48**
+
+- [Shared by an I Code This User](https://icodethis.com/code/630) - Example of how to build a slider
 
 ## Author
 
