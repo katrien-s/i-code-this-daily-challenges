@@ -10,13 +10,8 @@
 			rel="stylesheet"
 		/>
 		<title>Member Subscriptions</title>
-		<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-		<link
-			href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
-			rel="stylesheet"
-		/>
 		<link rel="stylesheet" href="style.css" />
-		<script src="app.js"></script>
+		<script src="app.js" defer></script>
 	</head>
 	<body>
 		<main class="container">
@@ -101,12 +96,8 @@
 			</section>
 
 			<section
-				class="slider-container | splide"
-				role="group"
-				aria-labelledby="carousel-heading"
-			>
-				<div class="splide__track">
-					<!-- <div class="button-container">
+				class="slider-container">
+					<div class="button-container" id="slider-btn-left">
 						<button class="slider-btn">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +115,9 @@
 								<path d="M15 6l-6 6l6 6"></path>
 							</svg>
 						</button>
-					</div> -->
-					<div class="slider-content-container | splide__list">
-						<div class="slider-card | splide__slide">
+					</div>
+					<ul class="slider-content-container">
+						<li class="slider-card">
 							<img
 								src="images/ludwig-lagos.jpg"
 								alt="Ludwig Lagos"
@@ -135,8 +126,8 @@
 							<p class="card-name">Ludwig Lagos</p>
 							<p class="card-info">Illustrator</p>
 							<a href="#" class="card-btn btn">View content</a>
-						</div>
-						<div class="slider-card">
+						</li>
+						<li class="slider-card">
 							<img
 								src="images/nina-valentine.jpg"
 								alt="Nina Valentine"
@@ -145,8 +136,8 @@
 							<p class="card-name">Nina Valentine</p>
 							<p class="card-info">3D Artist</p>
 							<a href="#" class="card-btn btn">View content</a>
-						</div>
-						<div class="slider-card | splide__slide">
+						</li>
+						<li class="slider-card">
 							<img
 								src="images/karolina-vargas.jpg"
 								alt="Karolina Vargas"
@@ -155,10 +146,40 @@
 							<p class="card-name">Karolina Vargas</p>
 							<p class="card-info">Illustrator</p>
 							<a href="#" class="card-btn btn">View content</a>
-						</div>
-					</div>
-					<!-- <div class="button-container">
-						<button class="slider-btn | splide__slide">
+						</li>
+						<li class="slider-card">
+							<img
+								src="images/amusan-john.jpg"
+								alt="Amusan John"
+								class="img card-img"
+							/>
+							<p class="card-name">Amusan John</p>
+							<p class="card-info">Designer</p>
+							<a href="#" class="card-btn btn">View content</a>
+						</li>
+						<li class="slider-card">
+							<img
+								src="images/ron-lach.jpg"
+								alt="Ron Lach"
+								class="img card-img"
+							/>
+							<p class="card-name">Ron Lach</p>
+							<p class="card-info">Photographer</p>
+							<a href="#" class="card-btn btn">View content</a>
+						</li>
+						<li class="slider-card">
+							<img
+								src="images/anna-shvets.jpg"
+								alt="Anna Shvets"
+								class="img card-img"
+							/>
+							<p class="card-name">Anna Shvets</p>
+							<p class="card-info">Tattoo Artist</p>
+							<a href="#" class="card-btn btn">View content</a>
+						</li>
+					</ul>
+					<div class="button-container" id="slider-btn-right">
+						<button class="slider-btn">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								class="icon icon-tabler icon-tabler-chevron-right"
@@ -175,8 +196,8 @@
 								<path d="M9 6l6 6l-6 6"></path>
 							</svg>
 						</button>
-					</div> -->
-				</div>
+					</div>
+				</ul>
 			</section>
 		</main>
 	</body>

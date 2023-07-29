@@ -1,10 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-	var splide = new Splide('.splide', {
-    perPage: 3,
-    rewind: true,
-		classes: {
-			arrow: 'splide__arrow slider-btn'
-		}
-	});
-	splide.mount();
+const sliderBtnLeft = document.getElementById('slider-btn-left');
+const sliderBtnRight = document.getElementById('slider-btn-right');
+const sliderGallery = document.querySelector('.slider-content-container');
+
+const scrollStep = sliderGallery.clientWidth / 1;
+
+sliderBtnLeft.addEventListener('click', () => {
+	sliderGallery.scrollBy(-scrollStep, 0);
+});
+
+sliderBtnRight.addEventListener('click', () => {
+	sliderGallery.scrollBy(scrollStep, 0);
 });
