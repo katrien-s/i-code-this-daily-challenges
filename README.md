@@ -49,17 +49,18 @@ All the solutions are deployed here on Github using Github Pages.
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources organised per challenge
 
 **Challenge 48**
 
 - [Shared by an I Code This User](https://icodethis.com/code/630) - Example of how to build a slider
+
+**Challenge 49**
+
+- [Glassmorphism Credit Card](https://codepen.io/ronkeee/pen/KKgJmmz) - Example of Glassmorphism Credit Card
+- [backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) - `backdrop-filter`
 
 ## Author
 
