@@ -27,6 +27,8 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Challenge 50
 
+![](screenshots/050-subscribe-pop-upjpg)
+
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/050-subscribe-pop-up)
 - [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/050-subscribe-pop-up)
 
@@ -37,6 +39,8 @@ Unless noted otherwise, the building of the exercises is done with:
 ---
 
 ### Challenge 49
+
+![](screenshots/049-glass-profile-card.jpg)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/049-glass-profile-card)
 - [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/049-glass-profile-card)
@@ -49,6 +53,8 @@ Unless noted otherwise, the building of the exercises is done with:
 ---
 
 ### Challenge 48
+
+![](screenshot/048-member-subscriptions.jpg)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/048-member-subscriptions)
 - [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/048-member-subscriptions)
