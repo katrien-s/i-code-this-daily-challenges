@@ -4,36 +4,17 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 ## Table of contents
 
-- [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [Intro](#intro)
+- [Challenges](#challenges)
+  - [Challenge 50](#challenge-50)
+  - [Challenge 49](#challenge-49)
+  - [Challenge 48](#challenge-48)
 - [Author](#author)
 
-## Links
+## Intro
 
 All the solutions are deployed on Github using Github Pages. You'll find the links here in ascending order (latest exercise on top).
-
-**Challenge 50**
-
-- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/050-subscribe-pop-up)
-- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/050-subscribe-pop-up)
-
-**Challenge 49**
-
-- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/049-glass-profile-card)
-- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/049-glass-profile-card)
-
-**Challenge 48**
-
-- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/048-member-subscriptions)
-- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/048-member-subscriptions)
-
-## My process
-
-### Built with
+Unless noted otherwise, the building of the exercises is done with:
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -42,24 +23,41 @@ All the solutions are deployed on Github using Github Pages. You'll find the lin
 - Mobile-first workflow
 - Vanilla JS
 
-### What I learned
+## Challenges
 
-### Continued development organised per challenge
+### Challenge 50
 
-### Useful resources organised per challenge
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/050-subscribe-pop-up)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/050-subscribe-pop-up)
 
-**Challenge 48**
+**Useful Resources**
 
-- [Shared by an I Code This User](https://icodethis.com/code/630) - Example of how to build a slider
+- [Pure CSS Custom Checkbox Style](https://moderncss.dev/pure-css-custom-checkbox-style/)
 
-**Challenge 49**
+---
+
+### Challenge 49
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/049-glass-profile-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/049-glass-profile-card)
+
+**Useful Resources**
 
 - [Glassmorphism Credit Card](https://codepen.io/ronkeee/pen/KKgJmmz) - Example of Glassmorphism Credit Card
 - [backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) - `backdrop-filter`
 
-**Challenge 50**
+---
 
-- [Pure CSS Custom Checkbox Style](https://moderncss.dev/pure-css-custom-checkbox-style/)
+### Challenge 48
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/048-member-subscriptions)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/048-member-subscriptions)
+
+**Useful Resources**
+
+- [Shared by an I Code This User](https://icodethis.com/code/630) - Example of how to build a slider
+
+---
 
 ## Author
 
