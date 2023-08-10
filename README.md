@@ -49,7 +49,7 @@ All the solutions are deployed here on Github using Github Pages.
 
 ### What I learned
 
-### Continued development
+### Continued development organised per challenge
 
 ### Useful resources organised per challenge
 
@@ -61,6 +61,10 @@ All the solutions are deployed here on Github using Github Pages.
 
 - [Glassmorphism Credit Card](https://codepen.io/ronkeee/pen/KKgJmmz) - Example of Glassmorphism Credit Card
 - [backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) - `backdrop-filter`
+
+**Challenge 50**
+
+- [Pure CSS Custom Checkbox Style](https://moderncss.dev/pure-css-custom-checkbox-style/)
 
 ## Author
 
