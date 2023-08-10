@@ -4,10 +4,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -15,26 +12,24 @@ This is a growing collection of challenges solved for the platform [I Code This]
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-## Overview
+## Links
 
-### The challenge
+All the solutions are deployed on Github using Github Pages. You'll find the links here in ascending order (latest exercise on top).
 
-Users should be able to:
+**Challenge 50**
 
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements throughout the site
-- Add JavaScript functionality
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/050-subscribe-pop-up)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/050-subscribe-pop-up)
 
-### I Code This platform
+**Challenge 49**
 
-![](screenshot-i-code-this.jpg)
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/049-glass-profile-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/049-glass-profile-card)
 
-### Links
+**Challenge 48**
 
-All the solutions are deployed here on Github using Github Pages.
-
-- Solution URL: [Github](https://github.com/graficdoctor/i-code-this-daily-challenges)
-- Live Site URL: [Github Pages](https://graficdoctor.github.io/i-code-this-daily-challenges/)
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/048-member-subscriptions)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/048-member-subscriptions)
 
 ## My process
 
