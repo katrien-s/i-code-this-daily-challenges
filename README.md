@@ -25,6 +25,19 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 51
+
+![](screenshots/051-accordion.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/051-accordion)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/051-accordion)
+
+**Useful Resources**
+
+- [Accordion Lesson by John Smilga](https://www.vanillajavascriptprojects.com/)
+
+---
+
 ### Challenge 50
 
 ![](screenshots/050-subscribe-pop-up.jpg)
