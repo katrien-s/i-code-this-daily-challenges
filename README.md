@@ -25,6 +25,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 52
+
+![](screenshots/052-promo-card.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/052-promo-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/052-promo-card)
+
+---
+
 ### Challenge 51
 
 ![](screenshots/051-accordion.jpg)
