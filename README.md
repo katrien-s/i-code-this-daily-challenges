@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 53](#challenge-53)
   - [Challenge 52](#challenge-52)
   - [Challenge 51](#challenge-51)
   - [Challenge 50](#challenge-50)
@@ -26,6 +27,16 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 53
+
+![](screenshots/053-glassy-landing-desktop.jpg)
+![](screenshots/053-glassy-landing-mobile.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/053-glassy-landing)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/053-glassy-landing)
+
+---
 
 ### Challenge 52
 
