@@ -110,6 +110,19 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ---
 
+### Challenge 01
+
+![](screenshots/001-photo-gallery.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/001-photo-gallery)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/001-photo-gallery)
+
+**Useful Resources**
+
+- [How to Show Text Above Image on Hover](https://makitweb.com/html-how-to-show-text-above-image-on-hover/)
+
+---
+
 ## Author
 
 - Website - [Katrien S](https://www.katriens.be)
