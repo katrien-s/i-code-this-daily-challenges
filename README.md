@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 54](#challenge-54)
   - [Challenge 53](#challenge-53)
   - [Challenge 52](#challenge-52)
   - [Challenge 51](#challenge-51)
@@ -27,6 +28,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 54
+
+![](screenshots/054-tv-app.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/054-tv-app)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/054-tv-app)
+
+---
 
 ### Challenge 53
 

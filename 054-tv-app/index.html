@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TV App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="bg-color">
+			<main class="container">
+				<header>
+					<div class="navigation">
+						<nav class="main-nav">
+							<ul class="main-nav-list">
+								<li><a href="#">now</a></li>
+								<li><a href="#">coming up</a></li>
+								<li><a href="#">tonight</a></li>
+								<li><a href="#">today</a></li>
+							</ul>
+						</nav>
+						<nav class="sub-nav">
+							<ul class="sub-nav-list">
+								<li><a href="#">Popular</a></li>
+								<li><a href="#">New</a></li>
+								<li><a href="#">Highest rated</a></li>
+							</ul>
+						</nav>
+					</div>
+					<button class="nav-toggle">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-menu-2"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M4 6l16 0"></path>
+							<path d="M4 12l16 0"></path>
+							<path d="M4 18l16 0"></path>
+						</svg>
+					</button>
+				</header>
+				<aside>
+					<nav class="category-nav">
+						<ul class="category-nav-list">
+							<li>
+								<p>movies</p>
+								<p class="channel">18 channels</p>
+							</li>
+							<li>
+								<p>music</p>
+								<p class="channel">9 channels</p>
+							</li>
+							<li>
+								<p>series</p>
+								<p class="channel">6 channels</p>
+							</li>
+							<li>
+								<p>live</p>
+								<p class="channel">16 channels</p>
+							</li>
+							<li>
+								<p>science</p>
+								<p class="channel">11 channels</p>
+							</li>
+							<li>
+								<p>sports</p>
+								<p class="channel">6 channels</p>
+							</li>
+							<li>
+								<p>news</p>
+								<p class="channel">15 channels</p>
+							</li>
+							<li>
+								<p>kids</p>
+								<p class="channel">9 channels</p>
+							</li>
+							<li>
+								<p>lifestyle</p>
+								<p class="channel">6 channels</p>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+				<section class="main-container">
+					<div class="main-card">
+						<img src="images/vikings-s4.jpg" class="img main-img" alt="" />
+						<div class="main-text">
+							<h3>Vikings</h3>
+							<div>
+								<p>Portage S4, Ep8</p>
+								<span> 28 min.left</span>
+							</div>
+							<div class="progress-bar progress-bar-one"></div>
+						</div>
+					</div>
+					<div class="main-card">
+						<img
+							src="images/game-of-thrones-s6.jpg"
+							class="img main-img"
+							alt=""
+						/>
+						<div class="main-text">
+							<h3>Game of Thrones</h3>
+							<div>
+								<p>The Red Woman S6, Ep1</p>
+								<span> 13 min.left</span>
+							</div>
+							<div class="progress-bar progress-bar-two"></div>
+						</div>
+					</div>
+					<div class="main-card">
+						<img
+							src="images/big-bang-theory-s9.jpg"
+							class="img main-img"
+							alt=""
+						/>
+						<div class="main-text">
+							<h3>The big bang theory</h3>
+							<div>
+								<p>The Viewing Party S9, Ep12</p>
+								<span> 5 min.left</span>
+							</div>
+							<div class="progress-bar progress-bar-three"></div>
+						</div>
+					</div>
+					<div class="main-card">
+						<img
+							src="images/orange-is-the-new-black-s3.jpg"
+							class="img main-img"
+							alt=""
+						/>
+						<div class="main-text">
+							<h3>Orange is The New ...</h3>
+							<div>
+								<p>Trust No Bitch S3, Ep13</p>
+								<span> 12 min.left</span>
+							</div>
+							<div class="progress-bar progress-bar-four"></div>
+						</div>
+					</div>
+					<div class="main-card">
+						<img src="images/mr-robot-s1.jpg" class="img main-img" alt="" />
+						<div class="main-text">
+							<h3>Mr. Robot</h3>
+							<div>
+								<p>W1terOse S1, Ep6</p>
+								<span> 38 min.left</span>
+							</div>
+							<div class="progress-bar progress-bar-five"></div>
+						</div>
+					</div>
+					<div class="main-card">
+						<img
+							src="images/modern-family-s3.jpg"
+							class="img main-img"
+							alt=""
+						/>
+						<div class="main-text">
+							<h3>Modern Family</h3>
+							<div>
+								<p>Phil On Wire S3, Ep2</p>
+								<span> 5 min.left</span>
+							</div>
+							<div class="progress-bar progress-bar-six"></div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<section class="container">
+				<h2>Featured</h2>
+				<div class="featured-container">
+					<div class="featured-card">
+						<img src="images/family-guy.jpg" class="img feat-img" alt="" />
+					</div>
+					<div class="featured-card">
+						<img
+							src="images/the-man-from-uncle.jpg"
+							class="img feat-img"
+							alt=""
+						/>
+					</div>
+					<div class="featured-card">
+						<img src="images/star-wars.jpg" class="img feat-img" alt="" />
+					</div>
+					<div class="featured-card">
+						<img src="images/deadpool.jpg" class="img feat-img" alt="" />
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
