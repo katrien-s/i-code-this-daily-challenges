@@ -149,8 +149,6 @@ header {
 	gap: 1rem;
 	margin-bottom: 3rem;
 	position: relative;
-	/* height: 56px; */
-	outline: 1px solid yellow;
 	padding-bottom: 2rem;
 }
 
