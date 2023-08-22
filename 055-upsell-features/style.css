@@ -200,6 +200,10 @@ ul {
 		border-bottom: 0;
 	}
 
+  	.vertical-card:nth-of-type(2) {
+		border-right: 2px solid var(--clr-neutral-900);
+	}
+
 	.vertical-card button {
 		margin-top: auto;
 	}
