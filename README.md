@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 55](#challenge-55)
   - [Challenge 54](#challenge-54)
   - [Challenge 53](#challenge-53)
   - [Challenge 52](#challenge-52)
@@ -13,6 +14,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
   - [Challenge 50](#challenge-50)
   - [Challenge 49](#challenge-49)
   - [Challenge 48](#challenge-48)
+  - [Challenge 01](#challenge-01)
 - [Author](#author)
 
 ## Intro
@@ -28,6 +30,19 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 55
+
+![](screenshots/055-upsell-features.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/055-upsell-features)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/055-upsell-features)
+
+**Useful Resources**
+
+- [Border Gradient Button](https://codesandbox.io/s/border-gradient-button-with-border-radius-50oi4?file=/index.html:413-538)
+
+---
 
 ### Challenge 54
 
