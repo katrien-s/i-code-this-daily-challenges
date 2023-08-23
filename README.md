@@ -31,6 +31,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 56
+
+![](screenshots/056-app-notifications.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/056-app-notifications)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/056-app-notifications)
+
+---
+
 ### Challenge 55
 
 ![](screenshots/055-upsell-features.jpg)
