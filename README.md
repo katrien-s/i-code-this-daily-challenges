@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 56](#challenge-56)
   - [Challenge 55](#challenge-55)
   - [Challenge 54](#challenge-54)
   - [Challenge 53](#challenge-53)
@@ -14,6 +15,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
   - [Challenge 50](#challenge-50)
   - [Challenge 49](#challenge-49)
   - [Challenge 48](#challenge-48)
+  - [Challenge 05](#challenge-05)
   - [Challenge 01](#challenge-01)
 - [Author](#author)
 
@@ -131,6 +133,15 @@ Unless noted otherwise, the building of the exercises is done with:
 **Useful Resources**
 
 - [Shared by an I Code This User](https://icodethis.com/code/630) - Example of how to build a slider
+
+---
+
+### Challenge 05
+
+![](screenshots/005-services-section.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/005-services-section)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/005-services-section)
 
 ---
 
