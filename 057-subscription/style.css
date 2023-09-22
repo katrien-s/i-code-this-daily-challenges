@@ -1,0 +1,250 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: #f4f6fa;
+	--clr-primary-200: #f1f0f7;
+	--clr-primary-300: #e7e6ff;
+	--clr-primary-800: hsla(246, 42%, 14%, 0.3);
+	--clr-primary-900: hsl(246, 42%, 14%);
+
+	/* rest of colors */
+	--clr-neutral-100: #fff;
+	--clr-neutral-200: #f4f6fa;
+	--clr-neutral-900: #181534;
+
+	--ff-sans-serif: 'Poppins', sans-serif;
+	--ff-serif: 'Roboto Slab', serif;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html,
+body {
+	height: 100%;
+}
+
+html {
+	background-color: var(--clr-primary-200);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: var(--ff-sans-serif);
+	color: var(--clr-neutral-900);
+}
+
+main {
+	background-color: var(--clr-primary-100);
+	box-shadow: 0 5px 5px var(--clr-primary-800);
+	border-radius: 20px;
+	padding-block: 1rem;
+}
+
+.svg {
+	height: 25px;
+	width: auto;
+	margin-bottom: 0.5rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-family: var(--ff-serif);
+	font-weight: 600;
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	text-wrap: balance;
+}
+
+.header-content {
+	text-align: center;
+	margin-inline: auto;
+	max-width: 50em;
+	margin-bottom: 2.5rem;
+}
+
+.header-content p {
+	font-size: 1.25rem;
+	max-width: 50ch;
+	margin-inline: auto;
+	text-wrap: balance;
+}
+
+@media (min-width: 40em) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 40em) {
+	.header-content {
+		padding: 1rem;
+		margin-inline: auto;
+	}
+}
+
+.mobile-cards {
+	display: grid;
+	gap: 2rem;
+	margin-inline: auto;
+	margin-bottom: 3rem;
+}
+
+.mobile-card {
+	background-color: var(--clr-neutral-100);
+	border-radius: 20px;
+	padding: 2rem;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	gap: 1rem;
+}
+
+.mobile-card--details {
+	margin-bottom: 1.5rem;
+}
+
+.mobile-card--cta {
+	width: 100%;
+	margin-top: auto;
+}
+
+@media (min-width: 35em) {
+	.mobile-cards {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3rem;
+	}
+
+	.mobile-card {
+		text-align: left;
+		align-items: start;
+	}
+}
+
+@media (min-width: 57em) {
+	.mobile-cards {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3rem;
+	}
+}
+
+/* Buttons */
+.button {
+	cursor: pointer;
+	color: var(--clr-primary-100);
+	background: var(--clr-primary-900);
+	border: transparent;
+	border-radius: 50vw;
+	letter-spacing: var(--letterSpacing);
+	padding: 0.75rem 1.25rem;
+	box-shadow: var(--shadow-1);
+	transition: var(--transition);
+	text-transform: capitalize;
+	display: block;
+}
+
+.button:hover,
+.button:focus {
+	background: var(--clr-primary-300);
+	color: var(--clr-primary-900);
+	box-shadow: var(--shadow-3);
+}
+
+.button[data-type='card'] {
+	color: var(--clr-primary-900);
+	background: var(--clr-primary-200);
+	box-shadow: 1px 5px 0 var(--clr-primary-300);
+	margin-top: 1rem;
+	margin-inline: auto;
+	width: 100%;
+}
+
+.button[data-type='card']:hover,
+.button[data-type='card']:focus {
+	background-color: var(--clr-primary-900);
+	color: var(--clr-primary-200);
+	box-shadow: 1px 5px 0 var(--clr-primary-800);
+}
+
+/* Utility */
+
+.wrapper {
+	margin-inline: auto;
+	padding-inline: 1rem;
+	max-width: 60em;
+}
+
+.fw-600 {
+	font-weight: 600;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.fs-400 {
+	font-size: 1rem;
+}
+
+.fs-500 {
+	font-size: 1.25rem;
+}
+
+.fs-600 {
+	font-size: 1.5rem;
+}
+
+.margin-inline-auto {
+	margin-inline: auto;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 40em) {
+	main {
+		padding-block: 2.5rem;
+	}
+
+	.wrapper {
+		padding-inline: 3rem;
+	}
+}
+
+.mobile-card[data-brand='ice'] {
+	box-shadow: -15px -15px 0 #fffced;
+}
+
+.mobile-card[data-brand='telia'] {
+	box-shadow: -15px -15px 0 #f9edff;
+}
+
+.mobile-card[data-brand='telenor'] {
+	box-shadow: -15px -15px 0 #eeeeff;
+}

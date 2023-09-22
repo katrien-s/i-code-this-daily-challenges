@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Subscription</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="wrapper">
+			<section class="header-content">
+				<h1>Get the most out of your mobile with the right subscription</h1>
+				<p>
+					All devices come with free delivery or pickup as standard. See
+					information on available shopping options for your location.
+				</p>
+			</section>
+			<section class="mobile-cards">
+				<div class="mobile-card" data-brand="ice">
+					<img src="images/ice-logo.svg" class="svg" alt="" />
+					<div class="mobile-card--details">
+						<p class="fw-600 fs-500">Ice Mobile 10GB</p>
+						<p class="fs-400">Up to 100Mbit/s</p>
+					</div>
+					<div class="mobile-card--cta margin-top-auto">
+						<p><span class="fw-700 fs-600">299,-</span> /month</p>
+						<button type="button" class="button" data-type="card">
+							Add subscription
+						</button>
+					</div>
+				</div>
+				<div class="mobile-card" data-brand="telia">
+					<img src="images/telia-logo.svg" class="svg" alt="" />
+					<div class="mobile-card--details">
+						<p class="fw-600 fs-500">Telia Mobil 15GB</p>
+						<p class="fs-400">Unlimited calls, SMS and MMS</p>
+					</div>
+					<div class="mobile-card--cta margin-top-auto">
+						<p><span class="fw-700 fs-600">953,-</span> /month</p>
+						<button type="button" class="button" data-type="card">
+							Add subscription
+						</button>
+					</div>
+				</div>
+				<div class="mobile-card" data-brand="telenor">
+					<img src="images/telenor-logo.svg" class="svg" alt="" />
+					<div class="mobile-card--details">
+						<p class="fw-600 fs-500">Telenor Next Fast</p>
+						<p class="fs-400">Up to 100Mbit/s</p>
+					</div>
+					<div class="mobile-card--cta margin-top-auto">
+						<p><span class="fw-700 fs-600">1028,-</span> /month</p>
+						<button type="button" class="button" data-type="card">
+							Add subscription
+						</button>
+					</div>
+				</div>
+			</section>
+			<button type="button" class="button margin-inline-auto">
+				See all subscriptions
+			</button>
+		</main>
+	</body>
+</html>

@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 57](#challenge-57)
   - [Challenge 56](#challenge-56)
   - [Challenge 55](#challenge-55)
   - [Challenge 54](#challenge-54)
@@ -15,6 +16,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
   - [Challenge 50](#challenge-50)
   - [Challenge 49](#challenge-49)
   - [Challenge 48](#challenge-48)
+  - [Challenge 06](#challenge-06)
   - [Challenge 05](#challenge-05)
   - [Challenge 01](#challenge-01)
 - [Author](#author)
@@ -32,6 +34,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 57
+
+![](screenshots/057-subscription.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/057-subscription)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/057-subscription)
+
+---
 
 ### Challenge 56
 
