@@ -136,6 +136,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ---
 
+### Challenge 06
+
+![](screenshots/006-activity-feed.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/006-activity-feed)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/006-activity-feed)
+
+---
+
 ### Challenge 05
 
 ![](screenshots/005-services-section.jpg)

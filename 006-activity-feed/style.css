@@ -8,7 +8,7 @@
 
 /* Global Styles */
 html {
-	background-color: #ECF2FF;
+	background-color: #ecf2ff;
 }
 
 body {
@@ -38,40 +38,53 @@ img {
 /* Buttons */
 .btn {
 	cursor: pointer;
-	color: #3E54AC;
-	background-color: #ECF2FF;
+	color: #3e54ac;
+	background-color: #ecf2ff;
 	border: transparent;
 	border-radius: 25px;
 	text-align: center;
 	font-weight: 400;
 	font-size: 1.25rem;
 	padding: 0.5em 1.5em;
-	margin-top: 2em;
+	margin-top: 1em;
 	transition: background-color ease 1s, color ease 1s;
 }
 
 .btn:hover,
 .btn:active {
-	background-color: #655DBB;
-	color: #ECF2FF;
+	background-color: #655dbb;
+	color: #ecf2ff;
 }
 
 /* General Classes */
 
 .container {
-	width: 390px;
+	width: min(90vw, 400px);
 	background-color: #fff;
 	text-align: center;
 	padding: 2em 1em;
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
 		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	position: relative;
+}
+
+.container::before {
+	content: '';
+	background-color: white;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	inset: -10px 0 0 50%;
+	transform: translateX(-50%) rotate(45deg);
+	z-index: -1;
 }
 
 /* User Profile */
 
 .user-profile {
 	display: grid;
-	grid-template-columns: 85px auto;
+	grid-template-columns: 75px auto;
+	gap: 0.5rem;
 	padding: 1em;
 	margin: auto;
 }
@@ -94,11 +107,11 @@ img {
 .action-time {
 	font-weight: 300;
 	color: rgba(0, 43, 91, 0.8);
+	font-size: 0.9rem;
 }
 
 .icon {
-	width: 80px;
-	height: 80px;
-	margin-bottom: 1rem;
-	align-self: center;
+	width: 65px;
+	height: 65px;
+	margin-bottom: 1.5rem;
 }
