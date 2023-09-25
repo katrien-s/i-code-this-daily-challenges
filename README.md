@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 58](#challenge-58)
   - [Challenge 57](#challenge-57)
   - [Challenge 56](#challenge-56)
   - [Challenge 55](#challenge-55)
@@ -34,6 +35,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 58
+
+![](screenshots/058-testimonials-grid.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/058-testimonials-grid)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/058-testimonials-grid)
+
+---
 
 ### Challenge 57
 

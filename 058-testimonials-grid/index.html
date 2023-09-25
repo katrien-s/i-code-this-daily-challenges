@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Testimonials Grid</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<header class="wrapper">
+			<nav class="primary-navigation" id="toggle-menu">
+				<div class="toggle-menu-btn-container">
+					<button class="toggle-menu-btn" id="toggle-menu-btn">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+
+				<ul>
+					<li>Popular</li>
+					<li>News</li>
+					<li data-active="true">Reviews</li>
+					<li>Multimedia</li>
+					<li>Twitter</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="wrapper">
+			<section class="testimonial-cards">
+				<div class="testimonial-card">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+						></span>
+					</p>
+					<h3>The High Heelers</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star" data-select="false"></i
+						></span>
+					</p>
+					<h3>Fellowship Investments</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star" data-select="false"></i
+							><i class="fa-solid fa-star" data-select="false"></i
+						></span>
+					</p>
+					<h3>Fresh Start</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+						></span>
+					</p>
+					<h3>Libera</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star" data-select="false"></i
+						></span>
+					</p>
+					<h3>McDade's</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+						></span>
+					</p>
+					<h3>Sherman's</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card" data-show="on-click">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star" data-select="false"></i
+							><i class="fa-solid fa-star" data-select="false"></i
+						></span>
+					</p>
+					<h3>Fresh Start</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card" data-show="on-click">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+						></span>
+					</p>
+					<h3>Libera</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card" data-show="on-click">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star" data-select="false"></i
+						></span>
+					</p>
+					<h3>McDade's</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card" data-show="on-click">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+						></span>
+					</p>
+					<h3>Sherman's</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<div class="testimonial-card" data-show="on-click">
+					<p class="star-rating">
+						<span
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+							><i class="fa-solid fa-star"></i
+						></span>
+					</p>
+					<h3>Sherman's</h3>
+					<p>
+						"Landlubber or just lubber lass spanker pinnace mizzenmast six
+						pounders. Ho brig doubloon. Sink me dance."
+					</p>
+					<button class="btn">
+						See Project <span><i class="fa-solid fa-chevron-right"></i></span>
+					</button>
+				</div>
+				<button
+					class="btn"
+					type="button"
+					data-type="extra"
+					id="display-extra-btn"
+				>
+					+ 5 more
+				</button>
+			</section>
+		</main>
+	</body>
+</html>
