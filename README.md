@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 60](#challenge-60)
   - [Challenge 59](#challenge-59)
   - [Challenge 58](#challenge-58)
   - [Challenge 57](#challenge-57)
@@ -36,6 +37,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 60
+
+![](screenshots/060-ui-cards.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/060-ui-cards)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/060-ui-cards)
+
+---
 
 ### Challenge 59
 
