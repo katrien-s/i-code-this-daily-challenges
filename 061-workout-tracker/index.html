@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Workout Tracker</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section class="wrapper">
+			<div class="container">
+				<div class="current-activity-date">
+					<p class="text-transform-uppercase fs-500">wednesday</p>
+					<p class="fs-300">May 04 2016, 07:30</p>
+				</div>
+				<div class="current-activity">
+					<!-- progress circle -->
+					<div class="current-activity__progress">
+						<p class="fw-300 fs-800">4.8</p>
+						<p class="text-transform-uppercase fs-600">km</p>
+					</div>
+					<div class="current-activity__credits">
+						<div class="current-activity__time">
+							<p class="fw-300 text-transform-uppercase">time</p>
+							<p class="fs-600">23:40</p>
+						</div>
+						<div class="current-activity__calories">
+							<p class="fw-300 text-transform-uppercase">calories</p>
+							<p class="fs-600">510</p>
+						</div>
+					</div>
+				</div>
+				<div class="activity-cards">
+					<h3>Latest activities</h3>
+					<div class="activity-card">
+						<img src="images/runner.svg" class="svg" alt="" />
+						<p>11km</p>
+						<p>1h 20min</p>
+						<p>478 calories</p>
+					</div>
+					<div class="activity-card">
+						<img src="images/bicycle.svg" class="svg" alt="" />
+						<p>45km</p>
+						<p>2h 37min</p>
+						<p>865 calories</p>
+					</div>
+					<div class="activity-card">
+						<img src="images/runner.svg" class="svg" alt="" />
+						<p>8km</p>
+						<p>55min</p>
+						<p>322 calories</p>
+					</div>
+				</div>
+				<div class="btn-container">
+					<button class="btn" data-type="naked" type="button">
+						<i class="fa-solid fa-home"></i>
+					</button>
+					<button class="btn" type="button" data-type="action">Go</button>
+					<button class="btn" data-type="naked" type="button">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
