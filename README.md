@@ -38,6 +38,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 61
+
+![](screenshots/061-workout-tracker.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/061-workout-tracker)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/061-workout-tracker)
+
+---
+
 ### Challenge 60
 
 ![](screenshots/060-ui-cards.jpg)
