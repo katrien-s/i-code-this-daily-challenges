@@ -42,19 +42,19 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ### Challenge 62
 
-![](screenshots/061-workout-tracker.jpg)
+![](screenshots/062-menu-card.jpg)
 
-- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/061-workout-tracker)
-- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/061-workout-tracker)
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/062-menu-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/062-menu-card)
 
 ---
 
 ### Challenge 61
 
-![](screenshots/062-menu-card.jpg)
+![](screenshots/061-workout-tracker.jpg)
 
-- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/062-menu-card)
-- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/062-menu-card)
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/061-workout-tracker)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/061-workout-tracker)
 
 ---
 
