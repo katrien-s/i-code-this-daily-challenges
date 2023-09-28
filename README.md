@@ -6,6 +6,8 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 62](#challenge-62)
+  - [Challenge 61](#challenge-61)
   - [Challenge 60](#challenge-60)
   - [Challenge 59](#challenge-59)
   - [Challenge 58](#challenge-58)
@@ -38,12 +40,21 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 61
+### Challenge 62
 
 ![](screenshots/061-workout-tracker.jpg)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/061-workout-tracker)
 - [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/061-workout-tracker)
+
+---
+
+### Challenge 61
+
+![](screenshots/062-menu-card.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/062-menu-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/062-menu-card)
 
 ---
 
