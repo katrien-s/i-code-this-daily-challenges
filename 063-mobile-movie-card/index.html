@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mobile Movie Card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lilita+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="container">
+			<header>
+				<div class="header-top padding-600">
+					<button class="btn"><i class="fa-solid fa-arrow-left"></i></button>
+					<button class="btn"><i class="fa-solid fa-share-nodes"></i></button>
+				</div>
+				<div class="header-bottom padding-600">
+					<div class="rating-card">
+						<i class="fa-solid fa-star"></i>
+						<p><strong class="fw-700">6.8</strong>/10</p>
+					</div>
+					<button class="btn" data-type="action"><i class="fa-solid fa-play"></i></button>
+				</div>
+				<div class="header-hero-image">
+					<img src="images/the-good-dinosaur.jpg" class="img" alt="" />
+				</div>
+			</header>
+			<section class="movie-card padding-600 padding-top-100">
+				<div class="movie-card__text">
+					<h1>The good dinosaur</h1>
+					<p class="fs-300">
+						Animation, Adventure, Comedy | 25 november 2015 (USA)
+					</p>
+					<p class="margin-top-400">
+						In a world where dinosaurs and humans live side-by-side, an
+						Apatosaurus named Arlo makes un unlikely human friend.
+					</p>
+				</div>
+				<div class="movie-card__actors">
+					<h3>Actors</h3>
+					<div class="img-slider">
+						<ul>
+							<li>
+								<img
+									src="images/frances-mc-dormand.jpg"
+									alt=""
+									class="img slider-img"
+								/>
+							</li>
+							<li>
+								<img
+									src="images/jack-mc-graw.jpg"
+									alt=""
+									class="img slider-img"
+								/>
+								<p class="fw-700">Young Arlo</p>
+								<p>Jack McGraw</p>
+							</li>
+							<li>
+								<img
+									src="images/maleah_nipay-padilla.jpg"
+									alt=""
+									class="img slider-img"
+								/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<footer class="padding-600">
+				<div class="">
+					<i class="fa-solid fa-book-bookmark"></i>
+					<button class="btn" data-type="naked">Add to watchlist</button>
+				</div>
+				<div class="">
+					<i class="fa-solid fa-users"></i>
+					<button class="btn" data-type="naked">See full cast & crew</button>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>

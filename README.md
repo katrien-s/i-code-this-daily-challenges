@@ -40,6 +40,20 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 63
+
+![](screenshots/063-mobile-movie-card.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/063-mobile-movie-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/063-mobile-movie-card)
+
+**Useful Resources**
+
+- [StackOverflow: Skew only one corner of a div](https://stackoverflow.com/questions/56013073/skew-only-one-corner-of-a-div)
+- [CSS Clip Path Maker](https://bennettfeely.com/clippy/)
+
+---
+
 ### Challenge 62
 
 ![](screenshots/062-menu-card.jpg)
