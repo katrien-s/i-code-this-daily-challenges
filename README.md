@@ -6,6 +6,8 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 65](#challenge-65)
+  - [Challenge 64](#challenge-64)
   - [Challenge 63](#challenge-63)
   - [Challenge 62](#challenge-62)
   - [Challenge 61](#challenge-61)
@@ -40,6 +42,30 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 64
+
+![](screenshots/065-user-card.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/065-user-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/065-user-card)
+
+---
+
+### Challenge 64
+
+![](screenshots/064-users-card.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/064-users-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/064-users-card)
+
+**Continued Development**
+
+- Cards open on hover
+- Cards are properly positioned on the page
+- Add follow-button-functionality
+
+---
 
 ### Challenge 63
 

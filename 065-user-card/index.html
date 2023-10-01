@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>User Card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<!-- main card -->
+			<div class="container user-card">
+				<img
+					src="alejandro_burton.jpg"
+					alt="Alejandro Burton"
+					class="img user-avatar main-img"
+				/>
+				<div class="user-details">
+					<p class="fw-500 fs-500">Alejandro Burton</p>
+					<p>@alejandroburton</p>
+					<p data-type="location">
+						<span
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-map-pin"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#d6dff6"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+								<path
+									d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+								/></svg
+						></span>
+						San Francisco
+					</p>
+				</div>
+				<div class="user-follow">
+					<div>
+						<ul class="followers-list">
+							<li>
+								<img
+									src="https://i.pravatar.cc/400?img=21"
+									alt="Carrie Brewer"
+									class="img user-avatar"
+									data-type="followers"
+								/>
+							</li>
+							<li>
+								<img
+									src="https://i.pravatar.cc/400?img=1"
+									alt="Sally Ramos"
+									class="img user-avatar"
+									data-type="followers"
+								/>
+							</li>
+							<li>
+								<img
+									src="https://i.pravatar.cc/400?img=53"
+									alt="Richard Powless"
+									class="img user-avatar"
+									data-type="followers"
+								/>
+							</li>
+						</ul>
+					</div>
+					<p>Followed by <span class="underline">3 people</span> you follow</p>
+					<button type="button" class="button">follow</button>
+				</div>
+			</div>
+			<!-- small card -->
+			<div class="container user-card-standalone">
+				<img
+					src="alejandro_burton.jpg"
+					alt="Alejandro Burton"
+					class="img user-avatar"
+				/>
+				<p>Alejandro Burton</p>
+			</div>
+		</main>
+	</body>
+</html>
