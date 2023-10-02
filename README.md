@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 66](#challenge-66)
   - [Challenge 65](#challenge-65)
   - [Challenge 64](#challenge-64)
   - [Challenge 63](#challenge-63)
@@ -43,7 +44,21 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 64
+### Challenge 66
+
+![](screenshots/066-booking-calendar.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/066-booking-calendar)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/066-booking-calenda)
+
+**Useful Resources**
+
+- [border-radius tip](https://youtu.be/D0lIR1qVJOk?si=VycS5dkvsw0r6IQL)
+- [65 Beautiful CSS Buttons](https://webdeasy.de/en/top-css-buttons-en/)
+
+---
+
+### Challenge 65
 
 ![](screenshots/065-user-card.jpg)
 

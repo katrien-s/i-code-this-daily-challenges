@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booking Calendar</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<header>
+				<h1>Book a training</h1>
+				<button class="button" data-type="toggle">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+			</header>
+			<section class="activity-cards">
+				<div class="date-container">
+					<button class="button" data-type="naked" disabled>
+						<i class="fa-solid fa-chevron-left"></i>
+					</button>
+					<div class="date">
+						<p class="fw-700 fs-500" id="date">Sep. 24</p>
+						<p class="fw-700">Today</p>
+					</div>
+					<button class="button" data-type="naked">
+						<i class="fa-solid fa-chevron-right"></i>
+					</button>
+				</div>
+				<div class="activity-card">
+					<div>
+						<div>
+							<h3>Bodypump</h3>
+							<p>09:30 • 60 min</p>
+						</div>
+						<div class="instructor">
+							<p class="fs-300">Trained by</p>
+							<div class="instructor-details">
+								<img
+									src="/000-profile-pictures/pexels-kebs-visuals-3992656.jpg"
+									class="img img-avatar"
+									alt="Emily Stark"
+								/>
+								<p>Emily Stark</p>
+							</div>
+						</div>
+					</div>
+					<div class="button-container">
+						<button
+							class="button"
+							type="button"
+							data-type="swipe"
+							data-training="bodypump"
+						>
+							<span>Book a spot</span>
+						</button>
+					</div>
+				</div>
+				<div class="activity-card">
+					<div>
+						<div>
+							<h3>Pilates</h3>
+							<p>10:30 • 60 min</p>
+						</div>
+						<div class="instructor">
+							<p class="fs-300">Trained by</p>
+							<div class="instructor-details">
+								<img
+									src="/000-profile-pictures/pexels-creation-hill-1681010.jpg"
+									class="img img-avatar"
+									alt="Erik Nest"
+								/>
+								<p>Erik Nest</p>
+							</div>
+						</div>
+					</div>
+					<div class="button-container">
+						<button
+							class="button"
+							type="button"
+							data-type="swipe"
+							data-training="pilates"
+						>
+							<span>Book a spot</span>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

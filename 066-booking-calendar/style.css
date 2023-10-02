@@ -1,0 +1,262 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: #f1f5fd;
+	--clr-primary-400: #4d68b8;
+	--clr-primary-900: #203673;
+
+	/* rest of colors */
+	--clr-neutral-100: #fff;
+	--clr-neutral-900: #0f1016;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	--ff-sans-serif: 'Roboto', sans-serif;
+}
+
+/* Global Styles */
+html {
+	background-color: var(--clr-primary-100);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: var(--ff-sans-serif);
+}
+
+.container {
+	margin-inline: 0.5rem;
+	background-color: var(--clr-neutral-100);
+	border-radius: 10px;
+	box-shadow: var(--shadow-2);
+	overflow: hidden;
+}
+
+h1,
+h3 {
+	margin: 0;
+	font-weight: 500;
+	line-height: 1.3;
+	text-wrap: balance;
+	text-transform: capitalize;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.img-avatar {
+	border-radius: 100%;
+	width: 45px;
+	height: 45px;
+	border: 2px solid var(--clr-primary-400);
+}
+
+header {
+	background-color: var(--clr-primary-900);
+	padding: 1rem;
+	color: var(--clr-neutral-100);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.activity-cards {
+	padding-inline: 1rem;
+	padding-bottom: 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	transition: all ease 0.5s;
+}
+
+.hidden {
+	display: none;
+}
+
+.date-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-block: 1.5rem;
+}
+
+.date p {
+	text-align: center;
+	margin-inline: 2rem;
+}
+
+.activity-card {
+	background-color: var(--clr-primary-900);
+	color: var(--clr-neutral-100);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-radius: calc(1rem - 10px);
+	padding: 1rem;
+}
+
+@media (min-width: 40em) {
+	header {
+		padding: 1rem 1.5rem;
+	}
+
+	.activity-cards {
+		padding: 0 5rem 4rem;
+	}
+
+	.activity-card {
+		gap: 2rem;
+		padding: 1.5rem 2rem;
+	}
+}
+
+.instructor {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+}
+
+.instructor-details {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	margin-top: 0.25rem;
+}
+
+.button-container {
+	display: flex;
+	justify-content: end;
+	align-self: start;
+}
+
+/* Buttons */
+.button {
+	cursor: pointer;
+	color: var(--clr-neutral-900);
+	background: var(--clr-neutral-100);
+	border: transparent;
+	border-radius: 0.5rem;
+	padding: 0.375rem 0.75rem;
+	transition: all ease 0.3s;
+	font-size: 0.875rem;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+}
+
+.button:hover,
+.button:focus {
+	background: var(--clr-primary-100);
+}
+
+.button[data-type='swipe']:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #ff003b;
+	transition: all 0.35s;
+}
+
+.button[data-type='swipe'] span {
+	z-index: 2;
+	position: relative;
+}
+
+.button[data-type='swipe']:hover {
+	color: #fff;
+}
+
+.button[data-type='swipe']:hover:after {
+	width: 100%;
+}
+
+.button[data-type='swipe'].disabled {
+	cursor: not-allowed;
+	background-color: limegreen;
+}
+
+.button[data-type='naked'] {
+	background-color: transparent;
+	padding: unset;
+}
+
+.button[data-type='toggle'] {
+	background-color: transparent;
+	color: var(--clr-neutral-100);
+	padding: unset;
+	font-size: 1.5rem;
+	transition: all ease 0.5s;
+}
+
+.button[data-type='toggle']:hover,
+.button[data-type='toggle']:focus {
+	transform: rotate(360deg);
+	background-color: var(--clr-primary-400);
+	border-radius: 100%;
+	width: 1.8rem;
+	height: 1.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Utility */
+
+.fs-300 {
+	font-size: 0.8rem;
+}
+.fs-400 {
+	font-size: 1rem;
+}
+.fs-500 {
+	font-size: 1.25rem;
+}
+.fs-600 {
+	font-size: 1.5rem;
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
