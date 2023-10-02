@@ -49,7 +49,7 @@ Unless noted otherwise, the building of the exercises is done with:
 ![](screenshots/066-booking-calendar.jpg)
 
 - [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/066-booking-calendar)
-- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/066-booking-calenda)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/066-booking-calendar)
 
 **Useful Resources**
 
