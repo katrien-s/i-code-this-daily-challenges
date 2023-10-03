@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Announcements</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="container">
+			<h2><span id="total-announcements">2</span> Announcements</h2>
+			<section class="announcement-card">
+				<div class="top-section">
+					<p>Ms. Philips is away this week. I am going to replace her</p>
+					<button class="button" title="Delete Messsage" data-type="naked">
+						&hellip;
+					</button>
+				</div>
+				<div class="bottom-section">
+					<div class="user-profile">
+						<img
+							src="../000-profile-pictures/pexels-masha-raymers-2726111.jpg"
+							alt="Hettie Marshall"
+							class="img img-avatar"
+						/>
+						<p>Hettie Marshall</p>
+					</div>
+					<p>2 hours ago</p>
+				</div>
+			</section>
+			<section class="announcement-card">
+				<div class="top-section">
+					<p>Bring your books! We will read the next 2 chapters</p>
+					<button class="button" title="Delete Messsage" data-type="naked">
+						&hellip;
+					</button>
+				</div>
+				<div class="bottom-section">
+					<div class="user-profile">
+						<img
+							src="../000-profile-pictures/pexels-masha-raymers-2726111.jpg"
+							alt="Hettie Marshall"
+							class="img img-avatar"
+						/>
+						<p>Hettie Marshall</p>
+					</div>
+					<p>3 hours ago</p>
+				</div>
+			</section>
+			<p class="show-on-empty"></p>
+			<button class="button" data-type="main" id="dismiss-btn">
+				Dismiss All
+			</button>
+		</main>
+	</body>
+</html>
