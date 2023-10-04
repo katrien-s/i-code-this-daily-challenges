@@ -3,7 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Signup Form 3</title>
+		<title>Mobile Movie App</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,5 +20,196 @@
 		<link rel="stylesheet" href="style.css" />
 		<script src="app.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<main>
+			<section class="all-movies-container container">
+				<header>
+					<div class="navigation primary-navigation">
+						<button class="button margin-right-auto" data-type="naked">
+							<i class="fa-solid fa-chevron-left"></i>
+						</button>
+						<h1>Available now</h1>
+					</div>
+				</header>
+				<div class="search-container">
+					<input
+						type="search"
+						name="search-movies"
+						id="search-movies"
+						placeholder="Search movies"
+					/>
+				</div>
+				<div class="movie-cards-container">
+					<div class="flex-row-sb margin-bottom-12">
+						<h3>Recently Added</h3>
+						<a href="#" class="clr-primary-700">
+							See all<span
+								><i class="fa-solid fa-caret-right margin-left-8"></i
+							></span>
+						</a>
+					</div>
+					<div class="movie-cards">
+						<div class="movie-card">
+							<img src="images/posters/24-city.jpg" class="img poster" alt="" />
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">24 City</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/i-wish-i-knew.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">I wish I Knew</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/in-den-gangen.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">In Den Gängen</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/theres-nothing-out-there.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">There's Nothing Out There</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-cards-container">
+					<div class="flex-row-sb margin-bottom-12">
+						<h3>Trending</h3>
+						<a href="#" class="clr-primary-700">
+							See all<span
+								><i class="fa-solid fa-caret-right margin-left-8"></i
+							></span>
+						</a>
+					</div>
+					<div class="movie-cards">
+						<div class="movie-card">
+							<img src="images/posters/24-city.jpg" class="img poster" alt="" />
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">24 City</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/i-wish-i-knew.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">I wish I Knew</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/in-den-gangen.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">In Den Gängen</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/theres-nothing-out-there.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">There's Nothing Out There</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-cards-container">
+					<div class="flex-row-sb margin-bottom-12">
+						<h3>Halloween - Horror</h3>
+						<a href="#" class="clr-primary-700">
+							See all<span
+								><i class="fa-solid fa-caret-right margin-left-8"></i
+							></span>
+						</a>
+					</div>
+					<div class="movie-cards">
+						<div class="movie-card">
+							<img src="images/posters/24-city.jpg" class="img poster" alt="" />
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">24 City</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/i-wish-i-knew.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">I wish I Knew</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/in-den-gangen.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">In Den Gängen</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+						<div class="movie-card">
+							<img
+								src="images/posters/theres-nothing-out-there.jpg"
+								class="img poster"
+								alt=""
+							/>
+							<div class="flex-row-sb-ab padding-8 height-3">
+								<p class="movie-title">There's Nothing Out There</p>
+								<p class="movie-rating">8,4</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="selected-movie-container container">
+				<div class="navigation bullet-navigation flex-row-sb">
+					<button class="button" data-type="naked">
+						<i class="fa-solid fa-chevron-left"></i>
+					</button>
+					<button class="button" data-type="naked">
+						<i class="fa-solid fa-ellipsis-vertical"></i>
+					</button>
+				</div>
+        <div class="movie-card">
+
+        </div>
+        <button class="button margin-16" data-type="main">Buy movie</button>
+			</section>
+		</main>
+	</body>
 </html>

@@ -45,6 +45,24 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 68
+
+![](screenshots/068-mobile-movie-app)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/068-mobile-movie-app)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/068-mobile-movie-app)
+
+**Continued Development**
+
+- Use an API to get all the movie-data
+- Create a data.js-file that holds all the movie-information & use JS the loading of a `.movie-card`
+
+**Useful Resources**
+
+- [Hide scroll bar, but while still being able to scroll](https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll)
+
+--- 
+
 ### Challenge 67
 
 ![](screenshots/067-announcements.jpg)
