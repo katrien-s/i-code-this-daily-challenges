@@ -94,7 +94,6 @@ h2 {
 	border: 1px solid var(--clr-primary-800);
 }
 
-
 .top-section,
 .bottom-section {
 	display: flex;
@@ -131,7 +130,7 @@ h2 {
 	text-transform: capitalize;
 	display: block;
 	font-weight: 600;
-  transition: all ease 0.3s;
+	transition: all ease 0.3s;
 }
 
 .button[data-type='main'] {

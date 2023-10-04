@@ -44,6 +44,19 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 67
+
+![](screenshots/067-announcements.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/067-announcements)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/067-announcements)
+
+**Continued Development**
+
+- In JS: click on a card to remove card
+
+---
+
 ### Challenge 66
 
 ![](screenshots/066-booking-calendar.jpg)
