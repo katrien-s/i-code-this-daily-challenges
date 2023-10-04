@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 67](#challenge-67)
   - [Challenge 66](#challenge-66)
   - [Challenge 65](#challenge-65)
   - [Challenge 64](#challenge-64)
