@@ -103,13 +103,17 @@ a:focus {
 	color: var(--clr-accent-500);
 }
 
+ul {
+	list-style: none;
+	padding: 0;
+}
+
 .img {
 	max-width: 100%;
 	display: block;
 	object-fit: cover;
 }
-
-header {
+.all-movies-container header {
 	background-color: var(--clr-primary-800);
 	padding: 1rem;
 }
@@ -182,12 +186,135 @@ header {
 
 /* Selected Movie */
 .selected-movie-container {
-  padding: 1rem;
+	outline: 1px solid pink;
+  background-color: transparent;
+}
+
+.selected-movie-container .bullet-navigation {
+	outline: 1px solid yellow;
+	height: 250px;
+	position: relative;
+  z-index: -1;
+}
+
+.selected-movie-container .btn-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	padding: 1.25rem 1.25rem 0;
+}
+
+.selected-movie-container .trailer video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .selected-movie-container .movie-card {
-  background-color: var(--clr-primary-100);
-  border-radius: 15px;
+	background-color: var(--clr-primary-100);
+	border-radius: 15px;
+	color: var(--clr-neutral-900);
+	margin-bottom: 1.75rem;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 10;
+  margin-top: -4rem;
+  padding-inline: 1.25rem;
+}
+
+.movie-details {
+	padding: 1.25rem 1.25rem 0;
+	display: grid;
+	grid-template-columns: 100px auto;
+	gap: 0.75rem;
+	margin-bottom: 1.25rem;
+}
+
+.movie-rating__numbers {
+	background-color: var(--clr-primary-400);
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	color: var(--clr-primary-100);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.25rem;
+}
+
+.movie-rating__stars {
+	color: var(--clr-primary-400);
+}
+
+.movie-rating__stars .star-rating {
+	color: orange;
+}
+
+.movie-rating__stars .amount-of-votes {
+	font-size: 0.775rem;
+}
+
+.movie-title {
+	text-transform: capitalize;
+	font-size: 1.5rem;
+	color: var(--clr-primary-400);
+}
+
+.movie-card .movie-summary {
+	padding-inline: 1.25rem;
+	margin-bottom: 1.25rem;
+	line-height: 1.5;
+	font-size: 0.95rem;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.movie-cast-container {
+	background-color: var(--clr-accent-300);
+}
+
+.movie-cast-list {
+	padding: 1.25rem;
+	display: grid;
+	grid-template-columns: repeat(
+		var(--num-columns, 4),
+		70px
+	); /* Use CSS variable to set the number of columns */
+	gap: 1rem;
+	overflow: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+
+.movie-cast-list::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+.movie-cast__member {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.movie-cast__member p {
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 0.25em;
+}
+
+.img-cast {
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	box-shadow: var(--shadow-2);
 }
 
 /* Buttons */
@@ -207,8 +334,9 @@ header {
 	border-radius: 50vw;
 	color: var(--clr-primary-100);
 	padding: 0.5rem 0.75rem;
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 	width: 100%;
+	margin-bottom: 1.25rem;
 }
 
 .button[data-type='naked'] {
@@ -276,6 +404,15 @@ header {
 	padding: 1rem;
 }
 
+.padding-left-20 {
+	padding-left: 1.25rem;
+}
+
 .height-3 {
 	height: 3rem;
+}
+
+/* To Be Deleted Afterwards */
+.all-movies-container {
+	display: none;
 }
