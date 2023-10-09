@@ -6,6 +6,8 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 69](#challenge-69)
+  - [Challenge 68](#challenge-68)
   - [Challenge 67](#challenge-67)
   - [Challenge 66](#challenge-66)
   - [Challenge 65](#challenge-65)
@@ -45,6 +47,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 69
+
+![](screenshots/069-store-location.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/069-store-location)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/069-store-location)
+
+---
+
 ### Challenge 68
 
 ![](screenshots/068-mobile-movie-app)
@@ -61,7 +72,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 - [Hide scroll bar, but while still being able to scroll](https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll)
 
---- 
+---
 
 ### Challenge 67
 
