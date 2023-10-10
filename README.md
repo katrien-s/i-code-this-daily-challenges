@@ -57,7 +57,8 @@ Unless noted otherwise, the building of the exercises is done with:
 
 **Continued Development**
 
-- Switch between grid and list-layout for `.group-cards`
+~~- Switch between grid and list-layout for `.group-cards`~~
+
 - 'Add a new group'-functionality with JS
 
 ---
