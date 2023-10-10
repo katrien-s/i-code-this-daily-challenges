@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 70](#challenge-70)
   - [Challenge 69](#challenge-69)
   - [Challenge 68](#challenge-68)
   - [Challenge 67](#challenge-67)
@@ -46,6 +47,20 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 70
+
+![](screenshots/070-groups.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/070-groups)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/070-groups)
+
+**Continued Development**
+
+- Switch between grid and list-layout for `.group-cards`
+- 'Add a new group'-functionality with JS
+
+---
 
 ### Challenge 69
 

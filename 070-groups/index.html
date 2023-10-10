@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Groups</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<section class="container">
+			<header>
+				<nav>
+					<ul class="primary-navigation">
+						<li>
+							<a href="#"><i class="fa-regular fa-message"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa-solid fa-user-group"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa-solid fa-golf-ball-tee"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa-solid fa-gear"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class="groups-container">
+				<div class="toggle-container">
+					<h3>
+						<span><i class="fa-solid fa-arrow-left"></i></span> Groups
+					</h3>
+					<div class="btn-container">
+						<button class="btn" type="button" data-selected="grid" data-active>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-layout-grid"
+								width="30"
+								height="30"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#b2bad2"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path
+									d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+								/>
+								<path
+									d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+								/>
+								<path
+									d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+								/>
+								<path
+									d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"
+								/>
+							</svg>
+						</button>
+						<button class="btn" type="button" data-selected="list" data-inactive>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-layout-list"
+								width="30"
+								height="30"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#b2bad2"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path
+									d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+								/>
+								<path
+									d="M4 14m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<ul class="group-cards">
+					<li class="group-card">
+						<button class="btn create-btn" type="button" data-create>
+							<i class="fa-solid fa-plus"></i>
+						</button>
+						<p>Create group</p>
+					</li>
+					<li class="group-card">
+						<p data-update></p>
+						<img src="images/cuisine.jpg" alt="" class="img group-img" />
+						<h5>Cuisine</h5>
+						<p>36 members</p>
+					</li>
+					<li class="group-card">
+						<p></p>
+						<img src="images/art.jpg" alt="" class="img group-img" />
+						<h5>Art</h5>
+						<p>9 members</p>
+					</li>
+					<li class="group-card">
+						<p data-update></p>
+						<img src="images/workout.jpg" alt="" class="img group-img" />
+						<h5>Workout</h5>
+						<p>27 members</p>
+					</li>
+					<li class="group-card">
+						<p data-update></p>
+						<img src="images/gaming.jpg" alt="" class="img group-img" />
+						<h5>Gaming</h5>
+						<p>105 members</p>
+					</li>
+					<li class="group-card">
+						<p></p>
+						<img src="images/hiking.jpg" alt="" class="img group-img" />
+						<h5>Hiking</h5>
+						<p>97 members</p>
+					</li>
+					<li class="group-card">
+						<p></p>
+						<img src="images/yoga.jpg" alt="" class="img group-img" />
+						<h5>Yoga</h5>
+						<p>65 members</p>
+					</li>
+				</ul>
+			</section>
+		</section>
+	</body>
+</html>
