@@ -45,8 +45,13 @@
 					<h3>
 						<span><i class="fa-solid fa-arrow-left"></i></span> Groups
 					</h3>
-					<div class="btn-container">
-						<button class="btn" type="button" data-selected="grid" data-active>
+					<div class="btn-container toggle-option">
+						<button
+							class="btn"
+							type="button"
+							data-selected="grid"
+							data-active="true"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								class="icon icon-tabler icon-tabler-layout-grid"
@@ -74,7 +79,7 @@
 								/>
 							</svg>
 						</button>
-						<button class="btn" type="button" data-selected="list" data-inactive>
+						<button class="btn" type="button" data-selected="list">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								class="icon icon-tabler icon-tabler-layout-list"
@@ -98,7 +103,7 @@
 						</button>
 					</div>
 				</div>
-				<ul class="group-cards">
+				<ul class="group-cards-grid" id="group-cards">
 					<li class="group-card">
 						<button class="btn create-btn" type="button" data-create>
 							<i class="fa-solid fa-plus"></i>
@@ -108,38 +113,50 @@
 					<li class="group-card">
 						<p data-update></p>
 						<img src="images/cuisine.jpg" alt="" class="img group-img" />
-						<h5>Cuisine</h5>
-						<p>36 members</p>
+						<div>
+							<h5>Cuisine</h5>
+							<p>36 members</p>
+						</div>
 					</li>
 					<li class="group-card">
-						<p></p>
+						<p data-update="none"></p>
 						<img src="images/art.jpg" alt="" class="img group-img" />
-						<h5>Art</h5>
-						<p>9 members</p>
+						<div>
+							<h5>Art</h5>
+							<p>9 members</p>
+						</div>
 					</li>
 					<li class="group-card">
 						<p data-update></p>
 						<img src="images/workout.jpg" alt="" class="img group-img" />
-						<h5>Workout</h5>
-						<p>27 members</p>
+						<div>
+							<h5>Workout</h5>
+							<p>27 members</p>
+						</div>
 					</li>
 					<li class="group-card">
 						<p data-update></p>
 						<img src="images/gaming.jpg" alt="" class="img group-img" />
-						<h5>Gaming</h5>
-						<p>105 members</p>
+						<div>
+							<h5>Gaming</h5>
+							<p>105 members</p>
+						</div>
 					</li>
 					<li class="group-card">
-						<p></p>
+						<p data-update="none"></p>
 						<img src="images/hiking.jpg" alt="" class="img group-img" />
-						<h5>Hiking</h5>
-						<p>97 members</p>
+						<div>
+							<h5>Hiking</h5>
+							<p>97 members</p>
+						</div>
 					</li>
 					<li class="group-card">
-						<p></p>
+						<p data-update="none"></p>
 						<img src="images/yoga.jpg" alt="" class="img group-img" />
-						<h5>Yoga</h5>
-						<p>65 members</p>
+						<div>
+							<h5>Yoga</h5>
+							<p>65 members</p>
+						</div>
 					</li>
 				</ul>
 			</section>
