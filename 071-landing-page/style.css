@@ -170,12 +170,9 @@ header {
 
 	.nav-center {
 		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		padding-block: 1rem;
     display: grid;
-    grid-template-columns: 33% 1fr;
+    grid-template-columns: 40px 1fr;
 	}
 
 	.nav-header {
@@ -188,13 +185,12 @@ header {
 		align-items: center;
 		justify-content: space-between;
 		margin-left: auto;
-		width: 100%;
 	}
 
 	.primary-navigation ul:first-of-type {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: start;
 	}
 
 	.button-navigation {
@@ -214,11 +210,15 @@ header {
 	.button-navigation {
 		padding-left: 0;
 		margin-left: auto;
-		font-size: 0.75rem;
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: nowrap;
 	}
-
+  
 	.button-navigation a {
+    font-size: 0.875rem;
 		color: var(--clr-neutral-900);
+    white-space: nowrap;
 	}
 }
 
