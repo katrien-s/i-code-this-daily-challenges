@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 71](#challenge-71)
   - [Challenge 70](#challenge-70)
   - [Challenge 69](#challenge-69)
   - [Challenge 68](#challenge-68)
@@ -48,6 +49,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 71
+
+![](screenshots/071-landing-page.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/071-landing-page)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/071-landing-page)
+
+---
+
 ### Challenge 70
 
 ![](screenshots/070-groups.jpg)
@@ -57,7 +67,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 **Continued Development**
 
-~~- Switch between grid and list-layout for `.group-cards`~~
+~~ - Switch between grid and list-layout for `.group-cards`~~
 
 - 'Add a new group'-functionality with JS
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<header class="wrapper">
+			<nav class="nav-center">
+				<div class="nav-header">
+					<h4>logo</h4>
+					<button class="nav-toggle" type="button">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+				<div class="primary-navigation">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<ul class="button-navigation">
+						<li class="btn" data-login><a href="#">Log In</a></li>
+						<li class="btn" data-trial><a href="#">Start Free Trial</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="">
+			<section class="hero-container container">
+				<h1>A modern way to build websites.</h1>
+				<p class="fw-500">
+					Empower designers to build professional, custom websites in a
+					completely visual canvas with no code.
+				</p>
+				<a href="" class="btn" type="button" data-trial>Start Free Trial</a>
+			</section>
+			<section class="article-container wrapper">
+				<span class="bullet-text">We share our thoughts on design</span>
+				<div class="article-cards">
+					<div class="article-card">
+						<div class="article-img-small">
+							<img src="/images/boosted-sales.jpg" alt="" class="img" />
+						</div>
+						<h6>Redesiging my site increased sales by over 400% in one week</h6>
+						<p class="fs-300">Jul 1, 2020</p>
+					</div>
+					<div class="article-card">
+						<div class="article-img-small">
+							<img src="/images/design-handoff.jpg" alt="" class="img" />
+						</div>
+						<h6>Design handoff: what engineers really want to see</h6>
+						<p class="fs-300">Jul 1, 2020</p>
+					</div>
+					<div class="article-card">
+						<div class="article-img-small">
+							<img src="/images/human-computer.jpg" alt="" class="img" />
+						</div>
+						<h6>A comprehensive list of human-computers interactions</h6>
+						<p class="fs-300">Jul 1, 2020</p>
+					</div>
+					<div class="article-card">
+						<div class="article-img-small">
+							<img src="/images/hate-redesigns.jpg" alt="" class="img" />
+						</div>
+						<h6>Why do people hate redesigns?</h6>
+						<p class="fs-300">Jul 1, 2020</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
