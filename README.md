@@ -6,32 +6,35 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
-
-| Challenge 25 | [Challenge 50](#challenge-50) | Challenge 75 | Challenge 100 |
-| Challenge 24 | [Challenge 49](#challenge-49) | Challenge 74 | Challenge 99 |
-| Challenge 23 | [Challenge 48](#challenge-48) | [Challenge 73](#challenge-73) | Challenge 98 |
-| Challenge 22 | Challenge 47 | [Challenge 72](#challenge-72) | Challenge 97 |
-| Challenge 21 | Challenge 46 | [Challenge 71](#challenge-71) | Challenge 96 |
-| Challenge 20 | Challenge 45 | [Challenge 70](#challenge-70) | Challenge 95 |
-| Challenge 19 | Challenge 44 | [Challenge 69](#challenge-69) | Challenge 94 |
-| Challenge 18 | Challenge 43 | [Challenge 68](#challenge-68) | Challenge 93 |
-| Challenge 17 | Challenge 42 | [Challenge 67](#challenge-67) | Challenge 92 |
-| Challenge 16 | Challenge 41 | [Challenge 66](#challenge-66) | Challenge 91 |
-| Challenge 15 | Challenge 40 | [Challenge 65](#challenge-65) | Challenge 90 |
-| Challenge 14 | Challenge 39 | [Challenge 64](#challenge-64) | Challenge 89 |
-| Challenge 13 | Challenge 38 | [Challenge 63](#challenge-63) | Challenge 88 |
-| Challenge 12 | Challenge 37 | [Challenge 62](#challenge-62) | Challenge 87 |
-| Challenge 11 | Challenge 36 | [Challenge 61](#challenge-61) | Challenge 86 |
-| Challenge 10 | Challenge 35 | [Challenge 60](#challenge-60) | Challenge 85 |
-| Challenge 09 | Challenge 34 | [Challenge 59](#challenge-59) | Challenge 84 |
-| Challenge 08 | Challenge 33 | [Challenge 58](#challenge-58) | Challenge 83 |
-| Challenge 07 | Challenge 32 | [Challenge 57](#challenge-57) | Challenge 82 |
-| [Challenge 06](#challenge-06) | Challenge 31 | [Challenge 56](#challenge-56) | Challenge 81 |
-| [Challenge 05](#challenge-05) | Challenge 30 | [Challenge 55](#challenge-55) | Challenge 80 |
-| Challenge 04 | Challenge 29 | [Challenge 54](#challenge-54) | Challenge 79 |
-| Challenge 03 | Challenge 28 | [Challenge 53](#challenge-53) | Challenge 78 |
-| Challenge 02 | Challenge 27 | [Challenge 52](#challenge-52) | Challenge 77 |
-| [Challenge 01](#challenge-01) | Challenge 26 | [Challenge 51](#challenge-51) | Challenge 76 |
+  - [Challenge 73](#challenge-73)
+  - [Challenge 72](#challenge-72)
+  - [Challenge 71](#challenge-71)
+  - [Challenge 70](#challenge-70)
+  - [Challenge 69](#challenge-69)
+  - [Challenge 68](#challenge-68)
+  - [Challenge 67](#challenge-67)
+  - [Challenge 66](#challenge-66)
+  - [Challenge 65](#challenge-65)
+  - [Challenge 64](#challenge-64)
+  - [Challenge 63](#challenge-63)
+  - [Challenge 62](#challenge-62)
+  - [Challenge 61](#challenge-61)
+  - [Challenge 60](#challenge-60)
+  - [Challenge 59](#challenge-59)
+  - [Challenge 58](#challenge-58)
+  - [Challenge 57](#challenge-57)
+  - [Challenge 56](#challenge-56)
+  - [Challenge 55](#challenge-55)
+  - [Challenge 54](#challenge-54)
+  - [Challenge 53](#challenge-53)
+  - [Challenge 52](#challenge-52)
+  - [Challenge 51](#challenge-51)
+  - [Challenge 50](#challenge-50)
+  - [Challenge 49](#challenge-49)
+  - [Challenge 48](#challenge-48)
+  - [Challenge 06](#challenge-06)
+  - [Challenge 05](#challenge-05)
+  - [Challenge 01](#challenge-01)
 
 - [Author](#author)
 
