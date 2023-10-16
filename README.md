@@ -6,6 +6,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+  - [Challenge 73](#challenge-73)
   - [Challenge 72](#challenge-72)
   - [Challenge 71](#challenge-71)
   - [Challenge 70](#challenge-70)
@@ -49,6 +50,19 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 73
+
+![](screenshots/073-conferences-page.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/073-conferences-page)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/073-conferences-page)
+
+**Continued Development**
+
+- Menu-toggle for mobile screens
+
+---
 
 ### Challenge 72
 
