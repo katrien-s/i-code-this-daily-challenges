@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forum Components</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Solved -->
+		<section class="container solution-card flex-align-items-center gap-1">
+			<div class="svg-container">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon icon-tabler icon-tabler-check"
+					width="44"
+					height="44"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="#2c3e50"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+					<path d="M5 12l5 5l10 -10" />
+				</svg>
+			</div>
+			<div class="solution-card__text">
+				<p class="fs-500">
+					Solved by <span class="clr-primary-500">Charlie_reid</span> in
+					<span class="clr-primary-500"> post #2</span>
+				</p>
+				<p>
+					The answer was identified. All redirects created can be found under
+					the hosting tab of project settings.
+				</p>
+			</div>
+		</section>
+
+		<!-- Form -->
+		<form class="container form-container">
+			<h3>Create a new Topic</h3>
+			<label for="title-topic" class="screen-reader-text"></label>
+			<input
+				type="text"
+				name="title-topic"
+				id="title-topic"
+				placeholder="Type title, or paste a link here"
+			/>
+			<div class="select-tags">
+				<select name="select-category" id="select-category">
+					<option value="category" disabled>Category</option>
+					<option value="resources">Community Resources</option>
+					<option value="design">Design Help</option>
+					<option value="publishing">Publishing Help</option>
+				</select>
+				<select name="select-tags" id="select-tags">
+					<option value="tags" disabled>Tags</option>
+					<option value="coding">Coding</option>
+					<option value="design">Design</option>
+					<option value="publishing">Publishing</option>
+				</select>
+			</div>
+			<label for="topic-description" class="screen-reader-text"></label>
+			<textarea name="topic-description" id="topic-description" rows="5">
+Enter your description here</textarea
+			>
+			<div class="btn-container">
+				<button class="btn" type="button"><span>+</span> Create Topic</button>
+				<button class="btn" type="button" data-cancel>Cancel</button>
+			</div>
+		</form>
+
+		<!-- Select Dropdown -->
+		<div class="container flex-align-items-center justify-content-between dropdown-container">
+      <div class="select-tags">
+        <select name="select-category" id="select-category">
+          <option value="category" disabled>Category</option>
+          <option value="resources">Community Resources</option>
+          <option value="design">Design Help</option>
+          <option value="publishing">Publishing Help</option>
+        </select>
+        <select name="select-tags" id="select-tags">
+          <option value="tags" disabled>Tags</option>
+          <option value="coding">Coding</option>
+          <option value="design">Design</option>
+          <option value="publishing">Publishing</option>
+        </select>
+      </div>
+      <button class="btn" type="button">Latest</button>
+    </div>
+
+		<!-- Task -->
+		<section class="container task-card">
+			<h5>Navbar Dropdown on Mobile</h5>
+			<div class="flex-align-items-center justify-content-between">
+				<p class="flex-align-items-center">
+					<span class="rounded-full clr-accent-100">•</span> Publishing Help
+				</p>
+				<div class="img-container">
+					<img
+						src="../000-profile-pictures/pexels-ali-madad-sakhirani-997489.jpg"
+						alt=""
+						class="img img-avatar"
+					/>
+					<img
+						src="../000-profile-pictures/pexels-italo-melo-2379005.jpg"
+						alt=""
+						class="img img-avatar"
+					/>
+					<img
+						src="../000-profile-pictures/pexels-luriko-yamaguchi-2804282.jpg"
+						alt=""
+						class="img img-avatar"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- Task -->
+		<section class="container task-card">
+			<h5>Persistent Dark Mode</h5>
+			<div class="flex-align-items-center justify-content-between height-2">
+				<p class="flex-align-items-center align-self-start">
+					<span class="rounded-full clr-accent-200">•</span>
+					Design Help
+				</p>
+				<div class="img-container">
+					<img
+						src="../000-profile-pictures/pexels-marcelo-dias-2104252.jpg"
+						alt=""
+						class="img img-avatar"
+					/>
+					<img
+						src="../000-profile-pictures/pexels-rodolfo-quirós-1727273.jpg"
+						alt=""
+						class="img img-avatar"
+					/>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

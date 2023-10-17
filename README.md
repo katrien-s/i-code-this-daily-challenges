@@ -6,6 +6,8 @@ This is a growing collection of challenges solved for the platform [I Code This]
 
 - [Intro](#intro)
 - [Challenges](#challenges)
+
+  - [Challenge 74](#challenge-74)
   - [Challenge 73](#challenge-73)
   - [Challenge 72](#challenge-72)
   - [Challenge 71](#challenge-71)
@@ -51,6 +53,19 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 74
+
+![](screenshots/074-forum-components.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/074-forum-components)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/074-forum-components)
+
+**Continued Development**
+
+- Still a lot needs to be done -> desktop size, select options, form validation, ...
+
+---
 
 ### Challenge 73
 
