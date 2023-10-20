@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 76](#challenge-76)
   - [Challenge 75](#challenge-75)
   - [Challenge 74](#challenge-74)
   - [Challenge 73](#challenge-73)
@@ -54,6 +55,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 76
+
+![](screenshots/076-menu.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/076-menu)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/076-menu)
+
+---
 
 ### Challenge 75
 

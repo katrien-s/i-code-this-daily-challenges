@@ -1,0 +1,143 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: #f6f8fc;
+	--clr-primary-500: #386ff9;
+	--clr-primary-900: #212139;
+
+	/* rest of colors */
+	--clr-neutral-100: #fff;
+	--clr-neutral-900: #222;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html {
+	background-color: var(--clr-primary-100);
+}
+
+body {
+	display: grid;
+	min-height: 100vh;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width: min(95vw, 1240px);
+	margin-inline: auto;
+	margin-top: 5rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-primary-900);
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.primary-navigation {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.primary-navigation a {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown span {
+	display: inline-flex;
+	align-items: center;
+}
+
+.dropdown .icon-tabler {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content {
+	display: flex;
+}
+
+.dropdown:hover a {
+	font-weight: 700;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 2rem;
+	z-index: 1;
+	background-color: var(--clr-neutral-100);
+	border-radius: 0.12rem;
+	box-shadow: var(--shadow-2);
+	padding: 2rem;
+	width: min(95vw, 450px);
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.dropdown-card {
+	display: grid;
+	grid-template-columns: repeat(2rem, 1fr);
+	grid-template-areas: 'icon text';
+	gap: 1rem;
+}
+
+.dropdown-card .icon-tabler {
+	stroke: var(--clr-primary-500);
+	width: 2rem;
+	height: 2rem;
+	grid-area: icon;
+}
+
+.dropdown-text p:first-of-type {
+	grid-area: text;
+	font-weight: 700;
+	font-size: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+@media (max-width: 30em) {
+	.primary-navigation {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.dropdown-content {
+		max-width: 95vw;
+		margin-right: 1rem;
+	}
+}
