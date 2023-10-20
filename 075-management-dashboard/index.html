@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Management Dashboard</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<section class="container">
+			<!-- Header -->
+			<header>
+				<div class="wrapper">
+					<button type="button">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-search"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+							<path d="M21 21l-6 -6" />
+						</svg>
+					</button>
+					<input type="search" name="search" id="search" placeholder="Search" />
+				</div>
+				<div class="text-elements">
+					<p class="icon-container">
+						<span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-mail"
+								width="44"
+								height="44"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#2c3e50"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path
+									d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+								/>
+								<path d="M3 7l9 6l9 -6" />
+							</svg>
+						</span>
+						<span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-bell"
+								width="44"
+								height="44"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#2c3e50"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path
+									d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"
+								/>
+								<path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+							</svg>
+						</span>
+					</p>
+					<div class="current-date">
+						<p class="fs-800" id="current-time">17:30</p>
+						<p id="current-day">18 august</p>
+					</div>
+				</div>
+			</header>
+			<!-- Sidebar Navigation -->
+			<div class="sidebar">
+				<p class="logo">S</p>
+				<nav>
+					<ul class="primary-navigation">
+						<li>
+							<a href="">
+								<p>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-activity-heartbeat"
+											width="44"
+											height="44"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#2c3e50"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<path d="M3 12h4.5l1.5 -6l4 12l2 -9l1.5 3h4.5" />
+										</svg> </span
+									><span class="hide-on-mobile">Dashboard</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-folder"
+											width="44"
+											height="44"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#2c3e50"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"
+											/>
+										</svg> </span
+									><span class="hide-on-mobile">Folders</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-cards"
+											width="44"
+											height="44"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#2c3e50"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M3.604 7.197l7.138 -3.109a.96 .96 0 0 1 1.27 .527l4.924 11.902a1 1 0 0 1 -.514 1.304l-7.137 3.109a.96 .96 0 0 1 -1.271 -.527l-4.924 -11.903a1 1 0 0 1 .514 -1.304z"
+											/>
+											<path d="M15 4h1a1 1 0 0 1 1 1v3.5" />
+											<path
+												d="M20 6c.264 .112 .52 .217 .768 .315a1 1 0 0 1 .53 1.311l-2.298 5.374"
+											/>
+										</svg> </span
+									><span class="hide-on-mobile">Projects</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-clipboard-check"
+											width="44"
+											height="44"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#2c3e50"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+											/>
+											<path
+												d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+											/>
+											<path d="M9 14l2 2l4 -4" />
+										</svg> </span
+									><span class="hide-on-mobile">Tasks</span>
+								</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<p>
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="icon icon-tabler icon-tabler-settings"
+											width="44"
+											height="44"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="#2c3e50"
+											fill="none"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+											/>
+											<path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+										</svg> </span
+									><span class="hide-on-mobile">Settings</span>
+								</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<button type="button" class="user-details">
+					<img
+						src="../000-profile-pictures/pexels-kebs-visuals-3992656.jpg"
+						alt="Devin Lee"
+						class="img img-avatar"
+					/>
+					<p class="show-on-desktop">Devin Lee</p>
+					<a href="#" data-chevron class="show-on-desktop">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-chevron-right"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M9 6l6 6l-6 6" />
+						</svg>
+					</a>
+				</button>
+			</div>
+
+			<!-- Tasks -->
+			<section class="tasks">
+				<h3>Your tasks</h3>
+				<section class="tasks-container">
+					<div class="task-card" data-unfinished>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-check"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M5 12l5 5l10 -10" />
+						</svg>
+						<div class="task-card__text">
+							<p>Better quality favicon</p>
+							<p class="tag" data-design>Design</p>
+						</div>
+					</div>
+					<div class="task-card" data-unfinished>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-check"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M5 12l5 5l10 -10" />
+						</svg>
+						<div class="task-card__text">
+							<p>Social accounts setup</p>
+							<p class="tag" data-marketing>Marketing</p>
+							<p class="additional-info">
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="icon icon-tabler icon-tabler-clock-hour-5"
+										width="44"
+										height="44"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="#2c3e50"
+										fill="none"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+										<path d="M12 12l2 3" />
+										<path d="M12 7v5" />
+									</svg>
+								</span>
+								12:30
+							</p>
+						</div>
+					</div>
+					<div class="task-card" data-finished>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-check"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M5 12l5 5l10 -10" />
+						</svg>
+						<div class="task-card__text">
+							<p>Upgrade plan page</p>
+							<p class="tag" data-development>Development</p>
+							<p class="additional-info">
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="icon icon-tabler icon-tabler-clock-hour-5"
+										width="44"
+										height="44"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="#2c3e50"
+										fill="none"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+										<path d="M12 12l2 3" />
+										<path d="M12 7v5" />
+									</svg> </span
+								>14:30
+							</p>
+						</div>
+					</div>
+					<div class="task-card" data-finished>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-check"
+							width="44"
+							height="44"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M5 12l5 5l10 -10" />
+						</svg>
+						<div class="task-card__text">
+							<p>Email templates</p>
+							<p class="tag" data-design>Design</p>
+							<p class="additional-info">
+								<span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="icon icon-tabler icon-tabler-paperclip"
+										width="44"
+										height="44"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="#2c3e50"
+										fill="none"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path
+											d="M15 7l-6.5 6.5a1.5 1.5 0 0 0 3 3l6.5 -6.5a3 3 0 0 0 -6 -6l-6.5 6.5a4.5 4.5 0 0 0 9 9l6.5 -6.5"
+										/>
+									</svg>
+								</span>
+								6
+							</p>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Folders -->
+			<section class="folders">
+				<h3>recent folders</h3>
+				<div class="folders-container">
+					<div class="folder-card" data-updated="false">
+						<img
+							src="images/blue-folder.svg"
+							class="img svg"
+							alt="Blue Folder"
+						/>
+						<p class="fw-700">Invoices</p>
+					</div>
+					<div class="folder-card" data-updated="true">
+						<img
+							src="images/blue-folder.svg"
+							class="img svg"
+							alt="Blue Folder"
+						/>
+						<p class="fw-700">Customers</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Projects -->
+			<section class="projects">
+				<h3>projects</h3>
+				<div class="projects-container">
+					<div class="project-card">
+						<p class="project-card__abr">S</p>
+						<div class="text-details">
+							<p class="project-card__name">Sintex</p>
+							<p class="completed-tasks"></p>
+							<p class="completed-tasks__numbers">26/47</p>
+						</div>
+					</div>
+					<div class="project-card">
+						<p class="project-card__abr">T</p>
+						<div class="text-details">
+							<p class="project-card__name">Tetrion</p>
+							<p class="completed-tasks"></p>
+							<p class="completed-tasks__numbers">7/21</p>
+						</div>
+					</div>
+					<div class="project-card">
+						<p class="project-card__abr">P</p>
+						<div class="text-details">
+							<p class="project-card__name">Petron</p>
+							<p class="completed-tasks"></p>
+							<p class="completed-tasks__numbers">14/16</p>
+						</div>
+					</div>
+					<button type="button" class="project-card add-new">
+						<p class="fs-900">+</p>
+						<p class="fs-300">Add new</p>
+					</button>
+				</div>
+			</section>
+		</section>
+	</body>
+</html>

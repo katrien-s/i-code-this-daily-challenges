@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 75](#challenge-75)
   - [Challenge 74](#challenge-74)
   - [Challenge 73](#challenge-73)
   - [Challenge 72](#challenge-72)
@@ -53,6 +54,20 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 75
+
+![](screenshots/075-management-dashboard.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/075-management-dashboard)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/075-management-dashboard)
+
+**Continued Development**
+
+- Have the page take up all the height
+- Add the menu-bar on mobile view
+
+---
 
 ### Challenge 74
 
