@@ -44,7 +44,7 @@ html {
 
 body {
 	display: grid;
-  place-items: start;
+	place-items: start;
 	place-items: center;
 	font-weight: 400;
 	line-height: 1.5;
@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  margin-inline: auto;
+	margin-inline: auto;
 	padding: 1rem;
 	width: min(95vw, 1240px);
 }
@@ -112,7 +112,7 @@ header {
 }
 
 header .wrapper {
-	width: 280px;
+	/* width: 280px; */
 	max-width: 100%;
 	position: relative;
 }
@@ -542,13 +542,16 @@ header .text-elements {
 		flex-direction: column-reverse;
 	}
 
+    header .wrapper {
+    width: 100%;
+  }
+
 	header .text-elements {
 		width: 100%;
 		margin-bottom: 1rem;
 	}
 
 	.sidebar {
-		display: none;
 		align-items: center;
 		padding: 0.25rem;
 		width: 66px;
@@ -567,6 +570,15 @@ header .text-elements {
 	.sidebar .show-on-desktop {
 		display: none;
 	}
+}
+
+@media (max-width: 40em) {
+	.sidebar {
+		display: none;
+	}
+
+
+
 }
 
 /* Buttons */
