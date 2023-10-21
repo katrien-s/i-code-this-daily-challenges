@@ -1,0 +1,238 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-primary-100: #f9fafe;
+	--clr-primary-400: #3456dd;
+	--clr-primary-500: #355adc;
+	--clr-primary-800: #191c38;
+	--clr-primary-900: #0e0e0e;
+
+	/* rest of colors */
+	--clr-neutral-100: #fff;
+	--clr-neutral-900: #16162d;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html {
+	background-color: var(--clr-primary-800);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--clr-neutral-100);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	width: min(95vw, 1240px);
+	margin-inline: auto;
+	margin-block: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	margin-bottom: 1.25rem;
+	font-weight: 700;
+	line-height: 1.2;
+	text-wrap: balance;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 2rem;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 40ch;
+	margin-bottom: 4rem;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 1rem;
+	max-width: 850px;
+}
+
+section {
+	background-color: var(--clr-neutral-100);
+	border-radius: 0.5rem;
+	color: var(--clr-neutral-900);
+	padding: 3rem 2rem 1.5rem 2rem;
+}
+
+.pricing-container li {
+	padding-block: 1.5rem;
+}
+
+.pricing-container li:first-of-type {
+	border-bottom: 2px solid var(--clr-primary-100);
+}
+
+.pricing-container {
+	position: relative;
+}
+
+.offer-container {
+	transition: all ease-in 0.3s;
+	padding-bottom: 3rem;
+	position: relative;
+}
+
+.pricing-container::after,
+.offer-container::after {
+	content: '';
+	border-radius: 100%;
+	background-color: var(--clr-primary-400);
+	z-index: -1;
+	position: absolute;
+}
+
+@media (max-width: 32em) {
+	.offer-container::after {
+		width: 200px;
+		height: 200px;
+		left: -50px;
+		bottom: -75px;
+	}
+
+	.pricing-container::after {
+		width: 450px;
+		height: 450px;
+		top: -150px;
+		right: -150px;
+	}
+}
+
+@media (min-width: 32em) {
+	.pricing-container::after {
+		width: 200px;
+		height: 200px;
+		left: -50px;
+		bottom: -75px;
+	}
+
+	.offer-container::after {
+		width: 450px;
+		height: 450px;
+		top: -150px;
+		right: -150px;
+	}
+}
+
+.offer-container li {
+	display: flex;
+	align-items: start;
+	gap: 0.5rem;
+	padding: 1rem;
+	border-radius: 0.25rem;
+	transition: all ease-in 0.2s;
+	margin-left: -1rem;
+}
+
+.offer-container .icon-tabler {
+	stroke: var(--clr-primary-900);
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.svg-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 1;
+	background-color: var(--clr-primary-100);
+	border-radius: 100%;
+	padding: 0.12rem;
+}
+
+.offer-container li:hover {
+	color: var(--clr-primary-400);
+	background-color: var(--clr-primary-100);
+}
+
+.offer-container li:hover .icon-tabler {
+	stroke: var(--clr-primary-400);
+}
+
+@media (min-width: 40em) {
+	main {
+		grid-template-rows: repeat(2, auto);
+	}
+
+	.pricing-container {
+		grid-row: 1/2;
+	}
+
+	.offer-container {
+		grid-row: 1/-1;
+	}
+}
+
+/* Buttons */
+.btn {
+	cursor: pointer;
+	color: var(--clr-neutral-100);
+	background: var(--clr-primary-500);
+	border: transparent;
+	border-radius: 50vw;
+	padding: 0.75rem 1.75rem;
+	box-shadow: var(--shadow-1);
+	text-transform: capitalize;
+	display: inline-block;
+	margin-top: 1.5rem;
+	font-size: 0.9rem;
+	transition: all ease-in 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+	background: var(--clr-primary-900);
+	box-shadow: var(--shadow-3);
+}
+
+/* Utility */
+
+.fw-700 {
+	font-weight: 700;
+}
