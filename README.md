@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 78](#challenge-78)
   - [Challenge 77](#challenge-77)
   - [Challenge 76](#challenge-76)
   - [Challenge 75](#challenge-75)
@@ -56,6 +57,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 77
+
+![](screenshots/078-promo-section.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/078-promo-section)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/078-promo-section)
+
+---
 
 ### Challenge 77
 
