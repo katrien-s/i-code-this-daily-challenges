@@ -58,7 +58,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 77
+### Challenge 78
 
 ![](screenshots/078-promo-section.jpg)
 
