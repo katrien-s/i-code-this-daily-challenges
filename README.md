@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 79](#challenge-79)
   - [Challenge 78](#challenge-78)
   - [Challenge 77](#challenge-77)
   - [Challenge 76](#challenge-76)
@@ -57,6 +58,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 79
+
+![](screenshots/079-timeline.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/079-timeline)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/079-timeline)
+
+---
 
 ### Challenge 78
 
