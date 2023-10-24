@@ -59,6 +59,19 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 80
+
+![](screenshots/080-message-box.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/080-message-box)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/080-message-box)
+
+**Continued Development**
+
+- Form Validation JS
+
+---
+
 ### Challenge 79
 
 ![](screenshots/079-timeline.jpg)

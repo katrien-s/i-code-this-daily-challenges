@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Message Box</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="container" id="form-container">
+			<div class="toggle-container">
+				<h3>Send us a message</h3>
+				<button class="btn" type="button" data-close>X</button>
+			</div>
+			<form action="" class="form-control">
+				<label for="firstname">your name</label>
+				<input type="text" name="firstname" id="firstname" required />
+				<label for="emailaddress">email address</label>
+				<input type="email" name="emailaddress" id="emailaddress" required />
+				<label for="message">what can we do for you?</label>
+				<textarea
+					name="message"
+					id="message"
+					rows="5"
+					placeholder="Type your message here"
+				></textarea>
+				<label for="file-upload">attachments</label>
+        <input type="file" name="file-upload" id="file-upload" />
+				<button class="btn" type="submit" data-form>send message</button>
+			</form>
+		</main>
+		<button class="btn" id="open-form">Send us a message</button>
+	</body>
+</html>
