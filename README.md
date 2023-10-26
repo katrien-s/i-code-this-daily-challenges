@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 82](#challenge-82)
   - [Challenge 81](#challenge-81)
   - [Challenge 80](#challenge-80)
   - [Challenge 79](#challenge-79)
@@ -60,6 +61,19 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 81
+
+![](screenshots/082-profile-dropdown.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/082-profile-dropdown)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/082-profile-dropdown)
+
+**Useful Resources**
+
+- [`transform-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+
+---
 
 ### Challenge 81
 
