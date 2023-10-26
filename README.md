@@ -62,7 +62,7 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 81
+### Challenge 82
 
 ![](screenshots/082-profile-dropdown.jpg)
 
