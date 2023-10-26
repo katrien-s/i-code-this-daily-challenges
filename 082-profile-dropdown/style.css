@@ -229,7 +229,7 @@ ul {
 
 .btn[data-plus] svg {
 	width: 35px;
-	height: 53px;
+	height: 35px;
 	stroke-width: 2px;
 	stroke: var(--clr-primary-100);
 }
