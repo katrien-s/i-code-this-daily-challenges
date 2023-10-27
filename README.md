@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 83](#challenge-83)
   - [Challenge 82](#challenge-82)
   - [Challenge 81](#challenge-81)
   - [Challenge 80](#challenge-80)
@@ -61,6 +62,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 83
+
+![](screenshots/083-pro-profile.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/083-pro-profile)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/083-pro-profile)
+
+---
 
 ### Challenge 82
 
