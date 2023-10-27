@@ -191,12 +191,22 @@ ul {
 	margin-block: 1.5rem;
 }
 
+@media (max-width: 18em) {
+	.button-container {
+		flex-direction: column;
+	}
+
+	.btn {
+		width: 135px;
+	}
+}
+
 /* Buttons */
 .btn {
 	cursor: pointer;
 	color: var(--clr-neutral-100);
 	background: var(--clr-accent-01);
-	border: 1px solid transparent;
+	border: 1px solid var(--clr-accent-01);
 	border-radius: 0.25rem;
 	letter-spacing: 0.03rem;
 	padding: 0.75rem 1.75rem;
