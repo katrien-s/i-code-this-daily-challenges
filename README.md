@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 84](#challenge-84)
   - [Challenge 83](#challenge-83)
   - [Challenge 82](#challenge-82)
   - [Challenge 81](#challenge-81)
@@ -62,6 +63,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 84
+
+![](screenshots/084-settings-modal.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/084-settings-modal)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/084-settings-modal)
+
+---
 
 ### Challenge 83
 

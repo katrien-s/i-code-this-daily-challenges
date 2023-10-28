@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Settings Modal</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="wrapper">
+			<div class="close-modal-container">
+				<button class="btn close-modal" type="button">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-x"
+						width="44"
+						height="44"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="#2c3e50"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M18 6l-12 12" />
+						<path d="M6 6l12 12" />
+					</svg>
+				</button>
+				<p>close</p>
+			</div>
+			<section class="settings-container">
+				<h1>Settings</h1>
+				<div class="select-container">
+					<h4>Language</h4>
+					<p>
+						Let us know which language you're most comfortable using. You can
+						change it back any time.
+					</p>
+					<select name="language-selection" id="language-selection">
+						<option value="english">English</option>
+						<option value="french">Français</option>
+						<option value="dutch">Nederlands</option>
+					</select>
+				</div>
+				<div class="options-container">
+					<div class="option">
+						<div>
+							<h4>Autoplay videos</h4>
+							<p>Choose if you want to autoplay on your browser</p>
+						</div>
+						<label for="autoplay_videos" class="switch">
+							<input
+								type="checkbox"
+								name="autoplay_videos"
+								id="autoplay_videos"
+							/>
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div class="option">
+						<div>
+							<h4>Show profile photos</h4>
+							<p>
+								Choose whether to show or hide profile photos of other members
+							</p>
+						</div>
+						<label for="show_photos" class="switch">
+							<input type="checkbox" name="show_photos" id="show_photos" />
+							<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+				<div class="button-container">
+					<button type="button" class="btn" data-save>Save</button>
+					<button type="button" class="btn" data-cancel>Cancel</button>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
