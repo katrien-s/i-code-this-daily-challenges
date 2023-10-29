@@ -490,6 +490,15 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ---
 
+### Challenge 15
+
+![](screenshots/015-order-placed-02.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/015-order-placed-02)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/015-order-placed-02)
+
+---
+
 ### Challenge 14
 
 ![](screenshots/014-order-placed-01.jpg)
