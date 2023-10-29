@@ -49,12 +49,12 @@ body {
 
 .wrapper {
 	width: min(95vw, 1100px);
-	padding: 2rem;
+	padding: 2rem 3rem;
 	margin-inline: auto;
 	background-color: var(--clr-neutral-700);
 }
 
-@media (min-width: 21em) {
+@media (max-width: 21em) {
 	.wrapper {
 		padding-inline: 1rem;
 	}
