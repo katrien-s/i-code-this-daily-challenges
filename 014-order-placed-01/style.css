@@ -24,28 +24,36 @@
 }
 
 /* Global Styles */
-html,
-body {
-	height: 100%;
-}
-
 html {
 	background-color: var(--primary-800);
 }
 
 body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
 	font-family: 'Instrument Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.5;
 	color: var(--primary-100);
-	display: grid;
-	place-items: center;
+}
+
+@media (max-width: 20em) {
+	body {
+		font-size: 0.9rem;
+	}
+}
+
+.wrapper {
+	width: min(95vw, 700px);
+	background-color: var(--primary-900);
+	padding-block: 3em;
 }
 
 .container {
-	background-color: var(--primary-900);
-	padding: 3em 8em;
+	width: 80%;
+	margin-inline: auto;
 }
 
 p {
@@ -64,6 +72,7 @@ p {
 	letter-spacing: 1.2px;
 	margin-bottom: 1.5rem;
 	display: inline-block;
+	text-align: center;
 }
 
 .countdown {
@@ -75,7 +84,7 @@ p {
 
 .text-container {
 	background-color: var(--primary-700);
-	padding: 2em 3em;
+	padding: 0.75em 1.25em;
 }
 
 .text-container p:first-of-type {
@@ -87,7 +96,7 @@ p {
 }
 
 .text-container[data-size='small'] {
-	padding: 1em 3em;
+	padding: 1em 1.25em;
 	margin: 1em 0;
 }
 
@@ -101,4 +110,11 @@ i {
 
 p em {
 	font-style: italic;
+}
+
+@media (min-width: 30em) {
+	.text-container,
+	.text-container[data-size='small'] {
+		padding: 2em 3em;
+	}
 }

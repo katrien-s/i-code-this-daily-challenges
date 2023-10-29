@@ -45,6 +45,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
   - [Challenge 50](#challenge-50)
   - [Challenge 49](#challenge-49)
   - [Challenge 48](#challenge-48)
+  - [Challenge 14](#challenge-14)
   - [Challenge 06](#challenge-06)
   - [Challenge 05](#challenge-05)
   - [Challenge 01](#challenge-01)
@@ -486,6 +487,15 @@ Unless noted otherwise, the building of the exercises is done with:
 **Useful Resources**
 
 - [Shared by an I Code This User](https://icodethis.com/code/630) - Example of how to build a slider
+
+---
+
+### Challenge 14
+
+![](screenshots/014-order-placed-01.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/014-order-placed-01)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/014-order-placed-01)
 
 ---
 
