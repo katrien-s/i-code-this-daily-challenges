@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 85](#challenge-85)
   - [Challenge 84](#challenge-84)
   - [Challenge 83](#challenge-83)
   - [Challenge 82](#challenge-82)
@@ -63,6 +64,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 84
+
+![](screenshots/085-trees-community.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/085-trees-community)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/085-trees-community)
+
+---
 
 ### Challenge 84
 
