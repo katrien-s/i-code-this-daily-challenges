@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Creative Dropdown</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<main class="wrapper">
+			<form class="form-container">
+				<p class="tt-uppercase fw-600">object type</p>
+				<select name="object-type-1" id="object-type-1">
+					<option value="select-type" disabled>Select an object type</option>
+				</select>
+			</form>
+			<form class="form-container">
+				<p class="tt-uppercase fw-600">object type</p>
+				<select name="object-type-2" id="object-type-1">
+					<option value="select-type">Select an object type</option>
+				</select>
+				<div class="selection-card no-content">
+					<div class="padding-inline">
+						<img src="molecule.svg" alt="" />
+						<p class="tt-uppercase fw-600 margin-bottom-16">
+							No object types in here yet
+						</p>
+						<p class="clr-neutral-300">
+							The object types that you'll create will appear here
+						</p>
+					</div>
+					<button class="btn" type="button">
+						<span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-plus"
+								width="44"
+								height="44"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#2c3e50"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M12 5l0 14" />
+								<path d="M5 12l14 0" />
+							</svg>
+						</span>
+						Create an Object Type
+					</button>
+				</div>
+			</form>
+			<form class="form-container">
+				<p class="tt-uppercase fw-600">object type</p>
+				<select name="object-type-3" id="object-type-1">
+					<option value="select-type" disabled>Select an object type</option>
+				</select>
+				<div class="selection-card content">
+					<ul>
+						<li value="person">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-user icon-inside"
+									width="44"
+									height="44"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#2c3e50"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+									<path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+								</svg>
+							</span>
+							person
+						</li>
+						<li value="book">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-book icon-inside"
+									width="44"
+									height="44"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#2c3e50"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+									<path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+									<path d="M3 6l0 13" />
+									<path d="M12 6l0 13" />
+									<path d="M21 6l0 13" />
+								</svg>
+							</span>
+							book
+						</li>
+						<li value="exercise">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-barbell icon-inside"
+									width="44"
+									height="44"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#2c3e50"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<path d="M2 12h1" />
+									<path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2" />
+									<path
+										d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"
+									/>
+									<path d="M9 12h6" />
+									<path
+										d="M15 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"
+									/>
+									<path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2" />
+									<path d="M22 12h-1" />
+								</svg>
+							</span>
+							exercise
+						</li>
+						<li value="income">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-coins icon-inside"
+									width="44"
+									height="44"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#2c3e50"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<path
+										d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z"
+									/>
+									<path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" />
+									<path
+										d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z"
+									/>
+									<path d="M3 6v10c0 .888 .772 1.45 2 2" />
+									<path d="M3 11c0 .888 .772 1.45 2 2" />
+								</svg>
+							</span>
+							income
+						</li>
+						<li value="expense">
+							<span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="icon icon-tabler icon-tabler-receipt-tax icon-inside"
+									width="44"
+									height="44"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="#2c3e50"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<path d="M9 14l6 -6" />
+									<circle cx="9.5" cy="8.5" r=".5" fill="currentColor" />
+									<circle cx="14.5" cy="13.5" r=".5" fill="currentColor" />
+									<path
+										d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"
+									/>
+								</svg>
+							</span>
+							expense
+						</li>
+					</ul>
+					<button class="btn" type="button">
+						<span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-plus"
+								width="44"
+								height="44"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#2c3e50"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M12 5l0 14" />
+								<path d="M5 12l14 0" />
+							</svg>
+						</span>
+						Create an Object Type
+					</button>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>

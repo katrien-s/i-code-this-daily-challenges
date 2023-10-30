@@ -490,6 +490,24 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ---
 
+### Challenge 17
+
+![](screenshots/017-subscribe.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/017-subscribe)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/017-subscribe)
+
+---
+
+### Challenge 16
+
+![](screenshots/016-sign-in-form.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/016-sign-in-form)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/016-sign-in-form)
+
+---
+
 ### Challenge 15
 
 ![](screenshots/015-order-placed-02.jpg)
