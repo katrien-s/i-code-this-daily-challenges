@@ -7,6 +7,8 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 87](#challenge-87)
+  - [Challenge 86](#challenge-86)
   - [Challenge 85](#challenge-85)
   - [Challenge 84](#challenge-84)
   - [Challenge 83](#challenge-83)
@@ -66,7 +68,25 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
-### Challenge 84
+### Challenge 87
+
+![](screenshots/087-halloween.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/087-halloween)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/087-halloween)
+
+---
+
+### Challenge 86
+
+![](screenshots/086-creative-dropdown.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/086-creative-dropdown)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/086-creative-dropdown)
+
+---
+
+### Challenge 85
 
 ![](screenshots/085-trees-community.jpg)
 
