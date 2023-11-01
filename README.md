@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 88](#challenge-88)
   - [Challenge 87](#challenge-87)
   - [Challenge 86](#challenge-86)
   - [Challenge 85](#challenge-85)
@@ -67,6 +68,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 88
+
+![](screenshots/088-onboarding.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/088-onboarding)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/088-onboarding)
+
+---
 
 ### Challenge 87
 
