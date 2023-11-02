@@ -1,0 +1,129 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	--clr-neutral-100: #eeecf1;
+	--clr-neutral-400: #929ea5;
+	--clr-neutral-500: #a8acad;
+	--clr-neutral-600: #3e535d;
+	--clr-neutral-700: #36474e;
+	--clr-neutral-800: #303c41;
+	--clr-neutral-900: #232e32;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	--ff-details: 'PT Sans Narrow', sans-serif;
+	--ff-post: 'Poppins', sans-serif;
+}
+
+/* Global Styles */
+html {
+	background-color: var(--clr-neutral-500);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-family: var(--ff-post);
+	color: var(--clr-neutral-100);
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.wrapper {
+	max-width: 400px;
+	box-shadow: var(--shadow-3);
+}
+
+.img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.card {
+	background-color: var(--clr-neutral-800);
+	padding: 2rem;
+}
+
+.card .img {
+	margin-bottom: 1.5rem;
+}
+
+.card-details {
+	font-family: var(--ff-details);
+	background-color: var(--clr-neutral-700);
+	color: var(--clr-neutral-400);
+	padding: 1.5rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all ease 0.5s;
+}
+
+.card-text-title {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.2rem;
+	line-height: 1.2;
+	text-wrap: balance;
+}
+
+.card-text-author {
+	color: var(--clr-neutral-400);
+	display: flex;
+	justify-content: space-between;
+	padding-block: 0.25rem;
+	font-size: 0.975rem;
+}
+
+.card-text-author span {
+	background-color: var(--clr-neutral-900);
+	padding: 0.25rem 0.5rem;
+	border-radius: 50vw;
+	display: inline-block;
+	font-size: 0.875rem;
+}
+
+.card-text-body {
+	font-size: 0.975rem;
+}
+
+.card-detail {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	cursor: pointer;
+}
+
+.card-detail svg {
+	stroke: var(--clr-neutral-400);
+	width: 1.5rem;
+}
+
+.card-detail:hover,
+.card-detail:active {
+	color: var(--clr-neutral-100);
+}
+
+.card-detail:hover svg,
+.card-detail:active svg {
+	stroke: var(--clr-neutral-100);
+}

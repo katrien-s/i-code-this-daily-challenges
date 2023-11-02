@@ -7,6 +7,7 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 89](#challenge-89)
   - [Challenge 88](#challenge-88)
   - [Challenge 87](#challenge-87)
   - [Challenge 86](#challenge-86)
@@ -68,6 +69,15 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 89
+
+![](screenshots/089-post-card.jpg)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/089-post-card)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/089-post-card)
+
+---
 
 ### Challenge 88
 
