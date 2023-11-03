@@ -70,6 +70,19 @@ Unless noted otherwise, the building of the exercises is done with:
 
 ## Challenges
 
+### Challenge 90
+
+![](screenshots/090-pricing-crop)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/090-pricing-crop)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/090-pricing-crop)
+
+**Useful Resources**
+
+- [Create A Simple Pricing Card in HTML and CSS w/Ribbon](https://www.codingnepalweb.com/create-simple-pricing-card-html-css/) Used this resource for the CSS-code for the ribbon.
+
+---
+
 ### Challenge 89
 
 ![](screenshots/089-post-card.jpg)
