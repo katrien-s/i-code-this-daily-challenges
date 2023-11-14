@@ -163,14 +163,15 @@ p:not(.secondary-container p) {
 	color: var(--clr-primary-800);
 }
 
-.modal-open-btn {
+#modal-open-btn {
 	display: none;
 }
 
 .btn {
+	cursor: pointer;
 	background-color: var(--clr-primary-200);
 	border: none;
-	border-radius: 15px;
+	border-radius: 1rem;
 	padding: 0.375rem 0.75rem;
 }
 
