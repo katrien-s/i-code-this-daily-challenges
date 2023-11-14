@@ -52,7 +52,7 @@ body {
 	text-align: center;
 	color: var(--primary-color-3);
 	display: grid;
-	align-items: center;
+	place-items: center;
 }
 
 h2,
@@ -99,8 +99,9 @@ ul {
 
 .service-cards {
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(max(200px, 350px), 1fr));
 	gap: 1.5rem;
-	margin: 0 auto;
+	outline: 1px solid green;
 }
 
 .service-card {
@@ -142,11 +143,6 @@ ul {
 @media (min-width: 30em) {
 	.intro-text {
 		max-width: 38rem;
-	}
-
-	.service-cards {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.service-card {
