@@ -7,6 +7,8 @@ This is a growing collection of challenges solved for the platform [I Code This]
 - [Intro](#intro)
 - [Challenges](#challenges)
 
+  - [Challenge 91](#challenge-91)
+  - [Challenge 90](#challenge-90)
   - [Challenge 89](#challenge-89)
   - [Challenge 88](#challenge-88)
   - [Challenge 87](#challenge-87)
@@ -69,6 +71,13 @@ Unless noted otherwise, the building of the exercises is done with:
 - Vanilla JS
 
 ## Challenges
+
+### Challenge 91
+
+![](screenshots/091-blue-cards)
+
+- [Code URL](https://github.com/graficdoctor/i-code-this-daily-challenges/tree/main/091-blue-cards)
+- [Live URL](https://graficdoctor.github.io/i-code-this-daily-challenges/091-blue-cards)
 
 ### Challenge 90
 

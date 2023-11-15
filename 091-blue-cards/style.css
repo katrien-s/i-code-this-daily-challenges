@@ -1,0 +1,162 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--clr-bg-color: #2f3651;
+	--clr-accent-color: #4465e2;
+	--clr-btn-color: #6483f6;
+	--clr-text-color: #fff9ff;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+html {
+	background-color: var(--clr-bg-color);
+}
+
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-family: 'Raleway', sans-serif;
+	color: var(--clr-text-color);
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+section {
+	width: min(95vw, 900px);
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		'places'
+		'address'
+		'diary';
+}
+
+@media (min-width: 40em) {
+	section {
+		grid-template-columns: 1fr 1fr;
+		gap: 2.5rem;
+		grid-template-areas:
+			'places diary'
+			'address diary';
+	}
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+	line-height: 1.3;
+	text-wrap: balance;
+	text-transform: capitalize;
+}
+
+a {
+	display: flex;
+	align-items: start;
+	gap: 0.5rem;
+	color: var(--clr-text-color);
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+.img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+article {
+	background-color: var(--clr-accent-color);
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+@media (min-width: 35em) {
+	article {
+		padding: 2.5rem;
+	}
+}
+
+article:nth-of-type(1) {
+	grid-area: places;
+	display: flex;
+	align-items: center;
+}
+
+article:nth-of-type(1) a {
+	align-self: center;
+}
+
+article:nth-of-type(1) a svg {
+	cursor: pointer;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+article:nth-of-type(2) {
+	grid-area: address;
+	display: flex;
+  flex-direction: column;
+	align-items: start;
+  justify-content: center;
+}
+
+article:nth-of-type(3) {
+	grid-area: diary;
+}
+
+.article-img {
+	margin-bottom: 1rem;
+}
+
+.article-img img {
+	width: 100%;
+	height: 225px;
+	border-radius: 0.5rem;
+}
+
+/* Buttons */
+
+.btn {
+	cursor: pointer;
+	color: var(--clr-text-color);
+	background: var(--clr-btn-color);
+	border: transparent;
+	border-radius: 0.25rem;
+	padding: 0.5rem 1.5rem;
+	box-shadow: var(--shadow-3);
+	transition: all ease 0.3s;
+	display: inline-block;
+	margin-top: 0.75rem;
+}
+
+.btn:hover,
+.btn:focus {
+	background: var(--clr-text-color);
+	color: var(--clr-accent-color);
+}
