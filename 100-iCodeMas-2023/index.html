@@ -4,18 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>iCodeMas</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="style.css" />
-		<script src="app.js" defer></script>
 	</head>
 	<body>
-		<section class="card-container">
+		<section class="cards">
 			<div class="card">
 				<img src="" alt="" />
 				<a href="./html/icodemas01.html" target="_blank">iCodeMas 01</a>
@@ -29,12 +27,16 @@
 				<a href="./html/icodemas03.html" target="_blank">iCodeMas 03</a>
 			</div>
 			<div class="card">
-				<img
-					src="./assets/images/icodemas04.jpg"
-					alt="Sparkling Gold Christmas presents background"
-          class="img"
-				/>
-				<a href="./html/icodemas04.html" target="_blank">iCodeMas 04</a>
+				<picture class="thumbnail">
+					<img
+						src="./assets/images/icodemas04.jpg"
+						alt="Sparkling Gold Christmas presents background"
+						class="img"
+					/>
+				</picture>
+				<div class="card-content">
+					<a href="./html/icodemas04.html" target="_blank">iCodeMas 04</a>
+				</div>
 			</div>
 			<div class="card">
 				<img src="" alt="" />
