@@ -3,20 +3,43 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>iCodeMas #02</title>
+		<title>iCodeMas #09</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/assets/css/style09.css" />
+    <script src="/assets/js/app09.js" defer></script>
 	</head>
 	<body>
-		<!-- Challenge 02 - images 
-https://icodethis.com/images/iCodeMas/tree.png
-https://icodethis.com/images/iCodeMas/gift.png
-https://icodethis.com/images/iCodeMas/gingerbread_cookie.png
--->
+		<ul class="custom-dropdown" id="custom-dropdown">
+			<li class="selected-option">
+				<span class="selected-text">Most recent</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-chevron-down"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M6 9l6 6l6 -6" />
+					</svg>
+			</li>
+			<ul class="dropdown-options">
+				<li class="dropdown-option">Recommended</li>
+				<li class="dropdown-option">Popular</li>
+				<li class="dropdown-option">Price low to high</li>
+				<li class="dropdown-option">Price high to low</li>
+				<li class="dropdown-option">Sales</li>
+			</ul>
+		</ul>
 	</body>
 </html>
