@@ -3,20 +3,81 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>iCodeMas #02</title>
+		<title>iCodeMas #11</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../assets/css/style11.css" />
+		<script src="../assets/js/app11.js" defer></script>
 	</head>
 	<body>
-		<!-- Challenge 02 - images 
-https://icodethis.com/images/iCodeMas/tree.png
-https://icodethis.com/images/iCodeMas/gift.png
-https://icodethis.com/images/iCodeMas/gingerbread_cookie.png
--->
+		<div class="container gift-container">
+			<div class="close-btn-container">
+				<button class="close-btn btn" id="close-btn">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-x"
+						width="25"
+						height="25"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="#2c3e50"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M18 6l-12 12" />
+						<path d="M6 6l12 12" />
+					</svg>
+				</button>
+			</div>
+			<div class="text-container">
+				<h4>Gift the joy of choice</h4>
+				<p class="clr-mako">
+					Show them you care with a gift they'll love. With an online gift card,
+					they can choose fromt a wide selection of products.
+				</p>
+			</div>
+			<div class="gift-list-container">
+				<div class="selected-gift">
+					<button class="btn updown-btn" id="gift-subtract">-</button>
+					<input type="text" id="gift-amount" placeholder="$25" readonly />
+					<button class="btn updown-btn" id="gift-add">+</button>
+				</div>
+				<ul class="gift-list">
+					<li class="gift-item" data-value="25">$25</li>
+					<li class="gift-item" data-value="50">$50</li>
+					<li class="gift-item" data-value="75">$75</li>
+					<li class="gift-item" data-value="100">$100</li>
+					<li class="gift-item" data-value="200">$200</li>
+					<li class="gift-item" data-value="300">$300</li>
+				</ul>
+				<button class="btn primary-btn">
+					<span>Add to cart</span>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-shopping-bag"
+						width="25"
+						height="25"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="#fff"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path
+							d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
+						/>
+						<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+					</svg>
+				</button>
+			</div>
+		</div>
 	</body>
 </html>

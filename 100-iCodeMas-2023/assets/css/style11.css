@@ -1,0 +1,231 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--white-100: #ffffff;
+	--white-200: #fdfdfd;
+	--gallery: #eeeeee;
+	--aqua-haze: #eff3f6;
+	--catskill-white: #f9fbfc;
+	--athens-gray: #e5e8ee;
+	--santas-gray: #a5a5b6;
+	--mako: #44474e;
+	--shark: #1a1e23;
+
+	--mandy: #e65952;
+	--jelly-bean: #267493;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* --ff-serif: ; */
+	--ff-sans-serif: 'Inter', sans-serif;
+}
+
+/* Global Styles */
+html {
+	background-color: var(--jelly-bean);
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	font-family: var(--ff-sans-serif);
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: var(--shark);
+}
+
+.container {
+	width: min(95vw, 1140px);
+	padding-inline: 1em;
+	display: flex;
+	justify-content: center;
+}
+
+.gift-container {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: var(--white-100);
+	border-radius: 1rem;
+	padding: 2rem;
+	width: 500px;
+	position: relative;
+	transition: opacity linear 1s;
+}
+
+.gift-container::before {
+	content: '';
+	background-image: url(../../images/gift.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	z-index: 1;
+	top: -35px;
+	left: -35px;
+	transform: rotate(-20deg);
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.close-btn-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: -0.5rem;
+	margin-inline-end: -1rem;
+}
+
+.close-btn {
+	margin-left: auto;
+	width: 35px;
+	height: 35px;
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all linear 0.3s;
+}
+
+.close-btn:hover {
+	border-radius: 100vw;
+	color: var(--jelly-bean);
+	border: 1px solid var(--jelly-bean);
+}
+
+.gift-list-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.selected-gift {
+	display: flex;
+	gap: 0rem;
+}
+
+input#gift-amount {
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 0.5rem;
+	width: 70px;
+	text-align: center;
+	border: 1px solid var(--gallery);
+	cursor: pointer;
+	display: block;
+}
+
+input#gift-amount:hover,
+input#gift-amount:active {
+	border: 1px solid var(--jelly-bean);
+	background-color: var(--catskill-white);
+}
+
+.gift-list {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	gap: 0.125rem;
+	margin-inline: auto;
+	margin-block: 1rem;
+}
+
+.gift-item {
+	background-color: var(--white-200);
+	border: 1px solid var(--gallery);
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all ease 0.3s;
+	font-size: 0.8rem;
+}
+
+.gift-item:hover {
+	border: 1px solid var(--jelly-bean);
+}
+
+/* Buttons */
+
+.btn {
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: var(--shark);
+	transition: all linear 0.3s;
+}
+
+.primary-btn {
+	background-color: var(--jelly-bean);
+	color: var(--white-100);
+	border-radius: 50vw;
+	padding: 0.5rem 1.25rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.primary-btn span {
+	align-self: last baseline;
+}
+
+.primary-btn:hover {
+	box-shadow: var(--shadow-3);
+	border: 1px solid var(--mandy);
+	background-color: var(--mandy);
+}
+
+.updown-btn {
+	height: 100%;
+	padding: 0.5rem;
+	border: 1px solid var(--gallery);
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.updown-btn:hover {
+	background-color: var(--catskill-white);
+	color: var(--jelly-bean);
+}
+
+.updown-btn:active {
+	border: 1px solid var(--jelly-bean);
+}
+
+/* Utility */
+
+.clr-mako {
+	color: var(--mako);
+}
