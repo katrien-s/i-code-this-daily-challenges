@@ -1,0 +1,115 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--white-100: #ffffff;
+	--white-200: #fdfdfd;
+	--gallery: #eeeeee;
+	--aqua-haze: #eff3f6;
+	--catskill-white: #f9fbfc;
+	--athens-gray: #e5e8ee;
+	--santas-gray: #a5a5b6;
+	--mako: #44474e;
+
+	--clr-specials-01: #fcf5d0;
+	--clr-specials-02: #e1fdfb;
+	--clr-specials-03: #fedfd0;
+
+	--shuttle-gray: #5c697a;
+	--limed-spruce: #35424c;
+
+	--shark: #1a1e23;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* --ff-serif: ; */
+	--ff-sans-serif: 'Inter', sans-serif;
+}
+
+/* Global Styles */
+html {
+	background-color: var(--limed-spruce);
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	font-family: var(--ff-sans-serif);
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: var(--shuttle-gray);
+}
+
+.container {
+	width: min(95vw, 1140px);
+	padding-inline: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.specials-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+@media (max-width: 50em) {
+	.specials-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.specials-card {
+	display: grid;
+	grid-template-columns: 64px 1fr;
+	gap: 0.75rem;
+	padding: 0.75rem 1rem;
+}
+
+.specials-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.specials-text h4 {
+	color: var(--shark);
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: -0.03rem;
+	line-height: 1.1;
+}
+
+.specials-text p {
+	margin-top: 0.5em;
+}
+
+.specials-card:nth-of-type(1) {
+	background-color: var(--clr-specials-01);
+}
+.specials-card:nth-of-type(2) {
+	background-color: var(--clr-specials-02);
+}
+.specials-card:nth-of-type(3) {
+	background-color: var(--clr-specials-03);
+}
