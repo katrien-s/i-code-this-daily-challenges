@@ -15,15 +15,14 @@
 	--white-100: #ffffff;
 	--white-200: #fdfdfd;
 	--gallery: #eeeeee;
-	--santas-gray: #a5a5b6;
-
-	/* on hover */
-	--catskill-white: #f9fbfc;
-
 	--aqua-haze: #eff3f6;
+	--catskill-white: #f9fbfc;
 	--athens-gray: #e5e8ee;
+	--santas-gray: #a5a5b6;
+	--mako: #44474e;
 	--shark: #1a1e23;
-	--matisse: #1a7692;
+
+	--mandy: #e65952;
 	--jelly-bean: #267493;
 
 	/* box shadow */
@@ -68,8 +67,29 @@ body {
 	text-align: center;
 	background-color: var(--white-100);
 	border-radius: 1rem;
-  padding: 2rem;
-  width: 452px;
+	padding: 2rem;
+	width: 500px;
+	position: relative;
+	transition: opacity linear 1s;
+}
+
+.feedback-container::before {
+	content: '';
+	transform: rotate(-20deg) scale(-1, 1);
+	background-image: url(../../images/santa_hat.png);
+	top: -40px;
+	left: -40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	z-index: 1;
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 1.5rem;
 }
 
 ul {
@@ -81,8 +101,8 @@ ul {
 	display: grid;
 	grid-template-columns: repeat(5, 70px);
 	gap: 1rem;
-	margin-inline:auto;
-  margin-bottom: 1rem;
+	margin-inline: auto;
+	margin-bottom: 1rem;
 }
 
 .feedback-item {
@@ -94,11 +114,17 @@ ul {
 .fb-emoticon {
 	font-size: 2.75rem;
 	margin-top: -0.25rem;
-  opacity: 0.8;
+	opacity: 0.8;
 }
 
 .fb-text {
 	font-size: 0.8rem;
 	margin-top: -0.5rem;
 	color: var(--santas-gray);
+}
+
+/* Utility */
+
+.clr-mako {
+	color: var(--mako);
 }
