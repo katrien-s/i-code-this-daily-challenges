@@ -14,6 +14,7 @@ This is the 'iCodeMas 2023'-collection of challenges solved for the platform [I 
 
 - [Naming Color Variables](https://marketplace.visualstudio.com/items?itemName=guillaumedoutriaux.name-that-color) A VS Code Plugin to convert hex or rgb color representation into friendly names.
 - [How to add a gradient overlay to text with CSS](https://fossheim.io/writing/posts/css-text-gradient/)
+- [Pagination UI Design using HTML CSS & JavaScript](https://www.codingnepalweb.com/pagination-ui-design-javascript/)
 
 ## Author
 
