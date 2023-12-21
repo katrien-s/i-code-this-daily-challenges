@@ -1,0 +1,286 @@
+/* Start */
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Variables */
+:root {
+	/* colors */
+	--white-100: #ffffff;
+	--white-200: #fdfdfd;
+	--gallery: #eeeeee;
+	--aqua-haze: #eff3f6;
+	--catskill-white: #f9fbfc;
+	--athens-gray: #e5e8ee;
+	--santas-gray: #a5a5b6;
+	--mako: #44474e;
+	--shark: #1a1e23;
+
+	--albescent-white: #f4ebca;
+	--persian-red: #c4342e;
+
+	--mandy: #e65952;
+	--jelly-bean: #267493;
+
+	/* box shadow */
+	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* --ff-serif: ; */
+	--ff-sans-serif: 'Inter', sans-serif;
+}
+
+/* Global Styles */
+html {
+	background-color: var(--mandy);
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	font-family: var(--ff-sans-serif);
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: var(--shark);
+}
+
+.container {
+	width: min(95vw, 1140px);
+}
+
+.modal {
+	background-color: var(--white-100);
+	border-radius: 0.75rem;
+	overflow: hidden;
+	max-width: 750px;
+	margin-block: 0.5rem;
+}
+
+.close-btn-container {
+	display: flex;
+	align-items: start;
+	justify-content: end;
+	width: 100%;
+}
+
+.modal-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.text-container {
+	padding: 2rem 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.text-container h2 {
+	max-width: 8ch;
+	margin-inline: auto;
+	font-family: 'Inter Tight', sans-serif;
+	font-weight: 600;
+	position: relative;
+}
+
+.text-container h2::before {
+	content: '20%';
+	background-color: var(--albescent-white);
+	color: var(--persian-red);
+	border-radius: 100%;
+	font-size: 1.75rem;
+	font-family: 'Inter Tight', sans-serif;
+	font-weight: 600;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  transform: rotate(-10deg);
+  top: -3.25rem;
+  left: -.75rem;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+	gap: 0.75rem;
+}
+
+.form-container input {
+	padding: 0.75rem 1.5rem;
+	border-radius: 50vw;
+	border: 1px solid var(--santas-gray);
+	color: var(--santas-gray);
+}
+
+.form-container input:focus::placeholder {
+	opacity: 0;
+}
+
+.img-container {
+	display: flex;
+}
+
+.text-container .naked-btn {
+	margin-top: 1rem;
+}
+
+@media (min-width: 33em) {
+	.text-container {
+		padding: 2rem;
+		order: 1;
+	}
+
+	.img-container {
+		order: 0;
+	}
+
+	.form-container {
+		margin-top: 3rem;
+	}
+
+	.text-container .naked-btn {
+		margin-top: auto;
+	}
+
+  .text-container h2::before {
+    top: -2.5rem;
+    left: -2.5rem;
+  }
+
+}
+
+/* Buttons */
+
+.close-btn {
+	width: 35px;
+	height: 35px;
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all linear 0.3s;
+}
+
+.close-btn:hover {
+	border-radius: 100vw;
+	color: var(--jelly-bean);
+	border: 1px solid var(--jelly-bean);
+}
+
+.btn {
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: var(--shark);
+	transition: all linear 0.3s;
+}
+
+.primary-btn {
+	background-color: var(--jelly-bean);
+	color: var(--white-100);
+	padding: 0.75rem 1.5rem;
+	border-radius: 50vw;
+}
+
+.primary-btn:hover {
+	background-color: var(--mandy);
+}
+
+.naked-btn {
+	color: var(--santas-gray);
+	font-weight: 500;
+}
+
+/* Utility */
+
+.clr-jelly-bean {
+	color: var(--jelly-bean);
+}
+
+.clr-santas-gray {
+	color: var(--santas-gray);
+}
+
+.fs-400 {
+	font-size: 1rem;
+}
+.fs-500 {
+	font-size: 1.25rem;
+}
+.fs-600 {
+	font-size: 1.5rem;
+}
+.fs-700 {
+	font-size: 1.75rem;
+}
+.fs-800 {
+	font-size: 2.75rem;
+}
+.fs-900 {
+	font-size: 3rem;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+.fw-500 {
+	font-weight: 500;
+}
+.fw-600 {
+	font-weight: 600;
+}
+.fw-700 {
+	font-weight: 700;
+}
+
+.line-height-200 {
+	line-height: 1.1;
+}
+
+.line-height-400 {
+	line-height: 1.5;
+}
+
+.mt-400 {
+	margin-top: 1rem;
+}
+
+.mi-auto {
+	margin-inline: auto;
+}
+
+.mxw-400 {
+	max-width: 25ch;
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

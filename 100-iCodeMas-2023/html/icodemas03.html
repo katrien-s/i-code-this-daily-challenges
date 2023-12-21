@@ -7,15 +7,58 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Inter:wght@300;400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../assets/css/style03.css" />
+		<script src="../assets/js/app03.js" defer></script>
 	</head>
 	<body>
-		<!-- 
-  Challenge 03 - images
-  https://icodethis.com/images/iCodeMas/modal_bg.png 
-
-  --></body>
+		<section class="container modal">
+			<div class="modal-grid">
+				<div class="text-container">
+					<div class="close-btn-container">
+						<button class="close-btn btn" id="close-btn">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="icon icon-tabler icon-tabler-x"
+								width="25"
+								height="25"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="#2c3e50"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M18 6l-12 12" />
+								<path d="M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<h2 class="clr-jelly-bean fs-800 line-height-200">
+						Jingle all the way to savings
+					</h2>
+					<p class="clr-santas-gray mt-400 mxw-400 mi-auto">
+						Enter your email for an exclusive Christmas discount
+					</p>
+					<div class="form-container">
+						<label for="fullName" class="sr-only">Enter Name</label>
+						<input
+							type="text"
+							name="fullName"
+							id="fullName"
+							placeholder="Enter Name"
+						/>
+						<button class="btn primary-btn">Place order</button>
+					</div>
+					<button class="btn naked-btn">No thanks</button>
+				</div>
+				<div class="img-container">
+					<img src="../images/modal_bg.png" class="img" alt="" />
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
