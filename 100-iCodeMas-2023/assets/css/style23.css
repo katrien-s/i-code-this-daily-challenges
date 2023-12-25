@@ -158,13 +158,15 @@ h2 {
 
 .santa-slide {
 	position: absolute;
-	left: 50px;
-	top: 50%;
-	max-width: 200px;
+	left: -35%;
+	top: 55%;
+	max-width: 250px;
+  /* z-index: -1; */
 }
 
-@media (max-width: 30em) {
+@media (max-width: 56em) {
 	.santa-slide {
-		top: 18rem;
+		top: -80px;
+    left: 0;
 	}
 }
