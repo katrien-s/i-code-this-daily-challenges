@@ -13,7 +13,7 @@ This is the '**iCodeMas 2023**'-collection of challenges solved for the platform
 I refactored this exercise in 2024, implementing the new theory I've learned in the meantime. But also to tidy up the previous solutions, and finish those I didn't in 2023.
 
 ## Useful Resources
-
+- [How to calculate days left until next Christmas using JavaScript ?](https://www.geeksforgeeks.org/how-to-calculate-days-left-until-next-christmas-using-javascript/) I used parts of this solution to update the errors in my **2023**-code.
 - [How to add a gradient overlay to text with CSS](https://fossheim.io/writing/posts/css-text-gradient/)
 - [Pagination UI Design using HTML CSS & JavaScript](https://www.codingnepalweb.com/pagination-ui-design-javascript/)
 
