@@ -11,30 +11,60 @@
 
 /* Variables */
 :root {
-	/* colors */
-	--white-200: #fdfdfd;
-	--white-300: #fafafa;
-	--gallery: #eeeeee;
-	--aqua-haze: #eff3f6;
-	--catskill-white: #f9fbfc;
-	--athens-gray: #e5e8ee;
-	--santas-gray: #a5a5b6;
-	--mako: #44474e;
+	/* Neutral Colors */
+	--neutral-100: hsl(0, 0%, 100%);
+	--neutral-200: hsl(0, 0%, 99%);
+	--neutral-300: hsl(0, 0%, 98%);
+	--neutral-400: hsl(210, 33%, 98%);
+	--neutral-500: hsl(0, 0%, 93%);
+	--neutral-600: hsl(224, 19%, 90%);
+	--neutral-700: hsl(240, 7%, 65%);
+	--neutral-900: hsl(0, 0%, 0%);
 
-	--clr-primary-300: #eff2f6;
-	--clr-primary-500: #9ca3b1;
-	--clr-primary-900: #131925;
+	/* Primary Colors */
+	--primary-100: hsl(210, 28%, 96%);
+	--primary-300: hsl(220, 8%, 68%);
+	--primary-900: hsl(225, 35%, 11%);
 
-	--clr-neutral-100: #ffffff;
-	--clr-neutral-900: #000;
+	/* Red Shades */
+	--red-100: hsl(7, 84%, 89%);
+	--red-500: hsl(3, 72%, 61%);
+	--red-900: hsl(2, 60%, 40%);
 
-	--clr-red-300: #fcd6cf;
-	--clr-red-500: #e55952;
+	/* Accent Colors */
+	--accent-400: hsl(47, 73%, 89%);
+	--accent-500: hsl(200, 61%, 36%);
+	--accent-900: hsl(224, 7%, 28%);
 
-	--albescent-white: #f4ebca;
-	--persian-red: #c4342e;
+	/* Font Sizes */
+	--fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+	--fs-800: 3.5rem;
+	--fs-700: 1.5rem;
+	--fs-600: 1.25rem;
+	--fs-500: 1rem;
+	--fs-400: 0.9rem;
+	--fs-300: 0.875rem;
+	--fs-200: 0.75rem;
 
-	--jelly-bean: #267493;
+	/* @media (min-width: 35em) {
+		:root {
+			--fs-800: 5rem;
+			--fs-700: 2.5rem;
+			--fs-600: 1.5rem;
+			--fs-500: 1.25rem;
+			--fs-400: 1rem;
+		}
+	} */
+
+	/* @media (min-width: 45em) {
+		:root {
+			--fs-800: 6.25rem;
+			--fs-700: 3.5rem;
+			--fs-600: 2rem;
+			--fs-500: 1.75rem;
+			--fs-400: 1.125rem;
+		}
+	} */
 
 	/* box shadow */
 	--shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -45,13 +75,12 @@
 	--shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
 		0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
-	/* --ff-serif: ; */
 	--ff-sans-serif: 'Inter', sans-serif;
 }
 
 /* Global Styles */
 html {
-	background-color: var(--jelly-bean);
+	background-color: var(--accent-500);
 }
 
 body {
@@ -60,13 +89,13 @@ body {
 	min-height: 100vh;
 	font-family: var(--ff-sans-serif);
 	font-weight: 400;
-	font-size: 0.9rem;
+	font-size: var(--fs-400);
 	line-height: 1.5;
-	color: var(--clr-primary-900);
+	color: var(--primary-900);
 }
 
 .container {
-	width: min(95vw, 1140px);
+	width: min(calc(100vw - 2em), 1320px);
 }
 
 .img {
@@ -81,5 +110,170 @@ ul {
 
 a {
 	text-decoration: none;
-	color: var(--clr-neutral-900);
+	color: var(--neutral-900);
+}
+/* Utility Classes */
+
+/* Icons */
+
+.icon-tabler {
+	stroke: var(--primary-900);
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/* General */
+
+/* Colors */
+
+/* Components */
+
+/* Buttons */
+
+.btn {
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: var(--primary-900);
+	transition: all linear 0.3s;
+}
+
+.form-control .btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Page Specific Background */
+
+/* Layout */
+
+.discount-coupon {
+	background-color: var(--red-100);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1rem;
+}
+
+.discount-text {
+	text-align: center;
+	font-size: var(--fs-300);
+	margin-right: auto;
+	width: 100%;
+}
+
+.discount-coupon .close-btn {
+	align-self: end;
+	display: flex;
+	justify-content: center;
+}
+
+.discount-coupon .close-btn .icon-tabler {
+	width: 0.8rem;
+	stroke-width: 3;
+}
+
+.main-header {
+	background-color: var(--neutral-100);
+	display: grid;
+	grid-template-columns: 120px 1fr auto;
+	gap: 1rem;
+	padding: 0.75rem 4rem;
+	grid-template-areas: 'logo search nav';
+}
+
+.form-control {
+	grid-area: search;
+	max-width: 100%;
+	position: relative;
+}
+
+.form-control input {
+	background-color: var(--primary-100);
+	border: transparent;
+	border-radius: 50px;
+	width: 300px;
+	padding: 0.75rem 0.75rem 0.75rem 3rem;
+	transition: all linear 0.5s;
+}
+
+.form-control input:focus {
+	width: 100%;
+}
+
+.form-control input::placeholder {
+	font-size: var(--fs-400);
+	font-weight: 500;
+	color: var(--primary-300);
+}
+
+.form-control input:focus::placeholder {
+	color: transparent;
+}
+
+.form-control button {
+	background: transparent;
+	height: 100%;
+	aspect-ratio: 1/1;
+	position: absolute;
+	top: 0;
+	left: 0.25rem;
+}
+
+.shop-logo {
+	font-size: var(--fs-700);
+	font-weight: 600;
+	grid-area: logo;
+	display: flex;
+	align-items: center;
+	user-select: none;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 3rem;
+}
+
+.primary-navigation {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	grid-area: nav;
+	font-weight: 600;
+}
+
+.shopping-cart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.cart-count {
+	position: absolute;
+	background-color: var(--red-500);
+	color: var(--neutral-100);
+	font-size: var(--fs-200);
+	text-align: center;
+	font-weight: 500;
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 100%;
+	top: -0.25rem;
+	right: -0.5rem;
 }
