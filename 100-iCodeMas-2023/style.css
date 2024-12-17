@@ -3,6 +3,8 @@
 /* ----------------  */
 
 :root {
+	--spacer: 1rem;
+
 	/* Neutral Colors */
 	--neutral-100: hsl(0, 0%, 100%); /* #ffffff (white) */
 	--neutral-200: hsl(0, 0%, 99%); /* #fdfdfd */
@@ -219,8 +221,20 @@ select {
 	margin-top: var(--flow-space, 1rem);
 }
 
-.flow--space-small {
+.flow-content > * + * {
+	margin-top: var(--flow-space, var(--spacer));
+}
+
+.flow--content-small {
 	--flow-space: 0.75rem;
+}
+
+.flow-content--large {
+	--flow-space: 3rem;
+}
+
+.flow-content--xtra-large {
+	--flow-space: 6rem;
 }
 
 .wrapper {
@@ -263,14 +277,6 @@ select {
 	transform: translateY(0);
 }
 
-/* Icons */
-
-.icon-tabler {
-	stroke: var(--primary-900);
-	width: 1.5rem;
-	height: 1.5rem;
-}
-
 .sr-only {
 	position: absolute;
 	width: 1px;
@@ -285,8 +291,44 @@ select {
 
 /* Typography */
 
-h4 {
+h4,
+.fs-600 {
 	font-size: var(--fs-600);
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-600 {
+	font-weight: 600;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+/* Icons */
+
+[class*='icon-tabler-'] {
+	stroke: var(--stroke, var(--primary-900));
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.icon-tabler-search,
+nav .icon-tabler-shopping-bag {
+	--stroke: var(--primary-900);
+}
+
+.icon-tabler-x,
+.icon-tabler-shopping-bag {
+	--stroke: var(--neutral-100);
+}
+
+.icon-tabler-chevron-down {
+	--stroke: var(--neutral-900);
+	width: 1rem;
 }
 
 /* General */
@@ -296,6 +338,22 @@ h4 {
 /* ----------------  */
 /* Components        */
 /* ----------------  */
+/* Background */
+
+[class*='bg-'] {
+	color: var(--fg, red);
+	background-color: var(--bg, purple);
+}
+
+.bg-blue {
+	--fg: var(--neutral-100);
+	--bg: var(--blue-800);
+}
+
+.bg-red {
+	--fg: var(--neutral-100);
+	--bg: var(--red-500);
+}
 
 /* Buttons */
 
@@ -303,41 +361,37 @@ h4 {
 	cursor: pointer;
 	background-color: transparent;
 	border: 1px solid transparent;
-	color: var(--primary-900);
 	transition: all linear 0.3s;
+	background: var(--bg, transparant);
+	color: var(--fg, var(--neutral-900));
+	display: flex;
+	align-items: center;
 }
 
+.btn span,
 .form-control .btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	place-items: center;
+}
+
+.btn .icon-tabler {
+	width: 1rem;
+	stroke-width: 2;
 }
 
 .primary-btn {
-	background-color: var(--blue-800);
-	color: var(--neutral-100);
+	--fg: var(--neutral-100);
+	--bg: var(--blue-800);
 	padding: 0.5rem 1.25rem;
-	display: flex;
-	align-items: center;
 	gap: 0.5rem;
 	margin-top: 0.5rem;
 	align-self: center;
 }
 
-.primary-btn[data-rounded] {
-	border-radius: 50vw;
-}
-
-.primary-btn .icon-tabler {
-	stroke: var(--neutral-100);
-	width: 1rem;
-	stroke-width: 2;
-}
-
 .primary-btn:hover {
+	--bg: var(--red-500);
 	box-shadow: var(--shadow-3);
 	border: 1px solid var(--red-500);
-	background-color: var(--red-500);
 }
 
 .product-card .primary-btn {
@@ -345,7 +399,44 @@ h4 {
 	align-self: start;
 	padding: 0.6rem 0.8rem;
 	font-size: var(--fs-300);
-	font-weight: 500;
+	font-weight: var(--fw-500);
+}
+
+.round-btn {
+	--bg: var(--neutral-100);
+	border-radius: 50vw;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+}
+
+.oval-btn {
+	--bg: var(--neutral-100);
+	--fg: var(--primary-900);
+	padding: 0.75rem 1rem;
+	border-radius: 60px;
+	justify-content: center;
+	gap: 0.25rem;
+}
+
+/* Recurring decorations */
+
+p[data-new],
+p[data-discount] {
+	position: absolute;
+	z-index: 1;
+	inset: 0;
+	color: var(--neutral-100);
+	background-color: var(--red-500);
+	width: max-content;
+	height: max-content;
+	text-transform: uppercase;
+	padding: 0.25rem;
+	font-size: 0.7rem;
+}
+
+p[data-new] {
+	background-color: var(--blue-800);
 }
 
 /* ---------------------------  */
@@ -439,7 +530,7 @@ h4 {
 	color: transparent;
 }
 
-.form-control button {
+.form-control .btn {
 	background: transparent;
 	height: 100%;
 	aspect-ratio: 1/1;
@@ -826,24 +917,15 @@ h2 {
 	text-decoration: line-through;
 } */
 
-/* Recurring decorations */
+/* Promo Cards */
 
-p[data-new],
-p[data-discount] {
-	position: absolute;
-	z-index: 1;
-	inset: 0;
-	color: var(--neutral-100);
-	background-color: var(--red-500);
-	width: max-content;
-	height: max-content;
-	text-transform: uppercase;
-	padding: 0.25rem;
-	font-size: 0.7rem;
+.promo-cards {
+	display: flex;
+	gap: 3rem;
 }
 
-p[data-new] {
-	background-color: var(--blue-800);
+.promo-card__text-background {
+	padding: 2rem 1.5rem;
 }
 
 /* Specials */
@@ -913,11 +995,6 @@ p[data-new] {
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 0.25rem;
-}
-
-.icon-tabler-chevron-down {
-	stroke: var(--neutral-900);
-	width: 1rem;
 }
 
 .dropdown-options {
