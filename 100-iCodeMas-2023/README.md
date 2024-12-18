@@ -16,6 +16,7 @@ I refactored this exercise in 2024, implementing the new theory I've learned in 
 - [How to calculate days left until next Christmas using JavaScript ?](https://www.geeksforgeeks.org/how-to-calculate-days-left-until-next-christmas-using-javascript/) I used parts of this solution to update the errors in my **2023**-code.
 - [How to add a gradient overlay to text with CSS](https://fossheim.io/writing/posts/css-text-gradient/)
 - [Pagination UI Design using HTML CSS & JavaScript](https://www.codingnepalweb.com/pagination-ui-design-javascript/)
+- [How to Truncate Text with CSS and JavaScript](https://www.freecodecamp.org/news/how-to-truncate-text-with-css-javascript/)
 
 ## Author
 
