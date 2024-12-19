@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>iCodeMas #19</title>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="../payment.js" defer></script>
+		<script src="../assets/js/app19.js" defer></script>
+	</head>
+	<body>
+		<main class="">
+			<section class="modal">
+				<div class="close-btn-container">
+					<button class="close-btn btn" id="close-btn">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-x"
+							width="25"
+							height="25"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="#2c3e50"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M18 6l-12 12" />
+							<path d="M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+				<form action="" class="checkout-form flow-content flow-content--large">
+					<fieldset>
+						<legend>Contact info</legend>
+						<label for="email">Email</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							required
+							aria-required="true"
+							placeholder="Enter email"
+							aria-placeholder="Enter email"
+						/>
+					</fieldset>
+					<fieldset class="shipping-info">
+						<legend>Shipping info</legend>
+						<div class="split">
+							<label for="name"
+								>Name
+								<!-- <span>
+											<svg>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													class="icon icon-tabler icons-tabler-outline icon-tabler-asterisk"
+												>
+													<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+													<path d="M12 12l8 -4.5" />
+													<path d="M12 12v9" />
+													<path d="M12 12l-8 -4.5" />
+													<path d="M12 12l8 4.5" />
+													<path d="M12 3v9" />
+													<path d="M12 12l-8 4.5" />
+												</svg>
+											</svg>
+										</span> -->
+							</label>
+							<input
+								type="text"
+								name="name"
+								id="name"
+								required
+								aria-required="true"
+								placeholder="Enter name"
+								aria-placeholder="Enter name"
+							/>
+						</div>
+						<div class="split">
+							<label for="country">Country / Region</label>
+							<input
+								type="text"
+								name="country"
+								id="country"
+								required
+								aria-required="true"
+								placeholder="Enter country"
+								aria-placeholder="Enter country"
+							/>
+						</div>
+						<div class="split">
+							<label for="address">Address</label>
+							<input
+								type="text"
+								name="address"
+								id="address"
+								required
+								aria-required="true"
+								placeholder="Enter address"
+								aria-placeholder="Enter address"
+							/>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Payment info</legend>
+						<!-- Card -->
+						<!-- Cash -->
+						<!-- Paypal -->
+						<div class="split">
+							<label for="cardnumber">Card number</label>
+							<input
+								name="cardnumber"
+								id="cardnumber"
+								type="text"
+								class="cc-number"
+								pattern="\d*"
+								x-autocompletetype="cc-number"
+								placeholder="Card number"
+								required
+								aria-required="true"
+								aria-placeholder="Enter cardnumber"
+							/>
+						</div>
+						<div>
+							<div class="split">
+								<label for="expirydate">Expiry date</label>
+								<input
+									type="text"
+									name="expirydate"
+									id="expirydate"
+									class="cc-exp"
+									pattern="\d*"
+									x-autocompletetype="cc-exp"
+									placeholder="Expires MM/YY"
+									required
+									maxlength="9"
+									aria-required="true"
+									placeholder="MM / YY"
+									aria-placeholder="Enter expiry date"
+								/>
+							</div>
+							<div class="split">
+								<label for="cardnumber">CVC</label>
+								<input
+									type="text"
+									name="cardnumber"
+									id="cardnumber"
+									class="cc-cvc"
+									pattern="\d*"
+									x-autocompletetype="cc-csc"
+									placeholder="Security code"
+									required
+									autocomplete="off"
+									aria-required="true"
+									placeholder="123"
+									aria-placeholder="Enter CVC"
+								/>
+							</div>
+						</div>
+					</fieldset>
+					<button class="btn primary-btn oval-btn" type="submit">
+						Place order
+					</button>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>
